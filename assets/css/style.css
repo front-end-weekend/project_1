@@ -4,6 +4,11 @@
   box-sizing: content-box;
 }
 
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("../font/Pretendard-Regular.otf");
+}
+
 section {
   display: block;
 }
@@ -11,6 +16,9 @@ section {
 a {
   text-decoration: none;
   text-decoration-line: none;
+}
+a:hover {
+  cursor: pointer;
 }
 
 p {
@@ -49,6 +57,7 @@ header .mainbar_mainbar {
   height: 50px;
   max-width: 1060px;
   position: relative;
+  top: 10px;
 }
 
 header .mainbar_nav {
@@ -61,18 +70,53 @@ header .mainbar_nav_menu_logo {
   display: flex;
 }
 
-header .mainbar_menu_classname {
-  display: flex;
-}
-
-header aside {
-  display: flex;
+header .mainbar_nav_menu_logo a img {
+  padding-bottom: 5px;
+  width: 78px;
+  height: 23px;
+  padding-left: 13px;
 }
 
 .header_padding {
   height: 50px;
 }
 
+header .mainbar_menu_classname {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "Pretendard-Regular";
+  font-weight: 500;
+  margin-bottom: 3px;
+  position: relative;
+  right: 7px;
+}
+
+.header aside {
+  display: flex;
+
+  width: 250px;
+  font-family: "Pretendard-Regular";
+}
+
+.header aside li button img {
+  width: 18px;
+  height: 18px;
+  margin-right: 28px;
+}
+
+.header aside li .member {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 0px;
+}
+
+.header aside li .service {
+  font-size: 13.5px;
+  color: rgb(98, 98, 98);
+  margin-right: 0;
+}
 /* header end */
 
 /* main start */
