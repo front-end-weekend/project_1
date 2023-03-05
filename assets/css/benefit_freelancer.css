@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.benefit_background {
+  background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fimage.wanted.co.kr%2Fgigs%2Fwww%2Fexperts%2Ffreelancer_landing_banner_type_A.png&w=2800&q=93);
+  background-size: cover;
+  height: 600px;
+}
+.benefit_background_img_text {
+  font-size: 56px;
+  color: white;
+}
+.benefit_background_img_text_sm {
+  font-size: 22px;
+  color: white;
+}
+#add_freelancer {
+  width: 253px;
+  height: 60px;
+  border-radius: 39px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+.mid_description {
+  font-size: 24px;
+}
