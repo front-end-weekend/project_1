@@ -22,9 +22,11 @@ for (var i = 0; i < buttons.length; i++) {
 
   button.addEventListener('click', function () {
     if (target.style.display === 'none') {
-      target.style.display = 'block';
+      target.style.display = 'flex';
+      target.classList.add('ans_bg');
     } else {
       target.style.display = 'none';
+      target.classList.remove('ans_bg');
     }
   });
 }
