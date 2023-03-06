@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .active {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a onmouseover="openModal()" onmousedown="closeModal()"
+      >Open Vanila JavaScript Animation Modal</a
+    >
+    <div id="modal-notice" class="modal">
+      <div class="modal-content">
+        <a class="btn-close">x</a>
+        <div class="modal-body">
+          <h2>Welcome to Teams!</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let modal = document.getElementById("modal-notice");
+      // 현재 문제에서 아이디를 가져와라, modal-notice라는
+
+      function openModal() {
+        modal.classList.add("btn-close");
+        //modal은 변수
+      }
+      function closeModal() {
+        modal.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
