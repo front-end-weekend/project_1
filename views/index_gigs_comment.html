@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,61 +9,219 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png" />
     <title>원티드긱스</title>
 </head>
+
 <body>
+    <!-- 상아 작업 -->
+    <!-- header 시작 -->
+    <header class="header">
+        <div class="main_bar">
+            <div class="mainbar_menu">
+                <a class="mainbar_menu_logo">
+                    <svg width="113" height="60" viewBox="0 0 113 20" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="black" fill-rule="evenodd">
+                            <path
+                                d="M45.609 1.447l-2.832 1.172v2.374h-1.97v2.542h1.933v4.932c0 2.046 1.305 3.383 3.39 3.383.848 0 1.37-.15 1.63-.258v-2.48c-.152.044-.543.086-.89.086-.826 0-1.261-.3-1.261-1.226V7.535h2.152V4.993h-2.152V1.447zM14.495 4.998l-1.978 6.807-2.325-6.807H7.345L5.02 11.805 3.042 4.998H0l3.411 10.597h3.06l2.297-7.14 2.31 7.14h3.047l3.412-10.597zM23.038 13.287c-1.551 0-2.816-1.12-2.816-3.015S21.532 7.3 23.038 7.3c1.507 0 2.681 1.055 2.681 2.95 0 1.917-1.174 3.037-2.68 3.037zm2.692-7.64c-.732-.517-1.626-.838-2.655-.896l-.028-.001-.074-.005a4.874 4.874 0 00-.58.007c-2.592.146-4.33 1.96-4.76 4.352a6.629 6.629 0 00-.104 1.09l-.003.09V10.297c0 .09.003.18.007.27v.017c.007.153.018.305.035.454.295 2.718 2.22 4.815 5.166 4.815 1.174 0 2.185-.334 2.996-.906v.642h2.792V4.993H25.73v.654zM36.112 4.713c-1.128 0-2.379.476-3.042 1.527V4.993h-2.848V15.59h2.89V9.494c0-1.227.74-2.197 2-2.197 1.391 0 1.978.927 1.978 2.111v6.182h2.89V8.913c0-2.326-1.216-4.2-3.868-4.2M64.678 13.285c-1.551 0-2.817-1.12-2.817-3.016 0-1.894 1.31-2.971 2.817-2.971 1.506 0 2.681 1.055 2.681 2.95 0 1.917-1.175 3.037-2.681 3.037zm2.637-11.838v4.161c-.689-.471-1.519-.772-2.466-.848a9.12 9.12 0 00-.162-.013c-.025-.002-.049-.004-.074-.004a5.048 5.048 0 00-.713.017c-2.519.2-4.204 1.994-4.628 4.344a6.669 6.669 0 00-.103 1.071c0 .036-.003.071-.003.107v.015c0 .092.003.182.006.272v.005l.001.004c.006.154.018.308.035.46.295 2.718 2.22 4.815 5.166 4.815 1.18 0 2.194-.336 3.006-.913v.65h.11l2.672.024V.348l-2.847 1.099zM50.604 9.062c.362-1.042 1.218-1.77 2.407-1.77 1.19 0 2.045.728 2.408 1.77h-4.815zm7.507.03c-.454-2.49-2.323-4.351-5.1-4.351-2.776 0-4.645 1.862-5.1 4.35 0 .005 0 .009-.002.013a6.69 6.69 0 00-.106 1.192v.001a6.977 6.977 0 00.042.74c.295 2.719 2.22 4.816 5.166 4.816 2.356 0 4.058-1.342 4.797-3.268l-2.56-.542c-.427.91-1.206 1.512-2.237 1.512-1.376 0-2.306-1.076-2.541-2.519h7.708a6.69 6.69 0 00-.065-1.932l-.002-.013zM83.285 9.99c0-1.688-1.165-2.753-2.599-2.753-1.478 0-2.644 1.065-2.644 2.753 0 1.71 1.098 2.776 2.644 2.776 1.524 0 2.6-1.089 2.6-2.776zm-5.348 5.499c.195 1.16 1.128 1.998 2.493 1.998 1.821 0 2.84-.902 2.84-2.943v-.774c-.434.688-1.431 1.353-2.97 1.353-2.84 0-4.964-2.17-4.964-5.134 0-2.792 2.038-5.155 4.964-5.155 1.69 0 2.666.73 3.034 1.439V5.027h2.775v9.43c0 2.901-1.583 5.543-5.592 5.543-2.927 0-4.878-1.804-5.18-3.824l2.6-.687zM100.448 9.99c0-1.688-1.166-2.753-2.6-2.753-1.478 0-2.643 1.065-2.643 2.753 0 1.71 1.098 2.776 2.643 2.776 1.524 0 2.6-1.089 2.6-2.776zm-5.349 5.499c.195 1.16 1.128 1.998 2.493 1.998 1.822 0 2.84-.902 2.84-2.943v-.774c-.433.688-1.43 1.353-2.97 1.353-2.84 0-4.964-2.17-4.964-5.134 0-2.792 2.038-5.155 4.965-5.155 1.69 0 2.665.73 3.034 1.439V5.027h2.774v9.43c0 2.901-1.582 5.543-5.592 5.543-2.927 0-4.878-1.804-5.18-3.824l2.6-.687zM88.165 15.596h2.882V5.026h-2.882v10.57zM89.595 0c.997 0 1.777.795 1.777 1.783 0 .946-.78 1.74-1.777 1.74-.975 0-1.777-.794-1.777-1.74C87.818.795 88.62 0 89.595 0zM106.888 12.116c.065.838.693 1.611 1.95 1.611.954 0 1.41-.494 1.41-1.053 0-.472-.326-.859-1.15-1.03l-1.408-.323c-2.06-.45-2.991-1.675-2.991-3.158 0-1.89 1.69-3.458 3.987-3.458 3.035 0 4.054 1.912 4.184 3.05l-2.406.538c-.087-.624-.542-1.419-1.756-1.419-.758 0-1.365.452-1.365 1.053 0 .516.39.838.976.945l1.516.322c2.104.43 3.165 1.698 3.165 3.244 0 1.719-1.343 3.48-4.14 3.48-3.208 0-4.313-2.062-4.443-3.265l2.47-.537z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="mainbar_menu_classname">
+                    <a class="mainbar_menu_name" href="#">프로젝트 등록</a>
+                    <a class="mainbar_menu_name" href="#">프로젝트 찾기</a>
+                    <a class="mainbar_menu_name" href="#">해택</a>
+                    <a class="mainbar_menu_name" href="#">견적 계산기</a>
+                </div>
+            </div>
+            <div class="mainber_menu_side">
+                <button class="mainbar_menu_button">프리랜서/클라이언트 등록</button>
+                <a class="mainbar_menu_login">로그인</a>
+            </div>
+        </div>
+    </header>
+    <!-- header 끝 -->
+
+    <!-- main 시작 -->
+    <main>
+        <section class="main_section">
+            <div class="main_section_content">
+                <div class="main_section_content_wrapper">
+                    <h2>실력 있는 프리랜서를 빠르게<br> 원티드긱스와 성공적인 비즈니스를 시작하세요</h2>
+                    <p>원티드의 300만 전문가 중 최적의 인재를 48시간 안에 매칭해 드려요</p>
+                    <button>무료로 프리랜서 매칭받기</button>
+                </div>
+                <video class="main_section_video_content" width="100%" height="auto" autoplay="" loop="" playsinline="">
+                    <source src="https://image.wanted.co.kr/gigs/www/home/mainVideo2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+    <!-- 원티드긱스를 왜 사용해야 할까요? -->
+    <section class="aos_section">
+        <div class="aos_list">
+            <h3 class="aos_list_title">원티드긱스를 왜 사용해야 할까요?</h3>
+            <ul>
+                <li class="aos_list_zeroFee">
+                    <img src="/project_1/assets/images/zeroFee.png" alt="수수료 제로" />
+                    <h4>수수료 제로</h4>
+                    <p>수수료 없는 맞춤 견적으로 <br>외주 비용을 절약하세요.</p>
+                    <p class="aos_list_zeroFee_font">* 부가 서비스 사용에 따라 달라질 수 있습니다</p>
+                </li>
+
+                <li>
+                    <img src="/project_1/assets/images/freelancers.png" alt="선별된 프리랜서" />
+                    <h4>선별된 프리랜서</h4>
+                    <p>경력 10년 이상의 매칭 매니저가<br> 프리랜서를 연결해 드립니다.</p>
+                </li>
+
+                <li>
+                    <img src="/project_1/assets/images/matching.png" alt="편리한 매칭" />
+                    <h4>편리한 매칭</h4>
+                    <p>48시간 안에 적합한 프리랜서를<br> 빠르게 매칭 받으세요.</p>
+                </li>
+
+            </ul>
+            <div class="aos_button">
+                <button>지금 바로 시작하기</button>
+            </div>
+        </div>
+    </section>
+    <!-- 상아 작업 끝 -->
+
+
+    <!-- 예슬 작업 -->
     <!-- 클라이언트 목소리 섹션 -->
     <section class="section_content section">
         <div class="section_wrapper">
             <div class="section_content_client content">
                 <h3 class="client_title title">
-                원티드긱스를 이용한 클라이언트들의<br/>
-                생생한 목소리를 들어보세요.</h3>
-                <div id="client-review">
-                    fade 배너 영역 <br> 아직은 잘 모르겠네요 ㅇㅅㅇ
+                    원티드긱스를 이용한 클라이언트들의<br />
+                    생생한 목소리를 들어보세요.
+                </h3>
+                <div class="client_review list">
+                    <div id="client-review-fade">
+                        <div class="client_box box1">
+                            <div class="client_txt">
+                                <h2>원티드긱스의 매칭 매니저가 프로젝트 성공의 핵심 키가 되었습니다.</h2>
+                                <p>
+                                    디자이너와 개발자를 팀이 아닌 개별 프리랜서로 고용했기 때문에 프로젝트 진행에 있어 걱정이 예상되었습니다.<br class="webBr">하지만 매칭
+                                    매니저님께서 프리랜서 매칭부터 계약 진행, 프로젝트 진행 간 이슈가 발생할 때마다 조율도 잘해주셨습니다.<br class="webBr">프리랜서 분들과
+                                    협업하는 팁도 자세히 설명해 주셔서 프로젝트를 성공적으로 진행할 수 있었습니다.
+                                </p>
+                            </div>
+                            <div class="client_profile">
+                                <img src="../assets/images/indexgigs_client.jpg" alt="">
+                                <div class="name_box">
+                                    <p class="client_name">정범진</p>
+                                    <p class="client_job">포잉 CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client_box box2">
+                            <div class="client_txt">
+                                <h2>그동안 원티드로 많은 팀원들을 채용해왔는데,<br>
+                                    이번에 원티드긱스를 통해 프리랜서 개발자까지 만나게 되었습니다.</h2>
+                                <p>
+                                    이번에 프리랜서 개발자를 찾으며 원티드긱스를 알게 되었습니다.<br class="webBr">신규 서비스라 걱정이 많이 되었지만, 의뢰한지 3일 만에
+                                    저희 기술과 딱 맞는 개발자를 매칭 받을 수 있어 좋았습니다.<br class="webBr">원티드긱스에서 편하게 매칭 매니저와 이야기 나눌 수 있어
+                                    조율, 협의 등이 굉장히 편했습니다.
+                                </p>
+                            </div>
+                            <div class="client_profile">
+                                <img src="../assets/images/indexgigs_client.jpg" alt="">
+                                <div class="name_box">
+                                    <p class="client_name">손영대</p>
+                                    <p class="client_job">29CM COO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client_box box3">
+                            <div class="client_txt">
+                                <h2>의뢰 내용과 맞지 않는 수많은 제안 대신,<br class="webBr">딱 맞는 프리랜서 후보자들만 확인하니 시간과 비용이 많이 단축되었습니다.
+                                </h2>
+                                <p>
+                                    사내 신규 서비스 기획을 위해 서비스 초기 기획부터 개발 단계까지 경험해 본 기획자 겸 프로젝트 매니저가 필요했습니다.<br
+                                        class="webBr">타 플랫폼에서 프로젝트와 맞지 않는 제안들이 너무 많이 들어와서 검토하기 힘들었는데,<br
+                                        class="webBr">원티드긱스에서 프로젝트 내용을 토대로 매칭 매니저가 직접 검토한 프로젝트 매니저들을 매칭해줘서 굉장히 편했습니다.
+                                </p>
+                            </div>
+                            <div class="client_profile">
+                                <img src="../assets/images/indexgigs_client.jpg" alt="">
+                                <div class="name_box">
+                                    <p class="client_name">김철우</p>
+                                    <p class="client_job">전&#41; 번개장터 CPO &#47; 현 더벤처스 파트너</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client_box box4">
+                            <div class="client_txt">
+                                <h2>프로젝트 시작부터 마무리까지, 원티드긱스만 믿고 진행하세요.</h2>
+                                <p>
+                                    기존 서비스의 고도화를 위해 단기적으로 추가 인력이 필요하여 프리랜서를 물색하던 중 원티드긱스를 추천받아 의뢰를 맡겼습니다.<br
+                                        class="webBr">전담 매칭 매니저님이 의뢰 내용 상 보충이 필요한 부분에 대해서 상세히 상담해 주셨고,<br
+                                        class="webBr">이를 바탕으로 더 적합한 기술을 가진 프리랜서를 만날 수 있었습니다. 프로젝트 진행 후 유지/보수 부분까지<br
+                                        class="webBr">꼼꼼히 팔로업해주신 덕분에 개발 완료 후 6개월 차인 지금까지 아무 문제 없이 서비스를 운영하고 있습니다.
+                                </p>
+                            </div>
+                            <div class="client_profile">
+                                <img src="../assets/images/indexgigs_client.jpg" alt="">
+                                <div class="name_box">
+                                    <p class="client_name">노재환</p>
+                                    <p class="client_job">올리브인터내셔널 전략기획 실장</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fade banner btn -->
+                        <section id="fade-btn">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </section>
+                    </div>
                 </div>
                 <div class="client_logo list">
                     <h5>Our client</h5>
                     <ul>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_01.png" alt="lg u+">
+                            <img src="../assets/images/logo_indexgigs_ourclient01.png" alt="lg u+">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_02.png" alt="descente">
+                            <img src="../assets/images/logo_indexgigs_ourclient02.png" alt="descente">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_03.png" alt="mbc">
+                            <img src="../assets/images/logo_indexgigs_ourclient03.png" alt="mbc">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_04.png" alt="seah">
+                            <img src="../assets/images/logo_indexgigs_ourclient04.png" alt="seah">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_05.png" alt="amorepacific">
+                            <img src="../assets/images/logo_indexgigs_ourclient05.png" alt="amorepacific">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_06.png" alt="myrealtrip">
+                            <img src="../assets/images/logo_indexgigs_ourclient06.png" alt="myrealtrip">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_07.png" alt="woongin">
+                            <img src="../assets/images/logo_indexgigs_ourclient07.png" alt="woongin">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_09.png" alt="lg cns">
+                            <img src="../assets/images/logo_indexgigs_ourclient08.png" alt="lg cns">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_08.png" alt="우리카드">
+                            <img src="../assets/images/logo_indexgigs_ourclient09.png" alt="우리카드">
                         </li>
                         <li>
-                            <img src="https://image.wanted.co.kr/gigs/www/home/client_logo_10.png" alt="배달의민족">
+                            <img src="../assets/images/logo_indexgigs_ourclient10.png" alt="배달의민족">
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
     </section>
     <!-- secion qna -->
     <section class="section_qna section">
         <div class="section_wrapper">
             <div class="section_content_qna content">
                 <h3 class="client_title title">
-                    원티드긱스에서<br/>
+                    원티드긱스에서<br />
                     가장 많이 묻는 질문입니다.
                 </h3>
                 <div class="qna_box list">
@@ -71,21 +230,25 @@
                             <p>Q</p>
                             <div class="qna_text_box">
                                 <p>타 서비스 대비 장점은 무엇인가요?</p>
-                                <p>다양한 직군의 경력을 지닌 고급 전문가 프리랜서 풀을 갖추고 있습니다. 그리고 직접 매칭 요청한 프리랜서뿐 아니라, 매칭매니저가 제안한 프리랜서의 지원서도 확인할 수 있어 프로젝트에 가장 적합한 매칭이 가능합니다. 또한 클라이언트가 프리랜서의 지원서 확인 후, 원티드긱스의 미팅 조율 시스템을 통해 원활한 미팅 진행이 가능합니다. 프로젝트 등록부터 완료까지 도움이 필요하실 경우 담당 매칭매니저가 문의사항에 대해 상세히 상담해 드립니다.</p>
+                                <p>다양한 직군의 경력을 지닌 고급 전문가 프리랜서 풀을 갖추고 있습니다. 그리고 직접 매칭 요청한 프리랜서뿐 아니라, 매칭매니저가 제안한 프리랜서의
+                                    지원서도 확인할 수 있어 프로젝트에 가장 적합한 매칭이 가능합니다. 또한 클라이언트가 프리랜서의 지원서 확인 후, 원티드긱스의 미팅 조율 시스템을 통해
+                                    원활한 미팅 진행이 가능합니다. 프로젝트 등록부터 완료까지 도움이 필요하실 경우 담당 매칭매니저가 문의사항에 대해 상세히 상담해 드립니다.</p>
                             </div>
                         </li>
                         <li>
                             <p>Q</p>
                             <div class="qna_text_box">
                                 <p>IT 외 분야의 외주도 의뢰 받나요?</p>
-                                <p>원티드긱스에는 개발/디자인/기획뿐만 아니라 영상/마케팅/컨설팅/인사 등 다양한 분야의 200만 명의 전문가가 포진해있습니다. 어떤 의뢰든 원티드긱스에 맡겨주세요.</p>
+                                <p>원티드긱스에는 개발/디자인/기획뿐만 아니라 영상/마케팅/컨설팅/인사 등 다양한 분야의 200만 명의 전문가가 포진해있습니다. 어떤 의뢰든 원티드긱스에
+                                    맡겨주세요.</p>
                             </div>
                         </li>
                         <li>
                             <p>Q</p>
                             <div class="qna_text_box">
                                 <p>서비스 수수료는 어떻게 되나요?</p>
-                                <p>상담, 매칭 계약 등 전 과정에 별도 수수료가 부과되지 않으며, 의뢰하신 프로젝트의 견적에 맞춰 최적의 프리랜서를 매칭해드립니다. (부가 서비스 사용에 따라 수수료가 부과될 수 있습니다.).</p>
+                                <p>상담, 매칭 계약 등 전 과정에 별도 수수료가 부과되지 않으며, 의뢰하신 프로젝트의 견적에 맞춰 최적의 프리랜서를 매칭해드립니다. (부가 서비스 사용에
+                                    따라 수수료가 부과될 수 있습니다.).</p>
                             </div>
                         </li>
                         <li>
@@ -99,14 +262,16 @@
                             <p>Q</p>
                             <div class="qna_text_box">
                                 <p>견적 산정을 위해 평균 임금을 알고 싶어요.</p>
-                                <p><a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 SW기술자 평균 노임</a>에서 확인이 가능합니다. 실제 매칭 시 의뢰 내용에 따라 제공된 차트와 차이가 있을 수 있습니다.</p>
+                                <p><a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 SW기술자 평균
+                                        노임</a>에서 확인이 가능합니다. 실제 매칭 시 의뢰 내용에 따라 제공된 차트와 차이가 있을 수 있습니다.</p>
                             </div>
                         </li>
                         <li>
                             <p>Q</p>
                             <div class="qna_text_box">
                                 <p>프리랜서로 등록을 하고 싶어요.</p>
-                                <p><a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 프리랜서 등록 페이지</a>에서등록이 가능합니다. 가지고 계신 역량과 스킬을 자세하게 작성해 주세요.</p>
+                                <p><a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 프리랜서 등록
+                                        페이지</a>에서등록이 가능합니다. 가지고 계신 역량과 스킬을 자세하게 작성해 주세요.</p>
                             </div>
                         </li>
                         <li>
@@ -123,7 +288,6 @@
                                 <p>프리랜서가 담당할 업무를 자세하게 작성할수록 프리랜서의 매칭율이 올라갑니다. 구체적인 업무의 양을 기술해 주셔도 좋습니다.</p>
                             </div>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -138,5 +302,47 @@
             </div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_logo">
+                <!-- <img src="../assets/images/logo_indexgigs_footer.svg" alt="원티드긱스 인덱스 페이지 하단 푸터 로고"> -->
+            </div>
+            <div class="footer_info">
+                <ul>
+                    <li><a
+                            href="https://help.wantedgigs.co.kr/hc/ko/articles/8678489029785-%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80">프리랜서
+                            이용약관</a></li>
+                    <li><a
+                            href="https://help.wantedgigs.co.kr/hc/ko/articles/8678442383129-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80-">클라이언트
+                            이용약관</a></li>
+                    <li><a href="https://help.wantedgigs.co.kr/hc/ko">고객센터</a></li>
+                    <li><a href="https://help.wanted.co.kr/hc/ko/articles/360035484292"><strong>개인정보 처리방침</strong></a>
+                    </li>
+                </ul>
+                <div class="footer_copyright">
+                    <p>
+                        (주)원티드랩 (대표이사:이복기)
+                        <span class="line"></span>
+                        서울특별시 송파구 올림픽로 300 롯데월드타워 35층
+                        <span class="line"></span>
+                        <strong>통신판매번호</strong> : 2020-서울송파-3147호
+                        <br>
+                        <strong>유료직업소개사업등록번호</strong> : (국내) 제2020-3230259-14-5-00018호
+                        <span class="line"></span>
+                        <strong>사업자등록번호</strong> : 299-86-00021
+                        <span class="line"></span>
+                        02-539-7118
+                        <br>
+                        &copy; WANTEDLAB, INC.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- 예슬 작업 끝 -->
 </body>
+
 </html>
