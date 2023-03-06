@@ -2,55 +2,55 @@
   font-family: "Pretendard";
   font-weight: 900;
   src: local("Pretendard Black"),
-    url("./../font/Pretendard-Black.otf") format("opentype");
+  url("../font/Pretendard-Black.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 800;
   src: local("Pretendard ExtraBold"),
-    url("./../font/Pretendard-ExtraBold.otf") format("opentype");
+  url("../font/Pretendard-ExtraBold.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 700;
   src: local("Pretendard Bold"),
-    url("./../font/Pretendard-Bold.otf") format("opentype");
+  url("../font/Pretendard-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 600;
   src: local("Pretendard SemiBold"),
-    url("./../font/Pretendard-SemiBold.otf") format("opentype");
+  url("../font/Pretendard-SemiBold.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 500;
   src: local("Pretendard Medium"),
-    url("./../font/Pretendard-Medium.otf") format("opentype");
+  url("../font/Pretendard-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 400;
   src: local("Pretendard Regular"),
-    url("./../font/Pretendard-Regular.otf") format("opentype");
+  url("../font/Pretendard-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 300;
   src: local("Pretendard Light"),
-    url("./../font/Pretendard-Light.otf") format("opentype");
+  url("../font/Pretendard-Light.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 200;
   src: local("Pretendard ExtraLight"),
-    url("./../font/Pretendard-ExtraLight.otf") format("opentype");
+  url("../font/Pretendard-ExtraLight.otf") format("opentype");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 100;
   src: local("Pretendard Thin"),
-    url("./../font/Pretendard-Thin.otf") format("opentype");
+  url("../font/Pretendard-Thin.otf") format("opentype");
 }
 
 * {
@@ -77,6 +77,162 @@ button {
   padding: 0;
   border: 0;
 }
+
+/* 상아 */
+/* 실력 있는 프리랜서를 빠르게 원티드긱스와 성공적인 비즈니스를 시작하세요 */
+.main_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1080px;
+}
+
+.main_section {
+  height: 680px;
+  background-color: rgb(245, 247, 255);
+  border: 1px solid red;
+}
+
+.main_section_content {
+  position: relative;
+  height: 100%;
+}
+
+.main_section_content_wrapper {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.main_section_content_wrapper h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.main_section_content_wrapper p {
+  font-size: 18px;
+  line-height: 160%;
+  padding: 20px 0px 35px 0px;
+}
+
+.main_section_content_wrapper button {
+  background-color: rgb(51, 102, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  width: 290px;
+  height: 46px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main_section_video_content {
+  width: 800px;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+/* 원티드긱스를 왜 사용해야 할까요?
+ */
+.aos_section {
+  padding: 100px 0;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.aos_list {
+  max-width: 1060px;
+  margin: 0px auto;
+}
+
+.aos_list_title {
+  color: rgb(51, 102, 255);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 160%;
+  padding-bottom: 50px;
+}
+
+/* common */
+.aos_list img {
+  width: 150px;
+}
+
+.aos_list ul {
+  display: flex;
+  border: 1px solid;
+  padding: 0 0 80px;
+  justify-content: space-between;
+}
+
+.aos_list li {
+  background-color: rgb(245, 247, 255);
+  width: 340px;
+  border-right: 10px;
+  padding: 30px 0px 50px;
+  border: 1px solid blue;
+}
+
+.aos_list ul li img {
+  width: 150px;
+}
+
+.aos_list ul li h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+  padding: 20px 0 5px;
+}
+
+.aos_list ul li p {
+  font-size: 16px; /* 폰트 적용 안됨 - 이유찾기 */
+  line-height: 160%;
+  margin-top: 5px;
+}
+
+.aos_button button {
+  color: white;
+  background-color: rgb(51, 102, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 160%;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+/* 끝 */
+
+/* .aos_list_zeroFee {
+  margin: 0 10px 0 0;
+}
+
+.aos_list_freelancers {
+  margin: 0 10px 0 10px;
+}
+
+.aos_list_matching {
+  margin: 0 0 0 10px;
+} */
+
+.aos_list_zeroFee_font {
+  color: rgb(136, 136, 136);
+}
+
+.aos_list_zeroFee p.aos_list_zeroFee_font {
+  font-size: 12px;
+}
+
+/* 예슬 */
 
 /* common */
 .section {
@@ -117,6 +273,96 @@ button {
   padding: 40px 100px;
 }
 
+.client_txt h2 {
+  color: rgb(51, 102, 255);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.client_txt p {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  line-height: 160%;
+  padding: 15px 0px 25px;
+}
+
+.client_profile {
+  display: flex;
+}
+
+.name_box {
+  display: flex;
+  align-items: center;
+}
+
+.client_profile img {
+  width: 36px;
+  border-radius: 18px;
+}
+
+#client-review-fade {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.client_box {
+  position: absolute;
+}
+
+.box1 {
+  z-index: 400;
+}
+.box2 {
+  z-index: 300;
+}
+.box3 {
+  z-index: 200;
+}
+.box4 {
+  z-index: 100;
+}
+
+.client_name {
+  color: #333;
+  margin-right: 10px;
+}
+
+.client_job {
+  padding-left: 10px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  line-height: 120%;
+  position: relative;
+}
+
+.client_job::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  height: 10px;
+  background-color: rgb(170, 170, 170);
+}
+
+.client_logo,
+.client_review {
+  background-color: #fff;
+  padding: 40px 100px;
+}
+
+.client_review {
+  padding-top: 60px;
+}
+
+.client_logo {
+  margin-top: 20px;
+}
+
 .client_logo h5 {
   color: rgba(0, 0, 0, 0.85);
   font-size: 16px;
@@ -136,6 +382,25 @@ button {
 
 .client_logo ul li img {
   width: 100%;
+}
+
+#fade-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#fade-btn button {
+  margin: 0 5px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border: 1px solid #3366ff;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* qna section */
@@ -206,4 +471,56 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#projectRegisterGo:hover {
+  opacity: 0.9;
+}
+
+/* footer */
+footer {
+  padding: 50px 0;
+}
+footer > div {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.footer_logo {
+  padding-right: 50px;
+}
+
+.footer_info ul {
+  display: flex;
+}
+
+.footer_info ul li {
+  margin-right: 36px;
+}
+
+.footer_info ul li a {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 15px;
+}
+
+.footer_info ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_copyright {
+  padding-top: 18px;
+  color: rgb(118, 118, 118);
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.line {
+  margin: 0px 6px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5px;
+  background-color: rgb(236, 236, 236);
 }

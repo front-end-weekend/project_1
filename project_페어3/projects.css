@@ -1,0 +1,263 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+input:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+select,
+select:focus {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+.width_restrict {
+  width: 70%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.flex_space_between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_align_center {
+  display: flex;
+  align-items: center;
+}
+.flex_justify_center {
+  display: flex;
+  justify-items: center;
+}
+.relative {
+  position: relative;
+}
+.absolute_left {
+  position: absolute;
+  left: 0;
+}
+.absolute_right {
+  position: absolute;
+  right: 0;
+}
+.block {
+  display: block;
+}
+/* main > nav */
+
+main > nav {
+  height: 90px;
+}
+main > nav > div {
+  padding: 25px 0;
+  height: 40px;
+}
+main > nav * {
+  height: inherit;
+}
+main > nav .dropdown_container > * {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin: 0 6px;
+  padding: 0 5px;
+}
+main > nav .dropdown_container > * > * {
+  margin: auto 10px;
+  width: max-content;
+  height: max-content;
+}
+main > nav .criterion_value {
+  color: blue;
+}
+main > nav .search_box {
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+/* main > div */
+main > div {
+  background-color: #f3f3f3;
+}
+/* main > div nav.setting */
+main > div nav.setting {
+  height: 90px;
+}
+main > div nav.setting > div {
+  padding: 25px 0;
+  height: 40px;
+}
+main > div nav.setting * {
+  height: inherit;
+}
+main > div nav.setting .num_and_sort > * {
+  padding: 0 7px;
+}
+main > div nav.setting .num_and_sort > .num_projects {
+  padding-left: 0;
+  border-right: 1px solid #d9d9d9;
+  font-size: 12px;
+  transform: translateY(4px);
+}
+main > div nav.setting .num_and_sort *,
+main > div nav.setting .toggle_container * {
+  margin: auto 0;
+  height: max-content;
+}
+main > div nav.setting .toggle_container > div {
+  font-size: 12px;
+}
+/* 임시 */
+/* .toggleSwitch {
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+    cursor: pointer;
+  } */
+
+/* 토글 버튼 */
+/* .toggleSwitch .toggleButton {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #f03d3d;
+  } */
+/* main > div div.content */
+main > div div.content article {
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 10px 0;
+  padding: 20px 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+main > div div.content article > * {
+  margin: 20px 0;
+}
+main > div div.content article .article_title {
+  font-size: 18px;
+  font-weight: 600;
+}
+main > div div.content article .classification > * {
+  margin: 0 7px;
+  padding: 5px 15px;
+}
+main > div div.content article .classification > .area {
+  margin-left: 0;
+  padding-left: 0;
+  font-weight: 600;
+}
+main > div div.content article .classification > .hashtag {
+  background-color: #f3f3f3;
+  border-radius: 16px;
+}
+main > div div.content article .classification > .hashtag:before {
+  content: "# ";
+}
+main > div div.content article .info > * {
+  font-size: 12px;
+  padding: 0 15px;
+  border-right: 1px solid #d9d9d9;
+}
+main > div div.content article .info > div:first-child {
+  padding-left: 0;
+}
+main > div div.content article .info > div:last-child {
+  border-right: none;
+}
+main > div div.content article .info .price_monthly,
+main > div div.content article .info .price_project,
+main > div div.content article .info .negotiable {
+  color: #999;
+  border: 1px solid #999;
+  font-size: 6px;
+  border-radius: 2px;
+  margin-left: 3px;
+}
+main > div div.content article .info .price_monthly:after {
+  content: "월 단위";
+}
+main > div div.content article .info .price_project:after {
+  content: "프로젝트 단위";
+}
+main > div div.content article .info .negotiable:after {
+  content: "협의 가능";
+}
+main > div div.content article .status * {
+  margin: 0 2px;
+  border-radius: 2px;
+  font-size: 10px;
+}
+main > div div.content article .status .resident {
+  background-color: pink;
+  color: red;
+  padding: 2px 7px;
+}
+main > div div.content article .status .resident::after {
+  content: "상주";
+}
+main > div div.content article .status .remote {
+  background-color: lightgreen;
+  color: lightseagreen;
+  padding: 2px 7px;
+}
+main > div div.content article .status .remote::after {
+  content: "원격";
+}
+main > div div.content article .status .recruiting {
+  background-color: purple;
+  color: white;
+  padding: 2px 7px;
+}
+main > div div.content article .status .recruiting::after {
+  content: "모집중";
+}
+main > div div.content article .status .recruiting_end {
+  background-color: gray;
+  color: white;
+  padding: 2px 7px;
+}
+main > div div.content article .status .recruiting_end::after {
+  content: "모집종료";
+}
+main > div div.content article .status .quick {
+  color: purple;
+  font-size: 12px;
+}
+main > div div.content article .status .quick::after {
+  content: "🏃 아직 많이 확인 안 한 프로젝트예요! 서둘러 지원해 보세요 :)";
+}
+/* main > div nav.pagination */
+main > div nav.pagination {
+  margin: 50px 0;
+}
+main > div nav.pagination ul {
+  margin: auto;
+}
+main > div nav.pagination ul > li {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+}
+main > div nav.pagination ul > li > div {
+  width: max-content;
+  margin: auto;
+}
+main > div nav.pagination ul > li.selected {
+  background-color: #3c9acd;
+  border-radius: 50%;
+}
