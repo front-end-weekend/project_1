@@ -1,60 +1,51 @@
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 900;
-  src: local("Pretendard Black"),
-  url("../font/Pretendard-Black.otf") format("opentype");
+  src: local('Pretendard Black'), url('../font/Pretendard-Black.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 800;
-  src: local("Pretendard ExtraBold"),
-  url("../font/Pretendard-ExtraBold.otf") format("opentype");
+  src: local('Pretendard ExtraBold'), url('../font/Pretendard-ExtraBold.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 700;
-  src: local("Pretendard Bold"),
-  url("../font/Pretendard-Bold.otf") format("opentype");
+  src: local('Pretendard Bold'), url('../font/Pretendard-Bold.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 600;
-  src: local("Pretendard SemiBold"),
-  url("../font/Pretendard-SemiBold.otf") format("opentype");
+  src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 500;
-  src: local("Pretendard Medium"),
-  url("../font/Pretendard-Medium.otf") format("opentype");
+  src: local('Pretendard Medium'), url('../font/Pretendard-Medium.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 400;
-  src: local("Pretendard Regular"),
-  url("../font/Pretendard-Regular.otf") format("opentype");
+  src: local('Pretendard Regular'), url('../font/Pretendard-Regular.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 300;
-  src: local("Pretendard Light"),
-  url("../font/Pretendard-Light.otf") format("opentype");
+  src: local('Pretendard Light'), url('../font/Pretendard-Light.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 200;
-  src: local("Pretendard ExtraLight"),
-  url("../font/Pretendard-ExtraLight.otf") format("opentype");
+  src: local('Pretendard ExtraLight'), url('../font/Pretendard-ExtraLight.otf') format('opentype');
 }
 @font-face {
-  font-family: "Pretendard";
+  font-family: 'Pretendard';
   font-weight: 100;
-  src: local("Pretendard Thin"),
-  url("../font/Pretendard-Thin.otf") format("opentype");
+  src: local('Pretendard Thin'), url('../font/Pretendard-Thin.otf') format('opentype');
 }
 
 * {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -233,7 +224,6 @@ button {
 }
 
 /* 예슬 */
-
 /* common */
 .section {
   display: flex;
@@ -266,11 +256,6 @@ button {
 .section_wrapper {
   max-width: 1060px;
   margin: 0 auto;
-}
-
-.client_logo {
-  background-color: #fff;
-  padding: 40px 100px;
 }
 
 .client_txt h2 {
@@ -339,7 +324,7 @@ button {
 }
 
 .client_job::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 4px;
