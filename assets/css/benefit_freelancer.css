@@ -26,6 +26,48 @@
   font-weight: 500;
   font-size: 20px;
 }
+#second_benefit {
+  background-color: white;
+}
 .mid_description {
   font-size: 24px;
+}
+.mid_description_bold {
+  font-size: 24px;
+}
+.description_bottom_line {
+  width: 60px;
+  height: 40px;
+  border-bottom: 1px solid black;
+}
+.desc_img {
+  width: 240px;
+  height: 209px;
+}
+.description_big_text {
+  font-size: 22px;
+}
+.description_sm_text {
+  font-size: 16px;
+}
+.description_sm_dif_text {
+  font-size: 16px;
+  color: rgb(51, 102, 255);
+}
+.btn_add_project {
+  width: 280px;
+  height: 50px;
+  background-color: rgb(51, 102, 255);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 44px;
+  cursor: pointer;
+}
+#third_benefit {
+  background-color: rgb(245, 248, 252);
+}
+
+.desc_tit {
+  font-size: 38px;
 }
