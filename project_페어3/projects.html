@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./projects.css" />
+    <script src="./assets/js/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- 토글버튼
+    https://gurtn.tistory.com/161 -->
+      <!-- flex -->
+      <nav class="filter">
+        <div class="width_restrict">
+          <div class="relative">
+            <!-- select의 문제점
+            1. 지금 떠있는 옵션이 드롭다운 안된다
+            2. 앞에 늘 있어야 하는 text를 구현 못한다
+            3. 모달창 뜨는거 -->
+            <div class="dropdown_container flex absolute_left">
+              <div class="work_type flex_align_center">
+                <div class="criterion">직군/직무</div>
+                <div class="criterion_value">전체</div>
+                <div class="arrow"></div>
+              </div>
+              <div class="work_form flex_align_center">
+                <div class="criterion">근무 형태</div>
+                <div class="criterion_value">전체</div>
+                <div class="arrow"></div>
+              </div>
+              <div class="select_skill flex_align_center">
+                <div class="criterion">스킬 선택</div>
+                <div class="arrow"></div>
+              </div>
+              <!-- <select name="work_type" id="workType">
+                <option value="total">전체</option>
+              </select>
+              <select name="work_form" id="workType">
+                <option value="total">전체</option>
+                <option value="resident">상주</option>
+                <option value="remote">원격</option>
+              </select>
+              <select name="select_skill" id="selectSkill">
+                <option value="total">스킬 선택</option>
+              </select> -->
+            </div>
+            <!-- 이거는 relative -->
+            <div class="search_box relative absolute_right">
+              <input type="text" placeholder="프로젝트명 검색" />
+              <!-- 이거 나중에 position absolute 주기 -->
+              <div class="search"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <!-- nav를 id로? -->
+        <nav class="setting">
+          <div class="width_restrict">
+            <div class="relative">
+              <div class="num_and_sort flex absolute_left">
+                <div class="num_projects">프로젝트 2553개</div>
+                <div class="sort flex_align_center">
+                  <div class="criterion">최신 순</div>
+                  <div class="arrow"></div>
+                </div>
+                <!-- <select name="align" id="align">
+                <option value="recent">최신 순</option>
+                <option value="price">견적 높은 순</option>
+                <option value="few_requests">매칭요청 수 적은 순</option>
+                <option value="start_date">시작 예정일 순</option>
+              </select> -->
+              </div>
+              <div class="toggle_container flex absolute_right">
+                <input type="checkbox" id="toggle" hidden />
+                <label for="toggle" class="toggleSwitch">
+                  <span class="toggleButton"></span>
+                </label>
+                <div>모집중인 프로젝트만 보기</div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="width_restrict">
+            <article>
+              <div class="article_title">
+                [원격/상주] 펫케어 분야 신규 플랫폼 서비스 기획 PM - 전략 기획,
+                제품 기획
+              </div>
+              <div class="bookmark"></div>
+              <div class="classification flex">
+                <div class="area">경영·비즈니스</div>
+                <div class="hashtag">PM·PO</div>
+                <div class="hashtag">사업개발·기획자</div>
+                <div class="hashtag">서비스 기획자</div>
+              </div>
+              <div class="info flex">
+                <div class="price flex">
+                  예상 금액 : 400만원 ~ 500만원
+                  <!-- price_monthly, price_project -->
+                  <div class="price_monthly"></div>
+                </div>
+                <div class="start_date flex">
+                  시작 예정일 : 2023-04-03
+                  <div class="negotiable"></div>
+                </div>
+                <div class="expected_time flex">예상 기간 : 6개월</div>
+              </div>
+              <div class="status flex">
+                <div class="resident"></div>
+                <div class="remote"></div>
+                <!-- recruiting, recruiting_end -->
+                <div class="recruiting"></div>
+                <div class="quick"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- 페이지네이션
+          https://www.w3schools.com/css/css3_pagination.asp -->
+        <nav class="pagination">
+          <div class="width_restrict flex_justify_center">
+            <ul class="flex_align_center">
+              <li class="flex_align_center"><div>&laquo;</div></li>
+              <li class="selected flex_align_center">
+                <div>1</div>
+              </li>
+              <li class="flex_align_center"><div>2</div></li>
+              <li class="flex_align_center"><div>3</div></li>
+              <li class="flex_align_center"><div>4</div></li>
+              <li class="flex_align_center"><div>...</div></li>
+              <li class="flex_align_center"><div>128</div></li>
+              <li class="flex_align_center"><div>&raquo;</div></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <!-- 공간 차지용 -->
+    <footer></footer>
+  </body>
+</html>
