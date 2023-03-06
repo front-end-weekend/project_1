@@ -32,11 +32,37 @@
       <div class="mainbar_mainbar">
         <nav class="mainbar_nav">
           <div class="mainbar_nav_menu_logo">
-            <button>
+            <button onmouseover="this.nextElementSibling.style.display = 'block'"
+                    onmouseout = "this.nextElementSibling.style.display = 'none'">
               <img src="./assets/images/optimize.png" alt="" />
             </button>
-            <a><img src="./assets/images/main_logo.png" alt="" /></a>
+            <ul class = "hidden_munu">
+              <li class = "big">직군 전체</li>
+              <li><a>개발</a></li>
+              <li><a>경영비즈니스</a></li>
+              <li><a>마케팅광고</a></li>
+              <li><a>디자인</a></li>
+              <li><a>영업</a></li>
+              <li><a>고객서비스리테일</a></li>
+              <li><a>게임제작</a> </li>
+              <li><a>미디어</a></li>
+              <li><a>HR</a></li>
+              <li><a>엔지니어링설계</a></li>
+              <li><a>금융</a></li>
+              <li><a>제조생산</a></li>
+              <li><a>의료제약바이오</a></li>
+              <li><a>물류무역</a></li>
+              <li><a>교육</a></li>
+              <li><a>법류범집행기관</a></li>
+              <li><a>식음료</a></li>
+              <li><a>건설시설</a></li>
+              <li><a>공공복지</a></li>
+            </ul>
+            <a>
+              <img src="./assets/images/wanted_BI_logotype.png" alt="" />
+            </a>
           </div>
+          <div>
           <ul class="mainbar_menu_classname">
             <li><a>채용</a></li>
             <li><a>이벤트</a></li>
@@ -46,11 +72,13 @@
             <li><a>프리랜서</a></li>
             <li><a>AI 합격예측</a></li>
           </ul>
+          </div>
           <aside>
             <li>
               <button><img src="./assets/images/main_search.png" /></button>
             </li>
             <li><a class="member">회원가입/로그인</a></li>
+            <li><div class="bar">|</div></li>
             <li><a class="service">기업 서비스</a></li>
           </aside>
         </nav>
@@ -71,7 +99,9 @@
           <div class="title">
             <div class="title_wrapper">
               <h2 class="title_wrapper_title">나에게 필요한 커리어 인사이트</h2>
-              <button type="button"><img src="" alt="?" /></button>
+              <button type="button">
+                <img src="./assets/images/main_question.png" alt="?" />
+              </button>
             </div>
           </div>
           <!-- 태그 슬라이드 배너 시작 -->
@@ -86,268 +116,322 @@
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card1.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">완벽한 인간은 없어요</p>
+                  <p class="card_introduce">
+                    리더도 완벽할 수 없습니다. 가끔 팔로워들과 이야기를 나눌
+                    때가 있습니다. 팔로워십에 대...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name">그로플 백종화</span>
                 </div>
               </a>
             </li>
-            <!-- 반복으로 만들어 되는 리스트  종료-->
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card2.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">늙지 않는 감각을 유지하는 법</p>
+                  <p class="card_introduce">
+                    올해 배철수의 음악캠프 배철수 DJ님이 32주년을 맞이했다고
+                    한다. DJ 경력으로만...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 우현수 </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card3_1.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
+                  <p class="card_title">
+                    도대체 회사 생활은 어떻게 해야 잘 하는거야 | 일못러 특강
+                    몰아보기
+                  </p>
                   <p class="card_introduce">눈물을 흘리다.</p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_3.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 퇴사한이형 </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card4.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">고객이기 전에 친구가 되는 법</p>
+                  <p class="card_introduce">
+                    요즘 가장 재밌게 보고 있는 유튜브 채널은‘터키즈다.
+                    이름에서도 알 수 있듯이‘터키즈는...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 우현수 </span>
                 </div>
               </a>
             </li>
+            <!-- 1줄 끝-->
+
+            <!-- 2줄 시작-->
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card1.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">회사와 집에서의 리더십</p>
+                  <p class="card_introduce">
+                    이기는 사람[1]겉으로 이기는 사람은 자신의 생각대로 모든 것을
+                    진행하려 하고안에서
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 그로플 백종화 </span>
                 </div>
               </a>
             </li>
-            <!-- 반복으로 만들어 되는 리스트  종료-->
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card6.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">이 시대의 소셜미디어</p>
+                  <p class="card_introduce">
+                    영화 <서치>는 사라진 딸 마고를 찾기 위해 고군분투하는 아빠
+                    데이빗(존 조)의 모습을...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 펜잡은 루이스 </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card1.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">이런 동료가 되고 싶습니다.</p>
+                  <p class="card_introduce">
+                    나의 성장과 성공을 돕는 사람이 내 주변에 있나요? 함께 일하는
+                    동료들 속에서 나의...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 그로플 백종화 </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card8.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">남극 탐험가, 세 사람의 리더십 이야기</p>
+                  <p class="card_introduce">
+                    불확실한 시대, 어떤 리더십이 필요할까요? 리더의 성향과
+                    리더가 직면한 상황, 그리고 다...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_2.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name">
+                    직장인행복연구소 서강석
+                  </span>
                 </div>
               </a>
             </li>
+            <!-- 2줄 끝-->
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card9.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">
+                    커뮤니케이션이 어려울 때 꺼내 읽기 좋은 이야기
+                  </p>
+                  <p class="card_introduce">
+                    타인과의 커뮤니케이션은 언제나 숙제다. 나는 업무 특성상
+                    대부분의 시간을 다양한 사람들...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 우디 </span>
                 </div>
               </a>
             </li>
-            <!-- 반복으로 만들어 되는 리스트  종료-->
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card10.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">XYZ가 함께 행복하게 일하는 법</p>
+                  <p class="card_introduce">
+                    XYZ 각 세대를 대표하는 75년생 X, 85년생 Y, 95년생 Z가 회사와
+                    조직 생활을 중심으로...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_2.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name">
+                    최원설, 이재하, 고은비
+                  </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card11.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">부하직원이 말하지 않는 31가지 진실</p>
+                  <p class="card_introduce">
+                    리더십은 함께 일하고 따르는 사람들을 통해 완성됩니다. 이번
+                    Talk에서는 리더의 자기 인...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_2.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 박태현 </span>
                 </div>
               </a>
             </li>
+
             <li class="interest_content_list_card">
               <a href="#">
                 <div class="list_card_thumbnail">
                   <img
                     class="list_card"
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/wanted_card1.png"
                     alt="카드"
                   />
                 </div>
                 <div class="card_information">
-                  <p class="card_title">애비츄</p>
-                  <p class="card_introduce">눈물을 흘리다.</p>
+                  <p class="card_title">글 소통(疏通)</p>
+                  <p class="card_introduce">
+                    소통, 전달이 중요한 게 아니다. 어느 날 이제는 다른 팀이 된
+                    전임 팀장으로부터 SNS 메시지...
+                  </p>
                 </div>
                 <div class="card_user_profile_image">
                   <img
-                    src="./assets/images/index_card_list_test.png"
+                    src="./assets/images/profile_1.png"
                     alt="프로필 이미지"
                   />
-                  <span class="card_user_profile_name"> 글쓴이 </span>
+                  <span class="card_user_profile_name"> 이수진 </span>
                 </div>
               </a>
             </li>
+            <!-- 3줄 끝 -->
           </ul>
           <div class="interest_content_list_more">
             <button type="button" class="content_list_more_button">
@@ -360,7 +444,10 @@
       <!-- 나에게 필요한 커리어 인사이트 종료 -->
       <!-- 유형 테스트 라인배너 시작 -->
       <section class="type_test_banner">
-        <div class="type_test_banner_inner"></div>
+        <div class="type_test_banner_inner">
+          <div class="type_test_banner_inner_title">내 유형과 가장 어울리는 회사는?</div>
+          <div class="type_test_banner_inner_subtitle">유형테스트 하러가기<span><img src="" alt=">"</span></div>
+        </div>
       </section>
       <!-- 유형 테스트 라인배너 종료 -->
       <!-- 크리에이터 추천하기 라인배너 시작 -->
@@ -394,8 +481,50 @@
         </div>
       </section>
       <!-- 채용 정보를 찾고 계시나요 종료 -->
-      <footer>
-        <div></div>
+      <footer class="footer">
+        <div class="footer_inner">
+          <div class="footer_inner_nav left">
+            <a href="" class="footer_inner_nav_link_logo">
+              <!-- <img src="" alt="원 세개 로고" width="31.4%" height="100%" /> -->
+              <img src="" alt="ㅇ" width="35.5px" height="100%" />
+              <img src="" alt="wanted" width="71px" height="100%" />
+            </a>
+            <div class="footer_inner_nav_menu">
+              <a>기업소개</a>
+              <a>이용약관</a>
+              <a>고객센터</a>
+              <a><span>개인정보 처리 방침</span></a>
+            </div>
+          </div>
+          <div class="footer_inner_nav right">
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="instagram" width="20px" height="20px">
+              </a>
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="youtube"width="20px" height="20px">
+              </a>
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="facebook"width="20px" height="20px">
+              </a>
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="naverblog"width="20px" height="20px">
+              </a>
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="apple"width="20px" height="20px">
+              </a>
+              <a href="#">
+                <img src="./assets/images/index_card_list_test.png" alt="playstore"width="20px" height="20px">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_inner">
+          <p class="footer_inner_text">
+            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147
+            <br>유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118
+            <br>© Wantedlab, Inc.
+          </p>
+        </div>
       </footer>
       <!-- 푸터 종료 -->
     </main>
