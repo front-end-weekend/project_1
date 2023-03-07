@@ -1,54 +1,63 @@
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 900;
-  src: local('Pretendard Black'), url('../font/Pretendard-Black.otf') format('opentype');
+  src: local("Pretendard Black"),
+    url("../font/Pretendard-Black.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 800;
-  src: local('Pretendard ExtraBold'), url('../font/Pretendard-ExtraBold.otf') format('opentype');
+  src: local("Pretendard ExtraBold"),
+    url("../font/Pretendard-ExtraBold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 700;
-  src: local('Pretendard Bold'), url('../font/Pretendard-Bold.otf') format('opentype');
+  src: local("Pretendard Bold"),
+    url("../font/Pretendard-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 600;
-  src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.otf') format('opentype');
+  src: local("Pretendard SemiBold"),
+    url("../font/Pretendard-SemiBold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 500;
-  src: local('Pretendard Medium'), url('../font/Pretendard-Medium.otf') format('opentype');
+  src: local("Pretendard Medium"),
+    url("../font/Pretendard-Medium.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 400;
-  src: local('Pretendard Regular'), url('../font/Pretendard-Regular.otf') format('opentype');
+  src: local("Pretendard Regular"),
+    url("../font/Pretendard-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 300;
-  src: local('Pretendard Light'), url('../font/Pretendard-Light.otf') format('opentype');
+  src: local("Pretendard Light"),
+    url("../font/Pretendard-Light.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 200;
-  src: local('Pretendard ExtraLight'), url('../font/Pretendard-ExtraLight.otf') format('opentype');
+  src: local("Pretendard ExtraLight"),
+    url("../font/Pretendard-ExtraLight.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-weight: 100;
-  src: local('Pretendard Thin'), url('../font/Pretendard-Thin.otf') format('opentype');
+  src: local("Pretendard Thin"),
+    url("../font/Pretendard-Thin.otf") format("opentype");
 }
 
 * {
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -71,29 +80,95 @@ button {
 
 /* 상아 */
 /* 실력 있는 프리랜서를 빠르게 원티드긱스와 성공적인 비즈니스를 시작하세요 */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  border: 1px solid red;
+  background-color: white;
+  /* border-bottom: 1px solid rgb(242, 244, 247); */
+}
+
+main {
+  margin-top: 64px;
+}
 .main_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
   max-width: 1080px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  font-size: 15px;
 }
+
+.mainbar_menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mainbar_menu_logo {
+  margin-right: 52px;
+}
+
+.mainbar_menu_name {
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  display: block;
+  height: 63px;
+  padding: 22px 2px 0px;
+}
+
+.nameBtn {
+  margin-right: 35px;
+}
+.mainber_menu_side {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.mainbar_menu_side_register {
+  margin-left: 10px;
+}
+
+.side_register_click {
+  border: 1px solid rgb(51, 102, 255);
+  color: rgb(51, 102, 255);
+  font-size: 13px;
+  height: 32px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding: 7px 15px 0 15px; */
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+}
+/* main */
 
 .main_section {
   height: 680px;
   background-color: rgb(245, 247, 255);
-  border: 1px solid red;
+}
+
+.main_section > div {
+  position: relative;
+  height: 100%;
 }
 
 .main_section_content {
-  position: relative;
-  height: 100%;
+  max-width: 1060px;
+  margin: 0px auto;
 }
 
 .main_section_content_wrapper {
   position: absolute;
   top: 100px;
-  left: 100px;
+  left: 0px;
   z-index: 1;
 }
 
@@ -134,7 +209,6 @@ button {
  */
 .aos_section {
   padding: 100px 0;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -158,7 +232,6 @@ button {
 
 .aos_list ul {
   display: flex;
-  border: 1px solid;
   padding: 0 0 80px;
   justify-content: space-between;
 }
@@ -168,7 +241,6 @@ button {
   width: 340px;
   border-right: 10px;
   padding: 30px 0px 50px;
-  border: 1px solid blue;
 }
 
 .aos_list ul li img {
@@ -182,10 +254,22 @@ button {
   padding: 20px 0 5px;
 }
 
-.aos_list ul li p {
-  font-size: 16px; /* 폰트 적용 안됨 - 이유찾기 */
+/* 폰트 사이즈 적용 안됨 - 이유찾기  -> 239~245 줄도 확인 */
+/* .aos_list ul li p {
+  font-size: 16px; 
   line-height: 160%;
   margin-top: 5px;
+} */
+
+.aos_list > ul > .aos_list_zeroFee > p {
+  font-size: 16px;
+  line-height: 160%;
+  margin-top: 5px;
+}
+
+.aos_list > ul > .aos_list_zeroFee > .aos_list_zeroFee_font {
+  font-size: 12px;
+  color: rgb(136, 136, 136);
 }
 
 .aos_button button {
@@ -215,13 +299,14 @@ button {
   margin: 0 0 0 10px;
 } */
 
-.aos_list_zeroFee_font {
+/* 폰트 사이즈 적용 안됨 - 이유찾기  -> 195번줄과 같이 확인 */
+/* .aos_list_zeroFee_font {
   color: rgb(136, 136, 136);
 }
 
 .aos_list_zeroFee p.aos_list_zeroFee_font {
   font-size: 12px;
-}
+} */
 
 /* 예슬 */
 /* common */
@@ -284,9 +369,10 @@ button {
 .client_profile img {
   width: 36px;
   border-radius: 18px;
+  margin-right: 10px;
 }
 
-#client-review-fade {
+#clientReviewFade {
   position: relative;
   width: 100%;
   height: 260px;
@@ -295,6 +381,9 @@ button {
 
 .client_box {
   position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 .box1 {
@@ -312,6 +401,7 @@ button {
 
 .client_name {
   color: #333;
+  font-weight: 600;
   margin-right: 10px;
 }
 
@@ -324,7 +414,7 @@ button {
 }
 
 .client_job::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 4px;
@@ -369,7 +459,8 @@ button {
   width: 100%;
 }
 
-#fade-btn {
+#fadeBtn {
+  z-index: 500;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -377,7 +468,7 @@ button {
   bottom: 0;
 }
 
-#fade-btn button {
+#fadeBtn button {
   margin: 0 5px;
   display: inline-block;
   width: 8px;
@@ -498,11 +589,12 @@ footer > div {
   padding-top: 18px;
   color: rgb(118, 118, 118);
   font-size: 12px;
+  font-weight: 300;
   line-height: 24px;
 }
 
 .line {
-  margin: 0px 6px;
+  margin: 0px 4px;
   height: 12px;
   display: inline-block;
   vertical-align: middle;
