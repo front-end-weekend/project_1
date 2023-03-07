@@ -74,6 +74,30 @@ main > nav .dropdown_container > * > * {
   width: max-content;
   height: max-content;
 }
+main > nav .dropdown_container ul {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  margin: 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+main > nav .dropdown_container ul.hidden {
+  display: none;
+}
+main > nav .dropdown_container ul > li {
+  padding: 10px;
+  width: 150px;
+  background-color: #fff;
+}
+main > nav .dropdown_container ul > li.selected {
+  position: relative;
+  background-color: #cecbf5;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 main > nav .criterion_value {
   color: blue;
 }
@@ -106,6 +130,30 @@ main > div nav.setting .num_and_sort > .num_projects {
   font-size: 12px;
   transform: translateY(4px);
 }
+main > div nav.setting .num_and_sort > .sort ul {
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  margin: 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+main > div nav.setting .num_and_sort > .sort ul.hidden {
+  display: none;
+}
+main > div nav.setting .num_and_sort > .sort ul > li {
+  padding: 10px;
+  width: 200px;
+  background-color: #fff;
+}
+main > div nav.setting .num_and_sort > .sort ul > li.selected {
+  position: relative;
+  background-color: #cecbf5;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 main > div nav.setting .num_and_sort *,
 main > div nav.setting .toggle_container * {
   margin: auto 0;
@@ -114,29 +162,33 @@ main > div nav.setting .toggle_container * {
 main > div nav.setting .toggle_container > div {
   font-size: 12px;
 }
-/* 임시 */
-/* .toggleSwitch {
-    width: 100px;
-    height: 50px;
-    display: block;
-    position: relative;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
-    cursor: pointer;
-  } */
-
-/* 토글 버튼 */
-/* .toggleSwitch .toggleButton {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 4px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: #f03d3d;
-  } */
+.toggleSwitch {
+  width: 40px;
+  min-height: 20px; /* 위에서 max-content로 속성 줬으므로 이렇게 해야 덮어써진다 */
+  display: block;
+  position: relative;
+  border-radius: 12px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+.toggleSwitch .toggleButton {
+  width: 16px;
+  min-height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  right: auto;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+.toggleSwitch.active {
+  background-color: blue;
+}
+.toggleSwitch.active .toggleButton {
+  left: auto;
+  right: 3px;
+}
 /* main > div div.content */
 main > div div.content article {
   background-color: #fff;
