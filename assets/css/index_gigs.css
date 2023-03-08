@@ -309,11 +309,36 @@ main {
 } */
 
 /* 예슬 */
+
+/* swiper overriding */
+.swiper-pagination {
+  margin-bottom: 40px;
+}
+
+.mySwiper {
+  width: 1060px;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 40px 100px;
+  padding-top: 60px;
+}
+
 /* common */
 .section {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding: 100px 0;
+}
+
+.section_wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
 }
 
 .title {
@@ -321,26 +346,39 @@ main {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.85);
   line-height: 160%;
-  padding-bottom: 50px;
   text-align: center;
-}
-
-.content {
-  padding: 100px 0;
+  padding-bottom: 50px;
 }
 
 .list {
   border-radius: 10px;
 }
 
+.client_box {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
 /* section_content */
+.swiper,
 .section_content {
   background-color: #f5f7ff;
 }
 
-.section_wrapper {
+.swiper-wrapper {
   max-width: 1060px;
   margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  border: 1px solid #3366ff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3366ff;
 }
 
 .client_txt h2 {
@@ -377,26 +415,13 @@ main {
   width: 100%;
   height: 260px;
   overflow: hidden;
+  background: #fff;
 }
 
 .client_box {
   position: absolute;
   background: #fff;
   width: 100%;
-  height: 100%;
-}
-
-.box1 {
-  z-index: 400;
-}
-.box2 {
-  z-index: 300;
-}
-.box3 {
-  z-index: 200;
-}
-.box4 {
-  z-index: 100;
 }
 
 .client_name {
@@ -600,4 +625,12 @@ footer > div {
   vertical-align: middle;
   width: 1.5px;
   background-color: rgb(236, 236, 236);
+}
+
+/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
+@media screen and (max-width: 1060px) {
+  .swiper-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+  }
 }
