@@ -8,15 +8,19 @@ let swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true
   },
+  initialSlide: 1,
   dynamicBullets: true,
   bulletClass: 'my-bullet-class', // Indicator의 클래스 이름
   bulletActiveClass: 'my-bullet-active-class' // 활성화된 Indicator의 클래스 이름
 });
 
 let buttons = document.querySelectorAll('.toggle-button');
+let arrows = document.querySelectorAll('.arrow_ud');
 
 for (var i = 0; i < buttons.length; i++) {
   let button = buttons[i];
+  let arrow = arrows[i];
+
   let targetId = button.getAttribute('data-target');
   let target = document.getElementById(targetId);
 
@@ -27,6 +31,11 @@ for (var i = 0; i < buttons.length; i++) {
     } else {
       target.style.display = 'none';
       target.classList.remove('ans_bg');
+    }
+    if (arrow.classList.contains('upside_down')) {
+      arrow.classList.remove('upside_down');
+    } else {
+      arrow.classList.add('upside_down');
     }
   });
 }
