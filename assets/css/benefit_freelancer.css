@@ -475,3 +475,7 @@
 .upside_down {
   transform: rotate(180deg);
 }
+.qnanswer {
+  width: 1040px;
+  margin: 0 auto;
+}
