@@ -198,7 +198,7 @@ main {
   color: white;
 }
 
-.main_section_video_content {
+video.main_section_video_content {
   width: 800px;
   position: absolute;
   bottom: 0px;
