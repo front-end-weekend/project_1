@@ -162,7 +162,7 @@
 
 .event_slide_banner .swiper-button-next:after {
   content: url(../images/index_arrow.svg);
-  width: inherit;
+  width: 36px;
   position: relative;
   transform: rotate(180deg);
 }
