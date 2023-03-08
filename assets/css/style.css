@@ -46,7 +46,6 @@ button {
   margin: 0;
   padding: 0;
   border: 0;
-  /* position: absolute; */
 }
 
 /* * */
@@ -68,37 +67,42 @@ header .mainbar_mainbar {
   height: 50px;
   max-width: 1060px;
   position: relative;
-  top: 13px;
+  /* border: 1px solid red; */
 }
 
 header .mainbar_nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* border: 1px solid blue; */
+  position: relative;
+  top: 10px;
 }
 
 header .mainbar_nav_menu_logo button img {
   /* border: 1px solid black; */
-  position: fixed;
-  left: 310px;
-  top: 17px;
 }
 
-header .mainbar_nav_menu_logo .hidden_munu {
-  border: 1px solid black;
+header .mainbar_nav_menu_logo a img {
+  padding-bottom: 3px;
+  width: 73px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 3px;
+  /* border: 1px solid green; */
+}
+
+.hidden_munu {
+  /* border: 1px solid black; */
   width: 200px;
   background-color: white;
   text-align: left;
   font-family: "Pretendard-light";
   line-height: 40px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 18px;
   padding-top: 20px;
   padding-left: 20px;
-  position: relative;
-  right: 10px;
-  top: 27px;
   display: none;
+  position: absolute;
+  margin-right: 20px;
 }
 
 header .mainbar_nav_menu_logo .hidden_munu li {
@@ -116,18 +120,10 @@ header .mainbar_nav_menu_logo .hidden_munu li:hover {
 header .mainbar_nav_menu_logo .hidden_munu .big {
   font-size: 15px;
 }
+
 header .mainbar_nav_menu_logo {
   display: flex;
-}
-
-header .mainbar_nav_menu_logo a img {
-  padding-bottom: 3px;
-  width: 73px;
-  height: 16px;
   /* border: 1px solid black; */
-  position: fixed;
-  left: 343px;
-  top: 14px;
 }
 
 .header_padding {
@@ -135,16 +131,17 @@ header .mainbar_nav_menu_logo a img {
 }
 
 header .mainbar_menu_classname {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   width: 500px;
   justify-content: space-between;
   font-size: 14px;
-  font-family: "Pretendard-Regular";
-  font-weight: 500;
-  margin-bottom: 3px;
+  font-family: "Pretendard-light";
+  font-weight: 600;
+  margin-left: 10px;
   position: relative;
-  right: 7px;
+  top: 5px;
+  left: 90px;
 }
 
 .header aside {
@@ -153,22 +150,28 @@ header .mainbar_menu_classname {
   font-family: "Pretendard-Regular";
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  /* border: 1px solid black; */
+  position: relative;
+  left: 175px;
 }
 
+.header aside li button {
+  /* border: 1px solid red; */
+  height: 18px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .header aside li button img {
   width: 18px;
   height: 18px;
-  margin-right: 28px;
-  margin-bottom: 30px;
-  position: relative;
-  bottom: 8px;
+  /* border: 1px solid black; */
 }
 
 .header aside li .member {
   font-size: 14px;
   font-weight: 500;
   margin-left: 0px;
+  /* border: 1px solid black; */
 }
 
 .header aside li .bar {
@@ -185,6 +188,7 @@ header .mainbar_menu_classname {
   border: 1px solid rgb(224, 224, 224);
   padding: 7px 11px;
   border-radius: 30px;
+  margin-bottom: 3px;
 }
 /* header end */
 
@@ -367,8 +371,26 @@ div.list_card_thumbnail {
 }
 
 .interest_content_list_more {
+  /* border: 1px solid black; */
+  position: relative;
+  bottom: 30px;
+}
+
+.interest_content_list_more .more_list_card ul {
+  width: 100% !important;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  grid-gap: 32px 20px;
+  gap: 32px 20px;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.interest_content_list_more .more_list_card li {
+  position: relative;
+  width: calc(25% - 15px);
 }
 
 .interest_content_list_more .content_list_more_button {
@@ -392,12 +414,39 @@ div.list_card_thumbnail {
   margin: 0 auto;
   height: 50px;
   padding: 0 27px;
+  left: 350px;
+  top: 38px;
 }
 
 .more_list_span {
   margin-right: 5px;
 }
 
+.interest_content_list_more .content_list_more_button_2 {
+  border-color: #e1e2e4 !important;
+  color: #171717;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 345px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 0 27px;
+  left: 350px;
+  top: 38px;
+  display: none;
+}
 .type_test_banner {
   max-width: 1060px;
   width: 90%;
