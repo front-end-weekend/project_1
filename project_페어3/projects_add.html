@@ -14,11 +14,11 @@
 
     <!--main 시작-->
     <main>
-        <article class="modal_bk_bg modal_close">
+        <article class="modal_bk_bg">
             <div class="modal_wh_bg">
                 <div id="modalText1">매칭 프로세스 안내</div>
                 <div id="modalText2">접수 내용 확인 후, 매칭 및 계약은 아래와 같이 진행됩니다.</div>
-                <img id="modalImage1" src="./assets/img_main_modal1.png" alt="modal이미지">
+                <img id="modalImage1" src="./img_main_modal1.png" alt="modal이미지">
                 <div id="modalTexts1">   
                     <p class="modal_texts1">접수 내용 확인 및 의뢰 상담</p>
                     <p class="modal_texts1">프리랜서 매칭</p>
@@ -28,9 +28,9 @@
                 </div>
                 <div id="modalText3">긱스 혜택</div>
                 <div id="modalBox1">
-                    <img class="modal_icon" src="./assets/ico_modal2.svg" alt="modalImage1">
-                    <img class="modal_icon" src="./assets/ico_modal3.svg" alt="modalImage2">
-                    <img class="modal_icon" src="./assets/ico_modal1.svg" alt="modalImage3">
+                    <img class="modal_icon" src="./ico_modal2.svg" alt="modalImage1">
+                    <img class="modal_icon" src="./ico_modal3.svg" alt="modalImage2">
+                    <img class="modal_icon" src="./ico_modal1.svg" alt="modalImage3">
                     <div id="modalText4">
                         <p id="modalText8">국내 최대 프리랜서 풀</p>
                         <p id="modalText7">편리한 매칭</p>
@@ -39,9 +39,12 @@
                     </div>
                 </div>
                 <div id="closeBox">
-                    <input type="checkbox">
+                    <div id="checkboxWrapper">
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1"></label>
+                    </div>
                     <p id="closeBoxText1">일주일 동안 보지 않기</p>
-                    <p id="closeBoxText2">닫기</p>
+                    <a id="closeBoxText2" href="#">닫기</a>
                 </div>
             </div>
         </article>
@@ -53,7 +56,7 @@
                 <ul>
                     <li class="progressbar"><span class="progress"></span><p id="progressbarPer">0%</p></div></li>
                     <li id="infoText1">의뢰인 정보를 입력해주세요 :)</li>
-                    <li><div id="hiddenInfo"><p id="hiddenInfoText">매칭 프로세스 알아보기</p></div></li><img id="hiddenInfoIcon" src="./assets/ico_main_hiddenInfo.png" alt="느낌표icon">
+                    <li><div id="hiddenInfo"><p id="hiddenInfoText">매칭 프로세스 알아보기</p></div></li><img id="hiddenInfoIcon" src="./ico_main_hiddenInfo.png" alt="느낌표icon">
                     <li class="main_input_checkbox">
                         <p id="mainInputText">회사명(사업자명)</p>
                         <input class="main_checkbox" type="checkbox">
