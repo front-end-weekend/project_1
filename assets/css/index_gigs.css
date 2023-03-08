@@ -261,7 +261,7 @@ video.main_section_video_content {
   margin-top: 5px;
 } */
 
-.aos_list > ul > .aos_list_zeroFee > p {
+.aos_list > ul > li > p {
   font-size: 16px;
   line-height: 160%;
   margin-top: 5px;
