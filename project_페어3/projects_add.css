@@ -158,6 +158,9 @@
     padding-left:26px; 
     margin-left: 20px;
     cursor:pointer; 
+    position: absolute;
+    left: 1px;
+    top: 417px;
 }
 
 #checkboxWrapper input[type="checkbox"] + label:before{ 
@@ -208,7 +211,7 @@
     color: black;
     font-weight: 400;
     margin-top: 13px;
-    margin-left: 415px;
+    margin-left: 455px;
 }
 
 #closeBox > input{
@@ -219,7 +222,7 @@ main{
     list-style: none;
     background-color: #F7F8FA;
     width: 100%;
-    height: 180vh;
+    height: 167vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -237,7 +240,7 @@ main{
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
     width: 36%;
-    height: 135vh;
+    height: 125vh;
     position: relative;
 }
 
@@ -258,8 +261,8 @@ main{
     font-weight: 900;
     font-size: 0.85rem;
     color: #3365FD;
-    left: 85.5%;
-    bottom: 92.9%;
+    left: 440px;
+    bottom: 864.5px;
 }
 
 #infoText1{
@@ -271,14 +274,14 @@ main{
 
 #hiddenInfoFull{
     z-index: 11;
-    width: 394px;
+    width: 431px;
     height: 570px;
     background-color: white;
     border: 1px solid #3366fd5c;
     border-radius: 9px;
     position: absolute;
-    left: 8%;
-    bottom: 13%;
+    left: 38px;
+    bottom: 150px;
     padding: 23px 20px 20px 22px;
 }
 
@@ -337,8 +340,8 @@ main{
 #hiddenInfoIcon{
     position: absolute;
     width: 16px;
-    left: 85%;
-    bottom: 77.2%;
+    left: 440px;
+    bottom: 720px;
     cursor: pointer;
 }
 
@@ -364,8 +367,8 @@ main{
     position:relative; 
     position: absolute;
     padding-left:26px; 
-    left: 65%;
-    bottom: 71.8%;
+    left: 340px;
+    bottom: 671px;
     cursor:pointer; 
 }
 
@@ -422,6 +425,12 @@ main{
 }
 
 .red_dot{
+    color: red;
+    font-size: 0.9rem;
+    margin-left: 2px;
+}
+
+#redDot1{
     color: red;
     font-size: 0.9rem;
     margin-left: 2px;
@@ -491,6 +500,27 @@ main{
     padding-top: 12px;
     padding-left: 15px;
     color: #666666ba;
+    position: relative;
+    cursor: pointer;
+}
+
+#hiddenInfo3{
+    font-size: 0.75rem;
+    width: 79.8%;
+    margin-left: 55px;
+    background-color: #F7F8FA;
+    border-radius: 0px 0px 4px 4px;
+    padding: 12px;
+    padding-left: 15px;
+    color: #666666ba;
+}
+
+#hiddenInfo2Icon{
+    width: 10px;
+    position: absolute;
+    left: 445px;
+    bottom: 200px;
+    cursor: pointer;
 }
 
 #mainAgreement2{
@@ -530,8 +560,8 @@ main{
     position:relative; 
     position: absolute;
     padding-left:26px; 
-    left: 8.4%;
-    bottom: 26.2%;
+    left: 40px;
+    bottom: 255px;
     cursor:pointer; 
 }
 
@@ -587,8 +617,8 @@ main{
     position:relative; 
     position: absolute;
     padding-left:26px; 
-    left: 8.4%;
-    bottom: 16.7%;
+    left: 40px;
+    bottom: 169px;
     cursor:pointer; 
 }
 
