@@ -922,6 +922,7 @@ footer.footer .footer_inner_text {
   display: flex;
   color: #36f;
   margin: 10px;
+  cursor: pointer;
 }
 
 .interest_slide_aside .div_hr_solid {
