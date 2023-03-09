@@ -86,15 +86,15 @@ button {
   top: 0;
   left: 0;
   z-index: 9000;
-  border: 1px solid red;
   background-color: white;
-  /* border-bottom: 1px solid rgb(242, 244, 247); */
+  border-bottom: 1px solid rgb(242, 244, 247);
 }
 
 main {
   margin-top: 64px;
 }
-.main_bar {
+
+.header > .main_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,25 +114,43 @@ main {
   margin-right: 52px;
 }
 
-.mainbar_menu_name {
+.main_bar_link > .benefits {
+  vertical-align: top;
+}
+
+.main_bar_link {
   color: rgb(51, 51, 51);
   font-weight: 500;
+  text-decoration: none;
   display: block;
   height: 63px;
   padding: 22px 2px 0px;
-}
-
-.nameBtn {
   margin-right: 35px;
 }
-.mainber_menu_side {
+
+a.main_bar_link:hover {
+  text-decoration: underline;
+}
+
+.header > .main_bar > .mainber_menu_side {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.mainbar_menu_side_register {
+.header > .main_bar > .mainbar_menu_side_register {
   margin-left: 10px;
+}
+
+a.side_register_click:hover {
+  text-decoration: underline;
+}
+
+a.side_login_click:hover {
+  text-decoration: underline;
+}
+.header > .main_bar > .mainber_menu_side > li {
+  position: relative;
 }
 
 .side_register_click {
@@ -143,10 +161,18 @@ main {
   padding-top: 7px;
   padding-left: 15px;
   padding-right: 15px;
-  /* padding: 7px 15px 0 15px; */
   display: inline-block;
   border-radius: 25px;
   font-weight: 500;
+  width: max-content;
+}
+
+.side_login_click {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 12px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
 }
 /* main */
 
@@ -202,7 +228,7 @@ video.main_section_video_content {
   width: 800px;
   position: absolute;
   bottom: 0px;
-  right: 20px;
+  right: -95px;
 }
 
 /* 원티드긱스를 왜 사용해야 할까요?
@@ -627,10 +653,61 @@ footer > div {
   background-color: rgb(236, 236, 236);
 }
 
+/* top button */
+#topBtn {
+  /* display: none; */
+  position: fixed;
+  z-index: 1000;
+  bottom: 40px;
+  right: 40px;
+  padding: 20px 18px;
+  border-radius: 50%;
+  border: 1px solid #e1e3e8;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0s;
+}
+
 /* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
-@media screen and (max-width: 1060px) {
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  .mySwiper {
+    width: 860px;
+    display: flex;
+    justify-content: center;
+  }
+
   .swiper-wrapper {
     max-width: 860px;
     margin: 0 auto;
+  }
+}
+/* 패드 */
+@media screen and (max-width: 1059px) {
+  .section_wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+
+  .swiper-wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #clientReviewFade {
+    overflow: inherit;
+  }
+
+  .client_box {
+    position: inherit;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 30px;
   }
 }
