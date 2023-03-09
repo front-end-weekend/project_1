@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>해당 페이지를 찾을 수 없습니다.</title>
+  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="../assets/icon/
+    favicon-16x16.png"
+  />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <script defer src="../assets/js/index_script.js"></script>
+
+  <style>
+    @font-face {
+      font-family: "Pretendard-Regular";
+      src: url("../font/Pretendard-Regular.otf");
+    }
+    * {
+      font-family: "Pretendard-Regular";
+    }
+    .image_container {
+      position: relative;
+      max-width: 400px;
+      margin: 80px auto 50px;
+    }
+    .image_container > img {
+      width: 100%;
+    }
+
+    .return_button {
+      text-align: center;
+    }
+
+    .return_button button {
+      padding: 17px;
+      margin-top: 20px;
+      border-radius: 17;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="mainbar_mainbar">
+        <nav class="mainbar_nav">
+          <div class="mainbar_nav_menu_logo">
+            <button>
+              <img
+                onmouseover="this.nextElementSibling.style.display ='block'"
+                src="../assets/images/optimize.png"
+                alt=""
+              />
+              <ul
+                onmouseover="this.style.display ='block'"
+                onmouseout="this.style.display ='none'"
+                class="hidden_munu"
+              >
+                <li class="big">직군 전체</li>
+                <li><a>개발</a></li>
+                <li><a>경영비즈니스</a></li>
+                <li><a>마케팅광고</a></li>
+                <li><a>디자인</a></li>
+                <li><a>영업</a></li>
+                <li><a>고객서비스리테일</a></li>
+                <li><a>게임제작</a></li>
+                <li><a>미디어</a></li>
+                <li><a>HR</a></li>
+                <li><a>엔지니어링설계</a></li>
+                <li><a>금융</a></li>
+                <li><a>제조생산</a></li>
+                <li><a>의료제약바이오</a></li>
+                <li><a>물류무역</a></li>
+                <li><a>교육</a></li>
+                <li><a>법류범집행기관</a></li>
+                <li><a>식음료</a></li>
+                <li><a>건설시설</a></li>
+                <li><a>공공복지</a></li>
+              </ul>
+            </button>
+            <a>
+              <img src="../assets/images/wanted_BI_logotype.png" alt="" />
+            </a>
+            <div>
+              <ul class="mainbar_menu_classname">
+                <li><a>채용</a></li>
+                <li><a>이벤트</a></li>
+                <li><a>직군별 연봉</a></li>
+                <li><a>이력서</a></li>
+                <li><a>커뮤니티</a></li>
+                <li><a>프리랜서</a></li>
+                <li><a>AI 합격예측</a></li>
+              </ul>
+            </div>
+            <aside>
+              <li>
+                <button><img src="../assets/images/main_search.png" /></button>
+              </li>
+              <li><a class="member">회원가입/로그인</a></li>
+              <li><div class="bar">|</div></li>
+              <li><a class="service">기업 서비스</a></li>
+            </aside>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <div class="image_container">
+        <img
+          class="error_image"
+          src="https://static.wanted.co.kr/images/error/lighthouse.png"
+          alt="wanted-error"
+        />
+      </div>
+      <h2>PAGE NOT FOUND</h2>
+      <div class="return_button">
+        <button onclick="history.back();">Return Page</button>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
