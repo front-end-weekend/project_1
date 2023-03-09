@@ -13,7 +13,7 @@
     <!--header 끝-->
 
     <!--main 시작-->
-    <main>
+    <main id="mainContainer">
         <article class="modal_bk_bg">
             <div class="modal_wh_bg">
                 <div id="modalText1">매칭 프로세스 안내</div>
@@ -95,7 +95,7 @@
                     </li>
                     <img id="hiddenInfoIcon" src="./ico_main_hiddenInfo.png" alt="느낌표icon">
                     <li class="main_input_checkbox">
-                        <div id="mainInputText">회사명(사업자명)<p class="red_dot">*</p></div>
+                        <div id="mainInputText">회사명(사업자명)<p id="redDot1">*</p></div>
                         <div id="checkboxWrapper2">
                             <input id="checkbox2" type="checkbox">
                             <label for="checkbox2"></label>
@@ -117,7 +117,18 @@
                         <div class="mainAgreementText2">임시저장 후 계속하기 (개인정보 수집 이용동의)<p class="red_dot">*</p></div>
                     </li>
                     <div id="hiddenInfo2"><p>이름, 연락처, 이메일과 작성하신 내용이 30일간 보관됩니다.</p></div>
-                    <!-- <div><img id="hoddenInfo2Icon" src="#" alt="hoddenInfo2Icon"></div> 등록예정 -->
+                    <div><img id="hiddenInfo2Icon" src="./ico_down.png" alt="hoddenInfo2Icon"></div>
+                    <div id="hiddenInfo3" class="close">
+                        <div>개인정보 수집 이용 동의</div>
+                        <br>
+                        <div>수집하는 개인정보 항목 : 회사명(사업자명), 이름, 연락처, 이메일</div>
+                        <div>개인정보 수집, 이용 목적 : 원티드긱스 프로젝트 등록 진행</div>
+                        <div>개인정보 수집, 이용 기간 :</div>
+                        <div>- 회원가입 완료 시 : 회원탈퇴 시 까지</div>
+                        <div>- 프로젝트 등록 중단 시 : 등록 중단일로부터 30일 후 파기</div>
+                        <br>
+                        <div>개인정보 수집 이용에 동의하지 않을 수 있습니다만, 그 경우 프로젝트를 등록하실 수 없습니다.</div>
+                    </div>
                     <li id="mainAgreement2"> 
                         <div id="checkboxWrapper4"> <!--등록예정-->
                             <input id="checkbox4" type="checkbox">
