@@ -244,6 +244,10 @@ main{
     position: relative;
 }
 
+.info_1 > ul li{
+    list-style: none;
+}
+
 
 .progressbar{
     margin-top: 50px;
@@ -254,15 +258,16 @@ main{
     width: 75%;
     height: 0.3rem;
     border-radius: 4px;
+    position: relative;
 }
 
 #progressbarPer{
-    position: absolute;
+    position: relative;
     font-weight: 900;
     font-size: 0.85rem;
     color: #3365FD;
-    left: 440px;
-    bottom: 864.5px;
+    left: 102.8%;
+    bottom: 5px;
 }
 
 #infoText1{
@@ -321,16 +326,18 @@ main{
 
 #hiddenInfo{
     background-color: #F7F8FA;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     font-weight: 400;
     color: rgb(88, 84, 84);
     width: 82.8%;
+    height: 10%;
     border-radius: 4px;
     margin-left: 40px;
     margin-top: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
     cursor: pointer;
+    position: relative;
 }
 
 #hiddenInfoText{
@@ -339,9 +346,9 @@ main{
 
 #hiddenInfoIcon{
     position: absolute;
+    left: 92.5%;
+    bottom: 25%;
     width: 16px;
-    left: 440px;
-    bottom: 720px;
     cursor: pointer;
 }
 
@@ -349,6 +356,7 @@ main{
     display: flex;
     margin-top: 45px;
     margin-left: 40px;
+    position: relative;
 }
 
 #checkboxWrapper2 input[type="checkbox"]{
@@ -364,11 +372,10 @@ main{
 
 #checkboxWrapper2 input[type="checkbox"] + label{
     display:inline-block; 
-    position:relative; 
-    position: absolute;
+    position:absolute;
     padding-left:26px; 
-    left: 340px;
-    bottom: 671px;
+    left: 66%;
+    bottom: 115%;
     cursor:pointer; 
 }
 
@@ -482,6 +489,7 @@ main{
     margin-left: 40px;
     margin-top: 40px;
     font-size: 0.8rem;
+    position: relative;
 }
 
 .mainAgreementText2{
@@ -515,11 +523,15 @@ main{
     color: #666666ba;
 }
 
+#hiddenInfo2_A{
+    position: relative;
+}
+
 #hiddenInfo2Icon{
     width: 10px;
     position: absolute;
-    left: 445px;
-    bottom: 200px;
+    left: 85%;
+    bottom: 40%;
     cursor: pointer;
 }
 
@@ -528,6 +540,7 @@ main{
     margin-left: 40px;
     margin-top: 20px;
     font-size: 0.8rem;
+    position: relative;
 }
 
 #mainBtnNext{
@@ -560,8 +573,8 @@ main{
     position:relative; 
     position: absolute;
     padding-left:26px; 
-    left: 40px;
-    bottom: 255px;
+    left: -0.2%;
+    bottom: 120%;
     cursor:pointer; 
 }
 
@@ -617,8 +630,8 @@ main{
     position:relative; 
     position: absolute;
     padding-left:26px; 
-    left: 40px;
-    bottom: 169px;
+    left: -0.2%;
+    bottom: 120%;
     cursor:pointer; 
 }
 
@@ -665,11 +678,11 @@ main{
     position: absolute;
     left: 15.5%;
     bottom: 15.5%;
-    z-index: 4;
+    z-index: 11;
 }
 
 #ghostBtn{
-    z-index: 3;
+    z-index: 10;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -680,9 +693,270 @@ main{
     left: 94%;
     bottom: 3%;
     background-color: white;
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.155)
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.155);
 }
 
 #ghostBtn:hover{
-    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.219)
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.219);
 }
+
+#ghostHidden{
+    z-index: 12;
+    position: absolute;
+    position: fixed;
+    width: 373px;
+    height: 597px;
+    background-color: #F7F7F8;
+    left: 72.5%;
+    bottom: 2.5%;
+    border: 1px solid #6666662b;
+    border-radius: 30px;
+    box-shadow: 0px 0px 35px 2px rgba(0, 0, 0, 0.219);
+    padding: 15px 15px;
+}
+
+#ghostHiddenSection1{
+    display: flex;
+    padding: 0px 5px;
+    position: relative;
+}
+
+.gigs_icon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+#ghostHiddenText1{
+    margin-top: 4px;
+    margin-left: 8px;
+    font-size: 1.15rem;
+    font-weight: 720;
+}
+
+.ghost_hidden_ico1{
+    display: flex;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 82%;
+    bottom: 30%;
+    cursor: pointer;
+}
+
+.ghost_hidden_ico2{
+    display: flex;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 93%;
+    bottom: 39%;
+    cursor: pointer;
+}
+
+#ghostHiddenSection2{
+    margin-top: 10px;
+    padding: 0px 5px;
+}
+
+#ghostHiddenText2{
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #888888;
+}
+
+#ghostHiddenSection3{
+    margin-top: 15px;
+    width: 340px;
+    height: 180px;
+    background-color: white;
+    border:1px solid rgba(204, 204, 204, 0.516); 
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.078);
+    position: relative;
+    padding: 5px;
+}
+
+#gigsSection1{
+    cursor: pointer;
+    width: 318px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 10px 0px 0px 5px;
+}
+
+#gigsSection1:hover{
+    background-color: rgba(204, 204, 204, 0.163);
+}
+
+.gigs_icon2{
+    display: flex;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+}
+
+#gigsTexts{
+    width: 235px;
+    margin-left: 45px;
+    padding-top: 5px;
+}
+
+#gigsText1{
+    margin-top: 5px;
+    font-size: 0.83rem;
+    font-weight: 700;
+}
+
+#gigsText2{
+    margin-top: 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#gigsBtn1{
+    width: 313px;
+    height: 50px;
+    background-image: linear-gradient(to right, #448bff 0%, #448bff 51%, #4360FF 100%);
+    border-radius: 17px;
+    border: none;
+    margin-top: 6px;
+    margin-left: 8px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.078);
+    display: flex;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#gigsBtn1:hover{
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+#gigBtn1Text{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+#airplanIco{
+    display: flex;
+    width: 18px;
+    height: 18px;
+    margin-left: 92px;
+}
+
+.green_dot_text{
+    display: flex;
+    font-size: 0.7rem;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 128px;
+    color: #666666;
+}
+
+#greenDot{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #32A552;
+    left: -6%;
+    bottom: 30%;
+}
+
+
+#ghostHiddenSection4{
+    display: flex;
+    padding: 15px 15px;
+    width: 340px;
+    height: 64px;
+    background-color: white;
+    border:1px solid rgba(204, 204, 204, 0.516); 
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.078);
+    margin-top: 10px;
+}
+
+#gigsText3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #8d8d8d;
+    margin-top: 10px;
+}
+
+.icos{
+    display: flex;
+    width: 15px;
+    height: 15px;
+}
+
+#kakaoIcoBack{
+    width: 33px;
+    height: 33px;
+    background-color: #FAE100;
+    padding: 9px;
+    border-radius: 13px;
+    margin-left: 137px;
+    cursor: pointer;
+}
+
+#kakaoIcoBack:hover{
+    width: 35px;
+    height: 35px;
+    background-color: #FAE100;
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 135px;
+}
+
+#phoneIcoBack{
+    width: 33px;
+    height: 33px;
+    background-color: #EBEBEB;
+    padding: 9px;
+    border-radius: 13px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#phoneIcoBack:hover{
+    width: 35px;
+    height: 35px;
+    background-color: #EBEBEB;
+    padding: 10px;
+    border-radius: 13px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+#ghost2IcoSection{
+    display: flex;
+    margin-top: 15px;
+    width: 100px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+/* 
+#ghost2IcoSection:hover{
+    color: black;
+} 안되는 이유? */
+
+#ghost2Ico{
+    display: flex;
+    width: 18px;
+    height: 18px;
+
+    margin-right: 5px;
+}
+
+.ghost_text{
+    font-size: 0.7rem;
+    margin-left: 4px;
+    color: #939393;
+}
+
+#ghText1{
+    font-weight: 700;
+}
+
