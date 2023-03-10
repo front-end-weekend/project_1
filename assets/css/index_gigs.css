@@ -661,7 +661,8 @@ footer > div {
   line-height: 24px;
 }
 
-.line {
+.line,
+.lineMobile {
   margin: 0px 4px;
   height: 12px;
   display: inline-block;
