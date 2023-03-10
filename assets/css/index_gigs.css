@@ -130,7 +130,7 @@ main {
 }
 
 a.main_bar_link:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid rgb(225, 227, 232);
 }
 
 .header > .main_bar > .mainber_menu_side {
@@ -225,6 +225,9 @@ a.side_login_click:hover {
   color: white;
 }
 
+.main_section_content_wrapper button:hover {
+  opacity: 0.8;
+}
 video.main_section_video_content {
   width: 800px;
   position: absolute;
@@ -311,6 +314,10 @@ video.main_section_video_content {
   justify-content: center;
   align-items: center;
   height: 80px;
+}
+
+.aos_button button:hover {
+  opacity: 0.8;
 }
 /* 끝 */
 

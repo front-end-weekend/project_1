@@ -5,14 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./projects.css" />
-    <script src="./assets/js/script.js" defer></script>
-    <title>Document</title>
+
+    <title>프로젝트 찾기 | 원티드긱스</title>
   </head>
   <body>
+    <header></header>
     <main>
-      <!-- 토글버튼
-    https://gurtn.tistory.com/161 -->
-      <!-- flex -->
+      <article class="modal_bk_bg hidden" id="work_type_modal">
+        <div class="modal_wh_bg">
+          <div class="modal_title">직군/직무 검색</div>
+          <div class="refresh">초기화</div>
+          <div class="close">╳</div>
+          <div class="area flex_align_center flex_space_between relative">
+            <div class="criterion">직군을 선택해주세요</div>
+            <div class="arrow"></div>
+            <ul class="dropdown hidden">
+              <li>
+                <div>개발</div>
+              </li>
+              <li>
+                <div>경영·비즈니스</div>
+              </li>
+              <li>
+                <div>마케팅·광고</div>
+              </li>
+              <li>
+                <div>디자인</div>
+              </li>
+              <li>
+                <div>미디어</div>
+              </li>
+              <li>
+                <div>엔지니어링·설계</div>
+              </li>
+              <li>
+                <div>법률·법집행기관</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="task flex_align_center flex_space_between relative hidden"
+          >
+            <div class="criterion">직무를 선택해주세요.</div>
+            <!--나중에 (0개) 멘트 넣기-->
+            <div class="arrow"></div>
+            <ul class="dropdown hidden">
+              <li>
+                <div>웹 개발자</div>
+              </li>
+              <li>
+                <div>서버 개발자</div>
+              </li>
+              <li>
+                <div>소프트웨어 엔지니어</div>
+              </li>
+              <li>
+                <div>프론트엔드 개발자</div>
+              </li>
+              <li>
+                <div>자바 개발자</div>
+              </li>
+              <li>
+                <div>안드로이드 개발자</div>
+              </li>
+              <li>
+                <div>C, C++ 개발자</div>
+              </li>
+              <li>
+                <div>Node.js 개발자</div>
+              </li>
+              <li>
+                <div>데이터 엔지니어</div>
+              </li>
+              <li>
+                <div>iOS 개발자</div>
+              </li>
+              <li>
+                <div>시스템, 네트워크 관리자</div>
+              </li>
+              <li>
+                <div>파이썬 개발자</div>
+              </li>
+              <li>
+                <div>DevOps / 시스템 관리자</div>
+              </li>
+              <li>
+                <div>머신러닝 엔지니어</div>
+              </li>
+              <li>
+                <div>개발 매니저</div>
+              </li>
+              <li>
+                <div>데이터 사이언티스트</div>
+              </li>
+              <li>
+                <div>기술 지원</div>
+              </li>
+              <li>
+                <div>빅데이터 엔지니어</div>
+              </li>
+              <li>
+                <div>QA, 테스트 엔지니어</div>
+              </li>
+              <li>
+                <div>보안 엔지니어</div>
+              </li>
+              <li>
+                <div>프로덕트 매니저</div>
+              </li>
+              <li>
+                <div>블록체인 플랫폼 엔지니어</div>
+              </li>
+              <li>
+                <div>임베디드 개발자</div>
+              </li>
+              <li>
+                <div>PHP 개발자</div>
+              </li>
+              <li>
+                <div>하드웨어 엔지니어</div>
+              </li>
+              <li>
+                <div>웹 퍼블리셔</div>
+              </li>
+              <li>
+                <div>.NET 개발자</div>
+              </li>
+              <li>
+                <div>DBA</div>
+              </li>
+              <li>
+                <div>크로스플랫폼 개발자</div>
+              </li>
+              <li>
+                <div>영상, 음성 엔지니어</div>
+              </li>
+              <li>
+                <div>그래픽스 엔지니어</div>
+              </li>
+              <li>
+                <div>CTO, Chief Technology Officer</div>
+              </li>
+              <li>
+                <div>ERP전문가</div>
+              </li>
+              <li>
+                <div>BI 엔지니어</div>
+              </li>
+              <li>
+                <div>루비온레일즈 개발자</div>
+              </li>
+              <li>
+                <div>VR 엔지니어</div>
+              </li>
+              <li>
+                <div>CIO, Chief Information Officer</div>
+              </li>
+            </ul>
+          </div>
+          <div class="confirm flex_align_center">
+            <div>확인</div>
+          </div>
+        </div>
+      </article>
+      <article class="modal_bk_bg hidden">
+        <div class="modal_wh_bg">
+          <div class="modal_title">스킬 검색</div>
+          <div class="refresh">초기화</div>
+          <div class="close">╳</div>
+          <div class="skill flex_align_center flex_space_between relative">
+            <input class="criterion" placeholder="스킬 검색" />
+            <div class="arrow"></div>
+            <ul class="dropdown hidden">
+              <li>
+                <div>개발</div>
+              </li>
+              <li>
+                <div>경영·비즈니스</div>
+              </li>
+              <li>
+                <div>마케팅·광고</div>
+              </li>
+              <li>
+                <div>디자인</div>
+              </li>
+              <li>
+                <div>미디어</div>
+              </li>
+              <li>
+                <div>엔지니어링·설계</div>
+              </li>
+              <li>
+                <div>법률·법집행기관</div>
+              </li>
+            </ul>
+          </div>
+          <div class="confirm flex_align_center">
+            <div>확인</div>
+          </div>
+        </div>
+      </article>
       <nav class="filter">
         <div class="width_restrict">
           <div class="relative">
@@ -33,7 +225,6 @@
                 <ul class="dropdown hidden">
                   <li class="selected">
                     <div>전체</div>
-                    <div>✓</div>
                   </li>
                   <li>
                     <div>상주</div>
@@ -52,13 +243,12 @@
             <div class="search_box relative absolute_right">
               <input type="text" placeholder="프로젝트명 검색" />
               <!-- 이거 나중에 position absolute 주기 -->
-              <div class="search"></div>
+              <!-- <div class="search"></div> -->
             </div>
           </div>
         </div>
       </nav>
       <div>
-        <!-- nav를 id로? -->
         <nav class="setting">
           <div class="width_restrict">
             <div class="relative">
@@ -68,7 +258,7 @@
                   <div class="criterion relative">
                     최신 순
                     <ul class="dropdown hidden">
-                      <li class="selected">
+                      <li>
                         <div>최신 순</div>
                         <div>✓</div>
                       </li>
@@ -105,7 +295,7 @@
               </div>
               <div class="bookmark"></div>
               <div class="classification flex">
-                <div class="area">경영·비즈니스</div>
+                <div class="work_area">경영·비즈니스</div>
                 <div class="hashtag">PM·PO</div>
                 <div class="hashtag">사업개발·기획자</div>
                 <div class="hashtag">서비스 기획자</div>
@@ -154,5 +344,6 @@
     </main>
     <!-- 공간 차지용 -->
     <footer></footer>
+    <script src="./projects.js"></script>
   </body>
 </html>
