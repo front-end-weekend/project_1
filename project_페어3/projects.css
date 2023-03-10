@@ -21,6 +21,7 @@ select:focus {
 }
 ul {
   list-style: none;
+  cursor: pointer;
 }
 .hidden {
   display: none !important;
@@ -57,6 +58,9 @@ ul {
 }
 .block {
   display: block;
+}
+.dropdown {
+  z-index: 100;
 }
 /* modal */
 
@@ -105,6 +109,7 @@ ul {
   top: 20px;
   right: 28px;
   font-size: 0.88rem;
+  cursor: pointer;
 }
 .area,
 .task,
@@ -185,6 +190,7 @@ main > nav .dropdown_container > * {
   border-radius: 5px;
   margin: 0 6px;
   padding: 0 5px;
+  cursor: pointer;
 }
 main > nav .dropdown_container > * > * {
   margin: auto 10px;
