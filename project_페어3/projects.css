@@ -148,6 +148,11 @@ ul {
   width: calc(400px - 2 * 28px);
   background-color: #fff;
 }
+.area ul > li > div:last-child,
+.task ul > li > div:last-child,
+.skill ul > li > div:last-child {
+  display: none;
+}
 .area ul > li.selected,
 .task ul > li.selected,
 .skill ul > li.selected {
@@ -155,8 +160,12 @@ ul {
   background-color: #cecbf5;
   color: #3365fd;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+}
+.area ul > li.selected > div:last-child,
+.task ul > li.selected > div:last-child,
+.skill ul > li.selected > div:last-child {
+  display: block;
 }
 .confirm {
   position: absolute;
@@ -218,7 +227,6 @@ main > nav .dropdown_container ul > li.selected {
   background-color: #cecbf5;
   color: #3365fd;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 main > nav .dropdown_container ul > li.selected > div:last-child {
@@ -331,7 +339,7 @@ main > div div.content article .classification > * {
   margin: 0 7px;
   padding: 5px 15px;
 }
-main > div div.content article .classification > .area {
+main > div div.content article .classification > .work_area {
   margin-left: 0;
   padding-left: 0;
   font-weight: 600;
