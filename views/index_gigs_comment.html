@@ -623,45 +623,6 @@
     <!-- <a href="#" id="scroll-to-top">Scroll to top</a> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      let swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        effect: "fade",
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
-      let scrollToTopButton = document.getElementById("topBtn");
-
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset < 1000) {
-          if (scrollToTopButton.style.opacity == "1") {
-            scrollToTopButton.style.opacity = "0";
-            scrollToTopButton.style.visibility = "hidden";
-            scrollToTopButton.style.transition = "ease-in-out 0.5s";
-          }
-        } else if (window.pageYOffset > 3000) {
-          scrollToTopButton.style.opacity = "1";
-          scrollToTopButton.style.visibility = "visible";
-          scrollToTopButton.style.transition = "ease-in-out 0.5s";
-        }
-      });
-
-      scrollToTopButton.addEventListener("click", function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
+    <script src="../assets/js/index_gigs.js"></script>
   </body>
 </html>
