@@ -468,6 +468,7 @@ video.main_section_video_content {
   padding-left: 10px;
   color: rgb(102, 102, 102);
   font-size: 14px;
+  font-weight: 300;
   line-height: 120%;
   position: relative;
 }
@@ -572,6 +573,10 @@ video.main_section_video_content {
   font-weight: 400;
 }
 
+.qna_text_box > p > span {
+  display: none;
+}
+
 .qna_text_box p a {
   text-decoration: underline;
   color: rgba(170, 170, 170, 0.9);
@@ -593,6 +598,10 @@ video.main_section_video_content {
 .section_content_project_register {
   font-size: 20px;
   font-weight: 700;
+}
+
+.reBr {
+  display: none;
 }
 
 #projectRegisterGo {
@@ -677,20 +686,6 @@ footer > div {
   transition: ease-in-out 0s;
 }
 
-/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
-/* 모바일 */
-@media screen and (max-width: 767px) {
-  .mySwiper {
-    width: 860px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .swiper-wrapper {
-    max-width: 860px;
-    margin: 0 auto;
-  }
-}
 /* 패드 */
 @media screen and (max-width: 1059px) {
   .section_wrapper {
@@ -717,5 +712,131 @@ footer > div {
 
   .swiper-pagination {
     margin-bottom: 30px;
+  }
+}
+
+/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 80px 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+
+  .mySwiper {
+    height: 460px;
+  }
+
+  .client_logo,
+  .client_review {
+    padding: 30px;
+  }
+
+  .client_box {
+    padding: 0;
+  }
+
+  .client_txt h2 {
+    font-size: 16px;
+  }
+
+  .client_txt p {
+    font-size: 14px;
+  }
+
+  .webBr {
+    display: none;
+  }
+
+  .client_profile {
+    flex-direction: column;
+  }
+
+  .client_profile img {
+    padding-bottom: 15px;
+  }
+
+  .client_name {
+    font-size: 15px;
+  }
+
+  .client_job {
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  .client_logo_img {
+    padding: 30px 20px;
+  }
+
+  .client_logo ul li {
+    width: 140px;
+    padding: 10px 0px 0px;
+  }
+
+  /* qna */
+  .qna_box ul {
+    padding: 30px;
+  }
+
+  .qna_box ul li {
+    font-size: 15px;
+  }
+
+  .qna_box > ul > li > p {
+    display: none;
+  }
+
+  .qna_text_box > p:last-of-type {
+    font-size: 14px;
+  }
+
+  .qna_text_box > p > span {
+    display: inline-block;
+  }
+
+  /* section project_register */
+  .section_content_project_register {
+    height: 205px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_content_project_register p {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #projectRegisterGo {
+    width: 240px;
+    height: 42px;
+    font-size: 14px;
+  }
+  .reBr {
+    display: block;
+  }
+
+  /* footer */
+  .footer_wrapper {
+    flex-direction: column;
+  }
+
+  .footer_logo img {
+    margin-bottom: 20px;
+  }
+
+  .footer_info ul li {
+    margin-right: 16px;
+  }
+
+  .footer_info ul li a {
+    font-size: 14px;
+  }
+
+  .line {
+    display: block;
+    height: 0;
   }
 }
