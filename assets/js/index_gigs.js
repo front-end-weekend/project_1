@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
       scrollToTopButton.style.visibility = "hidden";
       scrollToTopButton.style.transition = "ease-in-out 0.5s";
     }
-  } else if (window.pageYOffset > 3000) {
+  } else if (window.pageYOffset > 2500) {
     scrollToTopButton.style.opacity = "1";
     scrollToTopButton.style.visibility = "visible";
     scrollToTopButton.style.transition = "ease-in-out 0.5s";
