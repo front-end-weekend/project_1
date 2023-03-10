@@ -1,5 +1,4 @@
 // Initialize Swiper
-
 let swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   effect: "fade",
@@ -13,6 +12,7 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+// top 버튼 효과 적용
 let scrollToTopButton = document.getElementById("topBtn");
 
 window.addEventListener("scroll", function () {
