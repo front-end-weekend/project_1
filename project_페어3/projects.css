@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Pretendard;
+  src: url(../assets/font/Pretendard-Regular.otf);
+}
 input,
 input:focus {
   border: none;
@@ -17,6 +21,9 @@ select:focus {
 }
 ul {
   list-style: none;
+}
+.hidden {
+  display: none !important;
 }
 .width_restrict {
   width: 70%;
@@ -51,6 +58,116 @@ ul {
 .block {
   display: block;
 }
+/* modal */
+
+.modal_close {
+  display: none;
+}
+
+.modal_bk_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.298);
+  z-index: 9;
+}
+
+.modal_wh_bg {
+  width: 400px;
+  min-height: 400px;
+  background-color: white;
+  z-index: 8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9px;
+}
+.modal_title {
+  margin-top: 20px;
+  margin-left: 28px;
+  margin-right: 28px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-align: center;
+}
+.refresh {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  font-size: 0.88rem;
+}
+.refresh:before {
+  content: "↺ ";
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  font-size: 0.88rem;
+}
+.area,
+.task,
+.skill {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin: 40px 28px 10px 28px;
+  padding: 10px 5px;
+}
+.task {
+  margin-top: 10px;
+}
+.area > *,
+.task > *,
+.skill > * {
+  margin: auto 10px;
+  width: max-content;
+  height: max-content;
+}
+.area ul,
+.task ul,
+.skill ul {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  margin: 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  max-height: 230px;
+  overflow-y: scroll;
+}
+.area ul > li,
+.task ul > li,
+.skill ul > li {
+  padding: 10px;
+  width: calc(400px - 2 * 28px);
+  background-color: #fff;
+}
+.area ul > li.selected,
+.task ul > li.selected,
+.skill ul > li.selected {
+  position: relative;
+  background-color: #cecbf5;
+  color: #3365fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.confirm {
+  position: absolute;
+  left: 28px;
+  bottom: 30px;
+  color: white;
+  background-color: #3365fd;
+  width: calc(400px - 2 * 28px);
+  height: 50px;
+  border-radius: 25px;
+}
+.confirm > div {
+  width: max-content;
+  height: max-content;
+  margin: auto;
+}
 /* main > nav */
 
 main > nav {
@@ -82,24 +199,27 @@ main > nav .dropdown_container ul {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
-main > nav .dropdown_container ul.hidden {
-  display: none;
-}
 main > nav .dropdown_container ul > li {
   padding: 10px;
   width: 150px;
   background-color: #fff;
 }
+main > nav .dropdown_container ul > li > div:last-child {
+  display: none;
+}
 main > nav .dropdown_container ul > li.selected {
   position: relative;
   background-color: #cecbf5;
-  color: blue;
+  color: #3365fd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+main > nav .dropdown_container ul > li.selected > div:last-child {
+  display: block;
+}
 main > nav .criterion_value {
-  color: blue;
+  color: #3365fd;
 }
 main > nav .search_box {
   border: 1px solid #d9d9d9;
@@ -108,7 +228,7 @@ main > nav .search_box {
 }
 /* main > div */
 main > div {
-  background-color: #f3f3f3;
+  background-color: #f7f8fa;
 }
 /* main > div nav.setting */
 main > div nav.setting {
@@ -138,9 +258,6 @@ main > div nav.setting .num_and_sort > .sort ul {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
-main > div nav.setting .num_and_sort > .sort ul.hidden {
-  display: none;
-}
 main > div nav.setting .num_and_sort > .sort ul > li {
   padding: 10px;
   width: 200px;
@@ -149,7 +266,7 @@ main > div nav.setting .num_and_sort > .sort ul > li {
 main > div nav.setting .num_and_sort > .sort ul > li.selected {
   position: relative;
   background-color: #cecbf5;
-  color: blue;
+  color: #3365fd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -183,7 +300,7 @@ main > div nav.setting .toggle_container > div {
   background-color: #fff;
 }
 .toggleSwitch.active {
-  background-color: blue;
+  background-color: #3365fd;
 }
 .toggleSwitch.active .toggleButton {
   left: auto;
@@ -255,23 +372,23 @@ main > div div.content article .status * {
   font-size: 10px;
 }
 main > div div.content article .status .resident {
-  background-color: pink;
-  color: red;
+  background-color: #fef0f8;
+  color: #f348a2;
   padding: 2px 7px;
 }
 main > div div.content article .status .resident::after {
   content: "상주";
 }
 main > div div.content article .status .remote {
-  background-color: lightgreen;
-  color: lightseagreen;
+  background-color: #e4f3eb;
+  color: #02ba9b;
   padding: 2px 7px;
 }
 main > div div.content article .status .remote::after {
   content: "원격";
 }
 main > div div.content article .status .recruiting {
-  background-color: purple;
+  background-color: #737eff;
   color: white;
   padding: 2px 7px;
 }
@@ -287,7 +404,7 @@ main > div div.content article .status .recruiting_end::after {
   content: "모집종료";
 }
 main > div div.content article .status .quick {
-  color: purple;
+  color: #737eff;
   font-size: 12px;
 }
 main > div div.content article .status .quick::after {
@@ -310,6 +427,7 @@ main > div nav.pagination ul > li > div {
   margin: auto;
 }
 main > div nav.pagination ul > li.selected {
-  background-color: #3c9acd;
+  background-color: #3365fd;
+  color: white;
   border-radius: 50%;
 }
