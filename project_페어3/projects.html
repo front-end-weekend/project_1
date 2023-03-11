@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./projects.css" />
-
+    <link rel="stylesheet" href="../assets/css/font.css" />
     <title>프로젝트 찾기 | 원티드긱스</title>
   </head>
   <body>
@@ -46,7 +46,7 @@
           <div
             class="task flex_align_center flex_space_between relative hidden"
           >
-            <div class="criterion">직무를 선택해주세요.</div>
+            <div class="criterion">직무를 선택해주세요. <span></span></div>
             <!--나중에 (0개) 멘트 넣기-->
             <div class="arrow"></div>
             <ul class="dropdown hidden">
@@ -163,6 +163,7 @@
               </li>
             </ul>
           </div>
+          <div class="area_items flex_wrap"></div>
           <div class="confirm flex_align_center">
             <div>확인</div>
           </div>
@@ -176,29 +177,6 @@
           <div class="skill flex_align_center flex_space_between relative">
             <input class="criterion" placeholder="스킬 검색" />
             <div class="arrow"></div>
-            <ul class="dropdown hidden">
-              <li>
-                <div>개발</div>
-              </li>
-              <li>
-                <div>경영·비즈니스</div>
-              </li>
-              <li>
-                <div>마케팅·광고</div>
-              </li>
-              <li>
-                <div>디자인</div>
-              </li>
-              <li>
-                <div>미디어</div>
-              </li>
-              <li>
-                <div>엔지니어링·설계</div>
-              </li>
-              <li>
-                <div>법률·법집행기관</div>
-              </li>
-            </ul>
           </div>
           <div class="confirm flex_align_center">
             <div>확인</div>
@@ -256,11 +234,10 @@
                 <div class="num_projects">프로젝트 2553개</div>
                 <div class="sort flex_align_center">
                   <div class="criterion relative">
-                    최신 순
+                    <span>최신 순</span>
                     <ul class="dropdown hidden">
                       <li>
                         <div>최신 순</div>
-                        <div>✓</div>
                       </li>
                       <li>
                         <div>견적 높은 순</div>
@@ -278,7 +255,7 @@
               </div>
               <div class="toggle_container flex absolute_right">
                 <input type="checkbox" id="toggle" hidden />
-                <label for="toggle" class="toggleSwitch active">
+                <label for="toggle" class="toggle_switch">
                   <span class="toggleButton"></span>
                 </label>
                 <div>모집중인 프로젝트만 보기</div>
