@@ -1,3 +1,5 @@
+/* TODO : 폰트 적용, 디자인 변경, 아이콘 추가, 커서 포인터 */
+
 /* common css */
 * {
   margin: 0;
@@ -44,6 +46,10 @@ ul {
 .flex_justify_center {
   display: flex;
   justify-items: center;
+}
+.flex_wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 .relative {
   position: relative;
@@ -118,6 +124,7 @@ ul {
   border-radius: 5px;
   margin: 40px 28px 10px 28px;
   padding: 10px 5px;
+  cursor: pointer;
 }
 .task {
   margin-top: 10px;
@@ -167,6 +174,28 @@ ul {
 .skill ul > li.selected > div:last-child {
   display: block;
 }
+.area_items {
+  margin: 20px 28px;
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 110px;
+}
+.area_items > * {
+  font-size: 0.9rem;
+  background-color: #f7f8fa;
+  padding: 7px 15px;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.skill input {
+  height: 21px;
+}
+.skill input::placeholder {
+  color: #000;
+  font-size: 16px;
+}
+
 .confirm {
   position: absolute;
   left: 28px;
@@ -176,11 +205,15 @@ ul {
   width: calc(400px - 2 * 28px);
   height: 50px;
   border-radius: 25px;
+  cursor: pointer;
 }
 .confirm > div {
   width: max-content;
   height: max-content;
   margin: auto;
+}
+.criterion {
+  cursor: pointer;
 }
 /* main > nav */
 
@@ -272,6 +305,9 @@ main > div nav.setting .num_and_sort > .sort ul {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
+main > div nav.setting .num_and_sort > .sort ul > li > div:last-child {
+  display: none;
+}
 main > div nav.setting .num_and_sort > .sort ul > li {
   padding: 10px;
   width: 200px;
@@ -285,6 +321,9 @@ main > div nav.setting .num_and_sort > .sort ul > li.selected {
   flex-direction: row;
   justify-content: space-between;
 }
+main > div nav.setting .num_and_sort > .sort ul > li.selected > div:last-child {
+  display: block;
+}
 main > div nav.setting .num_and_sort *,
 main > div nav.setting .toggle_container * {
   margin: auto 0;
@@ -293,7 +332,7 @@ main > div nav.setting .toggle_container * {
 main > div nav.setting .toggle_container > div {
   font-size: 12px;
 }
-.toggleSwitch {
+.toggle_switch {
   width: 40px;
   min-height: 20px; /* 위에서 max-content로 속성 줬으므로 이렇게 해야 덮어써진다 */
   display: block;
@@ -301,8 +340,9 @@ main > div nav.setting .toggle_container > div {
   border-radius: 12px;
   background-color: #d9d9d9;
   cursor: pointer;
+  right: 10px;
 }
-.toggleSwitch .toggleButton {
+.toggle_switch .toggleButton {
   width: 16px;
   min-height: 16px;
   position: absolute;
@@ -313,10 +353,10 @@ main > div nav.setting .toggle_container > div {
   border-radius: 50%;
   background-color: #fff;
 }
-.toggleSwitch.active {
+.toggle_switch.active {
   background-color: #3365fd;
 }
-.toggleSwitch.active .toggleButton {
+.toggle_switch.active .toggleButton {
   left: auto;
   right: 3px;
 }
