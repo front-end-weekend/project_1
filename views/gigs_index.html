@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../assets/css/index_gigs.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png" />
+  <link rel="stylesheet" href="../assets/css/gigs_index.css" />
+  <link rel="stylesheet" href="../assets/css/font.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16x16.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title>원티드긱스</title>
 </head>
@@ -20,7 +20,7 @@
   <header class="header">
     <div class="main_bar">
       <div class="mainbar_menu">
-        <a class="mainbar_menu_logo">
+        <a class="mainbar_menu_logo" href="gigs_index.html">
           <svg width="113" height="60" viewBox="0 0 113 20" xmlns="http://www.w3.org/2000/svg">
             <g fill="black" fill-rule="evenodd">
               <path
@@ -54,7 +54,7 @@
             </g>
           </svg>
           혜택</a>
-        <a class="main_bar_link" onclick="location.href=('gigis_e404.html')">견적 계산기<svg width="24" height="14"
+        <a class="main_bar_link" onclick="location.href=('gigs_e404.html')">견적 계산기<svg width="24" height="14"
             fill="none" xmlns="http://www.w3.org/2000/svg"
             style="position: absolute; transform: translate(3.5px, -4px)">
             <path
@@ -65,10 +65,14 @@
       </div>
       <ul class="mainber_menu_side">
         <li class="mainbar_menu_side_register">
-          <a class="side_register_click" onclick="location.href=('gigis_e404.html')">프리랜서/클라이언트 등록</a>
+          <a class="side_register_click" onclick="location.href=('gigs_e404.html')">프리랜서/클라이언트 등록</a>
+          <div id="guide_id" class="guide_class">
+            <div class="guide_text"><strong>프리랜서</strong> 또는 <strong>클라이언트로<br>등록</strong>하고 이용해보세요.</div>
+            <div class="guide_location"></div>
+          </div>
         </li>
         <li class="mainbar_menu_side_login">
-          <a class="side_login_click" onclick="location.href=('gigis_e404.html')">로그인</a>
+          <a class="side_login_click" onclick="location.href=('gigs_e404.html')">로그인</a>
         </li>
       </ul>
     </div>
@@ -148,11 +152,11 @@
   <section class="section_content section">
     <div class="section_wrapper">
       <div class="section_content_client content">
-        <h3 class="client_title title">
+        <h3 class="client_title title" data-aos="fade-up" data-aos-duration="1000">
           원티드긱스를 이용한 클라이언트들의<br />
           생생한 목소리를 들어보세요.
         </h3>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1000">
           <div class="swiper-wrapper section_content_client content">
             <div class="swiper-slide client_review list">
               <div id="clientReviewFade">
@@ -265,7 +269,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="client_logo client_logo_img list">
+        <div class="client_logo client_logo_img list" data-aos="fade-up" data-aos-duration="1000">
           <h5>Our client</h5>
           <ul>
             <li>
@@ -309,11 +313,11 @@
   <section class="section_qna section">
     <div class="section_wrapper">
       <div class="section_content_qna content">
-        <h3 class="client_title title">
+        <h3 class="client_title title" data-aos="fade-up" data-aos-duration="1000">
           원티드긱스에서<br />
           가장 많이 묻는 질문입니다.
         </h3>
-        <div class="qna_box list">
+        <div class="qna_box list" data-aos="fade-up" data-aos-duration="1000">
           <ul>
             <li>
               <p>Q</p>
@@ -370,7 +374,7 @@
               <div class="qna_text_box">
                 <p><span>Q.</span> 견적 산정을 위해 평균 임금을 알고 싶어요.</p>
                 <p>
-                  <a onclick="location.href=('gigis_e404.html')">🔗 SW기술자 평균 노임</a>에서 확인이
+                  <a onclick="location.href=('gigs_e404.html')">🔗 SW기술자 평균 노임</a>에서 확인이
                   가능합니다. 실제 매칭 시 의뢰 내용에 따라
                   제공된 차트와 차이가 있을 수 있습니다.
                 </p>
@@ -390,7 +394,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p><span>Q.</span>  계약 성사까지 얼마나 걸리나요?</p>
+                <p><span>Q.</span> 계약 성사까지 얼마나 걸리나요?</p>
                 <p>
                   매칭 난이도에 따라 3일 이내부터 1달까지 소요됩니다. 프리랜서
                   매칭, 미팅, 계약 등 절차를 고려하여 1주일 이상이 필요합니다.
@@ -400,7 +404,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p><span>Q.</span>  프로젝트/외주 의뢰 작성팁이 있나요?</p>
+                <p><span>Q.</span> 프로젝트/외주 의뢰 작성팁이 있나요?</p>
                 <p>
                   프리랜서가 담당할 업무를 자세하게 작성할수록 프리랜서의
                   매칭율이 올라갑니다. 구체적인 업무의 양을 기술해 주셔도
@@ -420,7 +424,7 @@
     <div class="section_wrapper">
       <div class="section_content_project_register">
         <p>지금 원티드긱스의 프리랜서와 프로젝트를 시작하세요.</p>
-        <a href="../project_페어3/projects_add.html" id="projectRegisterGo">프로젝트 등록하기</a>
+        <a href="freelancer_benefit.html" id="projectRegisterGo">프로젝트 등록하기</a>
       </div>
     </div>
   </section>
@@ -443,16 +447,16 @@
       <div class="footer_info">
         <ul>
           <li>
-            <a onclick="location.href=('gigis_e404.html')">프리랜서 이용약관</a>
+            <a onclick="location.href=('gigs_e404.html')">프리랜서 이용약관</a>
           </li>
           <li>
-            <a onclick="location.href=('gigis_e404.html')">클라이언트 이용약관</a>
+            <a onclick="location.href=('gigs_e404.html')">클라이언트 이용약관</a>
           </li>
           <li>
-            <a onclick="location.href=('gigis_e404.html')">고객센터</a>
+            <a onclick="location.href=('gigs_e404.html')">고객센터</a>
           </li>
           <li>
-            <a onclick="location.href=('gigis_e404.html')"><strong>개인정보 처리방침</strong></a>
+            <a onclick="location.href=('gigs_e404.html')"><strong>개인정보 처리방침</strong></a>
           </li>
         </ul>
         <div class="footer_copyright">
@@ -480,10 +484,12 @@
   <!-- 예슬 html 작업 끝 -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="../assets/js/index_gigs.js"></script>
+  <script src="../assets/js/gigs_index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>

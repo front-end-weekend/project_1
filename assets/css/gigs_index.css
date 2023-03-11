@@ -1,60 +1,4 @@
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 900;
-  src: local("Pretendard Black"),
-    url("../font/Pretendard-Black.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  src: local("Pretendard ExtraBold"),
-    url("../font/Pretendard-ExtraBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  src: local("Pretendard Bold"),
-    url("../font/Pretendard-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  src: local("Pretendard SemiBold"),
-    url("../font/Pretendard-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  src: local("Pretendard Medium"),
-    url("../font/Pretendard-Medium.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  src: local("Pretendard Regular"),
-    url("../font/Pretendard-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: local("Pretendard Light"),
-    url("../font/Pretendard-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 200;
-  src: local("Pretendard ExtraLight"),
-    url("../font/Pretendard-ExtraLight.otf") format("opentype");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 100;
-  src: local("Pretendard Thin"),
-    url("../font/Pretendard-Thin.otf") format("opentype");
-}
-
 * {
-  font-family: "Pretendard", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -150,6 +94,38 @@ a.side_register_click:hover {
 a.side_login_click:hover {
   text-decoration: underline;
 }
+
+/* 안내문구 */
+.guide_class {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  transform: translateX(-50%);
+}
+
+.guide_text {
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 0px;
+  border: 1px solid rgba(51, 102, 255, 0.24);
+  border-radius: 5px;
+  padding: 8px 13px;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.guide_location {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  height: 7px;
+  margin-bottom: -1px;
+  transform: translateX(-50%);
+}
+/* 안내문구 끝 */
+
 .header > .main_bar > .mainber_menu_side > li {
   position: relative;
 }
@@ -285,11 +261,11 @@ video.main_section_video_content {
 }
 
 /* 폰트 사이즈 적용 안됨 - 이유찾기  -> 239~245 줄도 확인 */
-/* .aos_list ul li p {
-  font-size: 16px; 
+.aos_list ul li p {
+  font-size: 16px;
   line-height: 160%;
   margin-top: 5px;
-} */
+}
 
 .aos_list > ul > li > p {
   font-size: 16px;
@@ -321,26 +297,14 @@ video.main_section_video_content {
 }
 /* 끝 */
 
-/* .aos_list_zeroFee {
-  margin: 0 10px 0 0;
-}
-
-.aos_list_freelancers {
-  margin: 0 10px 0 10px;
-}
-
-.aos_list_matching {
-  margin: 0 0 0 10px;
-} */
-
 /* 폰트 사이즈 적용 안됨 - 이유찾기  -> 195번줄과 같이 확인 */
-/* .aos_list_zeroFee_font {
+.aos_list_zeroFee_font {
   color: rgb(136, 136, 136);
 }
 
 .aos_list_zeroFee p.aos_list_zeroFee_font {
   font-size: 12px;
-} */
+}
 
 /* 예슬 */
 
@@ -687,7 +651,7 @@ footer > div {
   transition: ease-in-out 0s;
 }
 
-/* 패드 */
+/* pad */
 @media screen and (max-width: 1059px) {
   .section_wrapper {
     max-width: 100%;
@@ -716,7 +680,6 @@ footer > div {
   }
 }
 
-/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
 /* 모바일 */
 @media screen and (max-width: 767px) {
   .section {
@@ -804,6 +767,7 @@ footer > div {
     flex-direction: column;
     justify-content: center;
   }
+
   .section_content_project_register p {
     text-align: center;
     padding-bottom: 25px;
@@ -815,6 +779,7 @@ footer > div {
     height: 42px;
     font-size: 14px;
   }
+
   .reBr {
     display: block;
   }
@@ -828,12 +793,20 @@ footer > div {
     margin-bottom: 20px;
   }
 
+  .footer_info ul {
+    flex-wrap: wrap;
+  }
+
   .footer_info ul li {
-    margin-right: 16px;
+    margin: 0 16px 16px 0;
   }
 
   .footer_info ul li a {
     font-size: 14px;
+  }
+
+  .footer_copyright {
+    padding-top: 0;
   }
 
   .line {

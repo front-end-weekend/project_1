@@ -1,14 +1,14 @@
-// Initialize Swiper
+// Swiper fade 효과 적용
 let swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   effect: "fade",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    speed: 2000,
   },
 });
 
@@ -35,3 +35,12 @@ scrollToTopButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+setTimeout(function () {
+  sideGuide = $("#guide_id");
+  sideGuide.fadeOut();
+}, 3000);
+// function sideGuide() {
+//   document.getElementById("guide_id");
+// }
+// self.setTimeout("sideGuide()", 2000);
