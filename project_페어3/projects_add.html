@@ -13,7 +13,7 @@
     <!--header 끝-->
 
     <!--main 시작-->
-    <main>
+    <main id="mainContainer">
         <article class="modal_bk_bg">
             <div class="modal_wh_bg">
                 <div id="modalText1">매칭 프로세스 안내</div>
@@ -54,37 +54,161 @@
         <section id="infoBox">
             <div class="info_1">
                 <ul>
-                    <li class="progressbar"><span class="progress"></span><p id="progressbarPer">0%</p></div></li>
+                    <li class="progressbar">
+                        <span class="progress"></span>
+                        <p id="progressbarPer">0%</p>
+                    </li>
                     <li id="infoText1">의뢰인 정보를 입력해주세요 :)</li>
-                    <li><div id="hiddenInfo"><p id="hiddenInfoText">매칭 프로세스 알아보기</p></div></li><img id="hiddenInfoIcon" src="./ico_main_hiddenInfo.png" alt="느낌표icon">
+                    <li>
+                        <div id="hiddenInfoFull" class="close">
+                            <div class="info_main_text"><p class="blue_text">매칭은</p>어떻게 되나요?</div>
+                            <ul class="info_text_list">
+                                <li>등록해 주신 프로젝트를 전담해 줄 매칭매니저가 배정됩니다.</li>
+                                <li>입력해 주신 정보가 매칭에 충분한 지 매칭매니저가 확인 후, 연락드립니다.</li>
+                                <p class="grey_text">(상세한 업무내용, 견적, 업무 기간 등)</p>
+                                <li>확인된 내용에 따라 가장 적합한 프리랜서와 매칭을 시작합니다.</li>
+                                <li>매칭을 희망하는 프리랜서의 진행 가능 여부를 확인합니다.</li>
+                                <li>직접 매칭 요청한 프리랜서와 매칭매니저의 제안에 수락한 프리랜서의 지원서를 모두 확인하실 수 있습니다.</li>
+                                <li>프리랜서의 지원서를 검토하신 후, 매칭 요청 or 반려 선택해 주세요!</li>
+                                <li>승인해 주신 프리랜서와 미팅을 통해 작업 범위와 일정, 최종 견적 등을 논의합니다.</li>
+                                <li>협의가 되지 않을 경우 다른 프리랜서와 다시 미팅을 진행해 볼 수 있습니다.</li>
+                                <p class="grey_text">(긱스 PRO 등록 시 무제한 미팅 가능)</p>
+                            </ul>
+                            <br>
+                            <div class="info_main_text"><p class="blue_text">계약은</p>어떻게 되나요?</div>
+                            <ul class="info_text_list">
+                                <li>사전 미팅을 통해 확인한 일정과 비용을 확정합니다.</li>
+                                <li>표준 계약서를 통해서 원티드긱스와 계약을 진행합니다.</li>
+                                <li>계약 완료 후, 정해진 일정에 따라 업무를 시작합니다.</li>
+                                <li>사전에 협의한 방식 (프로젝트 착수/완료 시 또는 월단위 정산)에 따라 비용을 지급합니다.</li>
+                            </ul>
+                            <br>
+                            <div class="info_main_text"><p class="red_text">매칭 불가</p>프로젝트 안내</div>
+                            <ul class="info_text_list">
+                                <li>정규직 구인의 경우, 원티드 기업 서비스 이용부탁드립니다.</li>
+                                <li>예산이 최저시급 미만일 경우, 매칭이 불가합니다.</li>
+                                <li>계약 완료 후, 정해진 일정에 따라 업무를 시작합니다.</li>
+                                <li>원티드긱스를 통해 계약 성사 및 계약서 작성 시, 의뢰사와 프리랜서가 각각 원티드긱스와 계약서를 작성하게 됩니다. 즉, 계약주체는 의뢰사-원티드긱스 / 프리랜서-원티드긱스입니다.</li>
+                                <li>해당 계약구조를 통해, 원티드긱스가 클라이언트와 프리랜서 간의 계약금을 안전하게 지급해드리며, 분쟁 조정이 가능합니다.</li>
+                            </ul>
+                        </div>
+                        <div id="hiddenInfo">
+                            <p id="hiddenInfoText">매칭 프로세스 알아보기</p>
+                            <img id="hiddenInfoIcon" src="./ico_main_hiddenInfo.png" alt="느낌표icon">
+                        </div>
+                    </li>
                     <li class="main_input_checkbox">
-                        <p id="mainInputText">회사명(사업자명)</p>
-                        <input class="main_checkbox" type="checkbox">
-                        <div id="mainCheckboxText">사업자가 아닙니다.</div>
+                        <div id="mainInputText">회사명(사업자명)<p id="redDot1">*</p></div>
+                        <div id="checkboxWrapper2">
+                            <input id="checkbox2" type="checkbox">
+                            <label for="checkbox2"></label>
+                        </div>
+                        <div id="mainCheckboxText" class="grey_text">사업자가 아닙니다.</div>
                     </li>
                     <li><input id="mainInput2" type="text" placeholder="회사명(사업자명) 입력"></li>
-                    <li class="main_input_text2">담당자 이름</li>
+                    <li class="main_input_text2">담당자 이름<p class="red_dot">*</p></li>
                     <li><input class="main_inputbox2" type="text" placeholder="담당자 이름 입력"></li>
-                    <li class="main_input_text2">담당자 연락처</li>
+                    <li class="main_input_text2">담당자 연락처<p class="red_dot">*</p></li>
                     <li><input class="main_inputbox2" type="text" placeholder="연락 가능한 번호 입력"></li>
-                    <li class="main_input_text2">담당자 이메일</li>
+                    <li class="main_input_text2">담당자 이메일<p class="red_dot">*</p></li>
                     <li><input class="main_inputbox2" type="text" placeholder="연락 가능한 이메일 입력"></li>
-                    <li id="mainAgreement"><input class="main_checkbox" type="checkbox">
-                        <p>임시저장 후 계속하기 (개인정보 수집 이용동의)</p>
+                    <li id="mainAgreement">
+                        <div id="checkboxWrapper3">
+                            <input id="checkbox3" type="checkbox">
+                            <label for="checkbox3"></label>
+                        </div>
+                        <div class="mainAgreementText2">임시저장 후 계속하기 (개인정보 수집 이용동의)<p class="red_dot">*</p></div>
                     </li>
-                    <div id="hiddenInfo2"><p>이름, 연락처, 이메일과 작성하신 내용이 30일간 보관됩니다.</p></div>
-                    <li id="mainAgreement2"><input class="main_checkbox" type="checkbox">
-                    <p>등록 미완료 시 리마인드 알림 받기 (선택)</p></li>
+                    <div id="hiddenInfo2_A">
+                        <div id="hiddenInfo2">
+                            <p>이름, 연락처, 이메일과 작성하신 내용이 30일간 보관됩니다.</p>
+                        </div>
+                        <div>
+                            <img id="hiddenInfo2Icon" src="./ico_down.png" alt="hoddenInfo2Icon">
+                        </div>
+                    </div>
+                    <div id="hiddenInfo3" class="close">
+                        <div>개인정보 수집 이용 동의</div>
+                        <br>
+                        <div>수집하는 개인정보 항목 : 회사명(사업자명), 이름, 연락처, 이메일</div>
+                        <div>개인정보 수집, 이용 목적 : 원티드긱스 프로젝트 등록 진행</div>
+                        <div>개인정보 수집, 이용 기간 :</div>
+                        <div>- 회원가입 완료 시 : 회원탈퇴 시 까지</div>
+                        <div>- 프로젝트 등록 중단 시 : 등록 중단일로부터 30일 후 파기</div>
+                        <br>
+                        <div>개인정보 수집 이용에 동의하지 않을 수 있습니다만, 그 경우 프로젝트를 등록하실 수 없습니다.</div>
+                    </div>
+                    <li id="mainAgreement2"> 
+                        <div id="checkboxWrapper4"> <!--등록예정-->
+                            <input id="checkbox4" type="checkbox">
+                            <label for="checkbox4"></label>
+                        </div>
+                    <p class="mainAgreementText2">등록 미완료 시 리마인드 알림 받기 (선택)</p></li>
                     <li><button id="mainBtnNext" type="button">다음 단계</button></li>
                 </ul>
             </div>
            <div></div>
         </section>
+        <section2>
+            <div id="ghostBtn"><img id="ghost" src="./ico_ghost.png" alt="ghostImg"></div>
+        </section2>
+            <div id="ghostHidden" class="close">
+                <div id="ghostHiddenSection1">
+                    <div class="gigs_icon"><img src="./ico_gigs.png" alt="gigs"></div>
+                    <p id="ghostHiddenText1">원티드긱스(wanted gigs)</p>
+                    <img class="ghost_hidden_ico1" src="./ico_gear.png" alt="톱니바퀴">
+                    <img class="ghost_hidden_ico2" src="./ico_X.png" alt="X">
+                </div>
+                <div id="ghostHiddenSection2">
+                    <p id="ghostHiddenText2">원티드긱스는 가장 빠르고 간편하게 고객에 니즈에 맞는 우수한 프리랜서를 매칭해드립니다.</p>
+                </div>
+                <div id="ghostHiddenSection3">
+                    <div>
+                        <div id="gigsSection1">
+                            <div class="gigs_icon2">
+                                <img src="./ico_gigs.png" alt="gigs_ico2">
+                            </div>
+                            <div id="gigsTexts">
+                                <p id="gigsText1">원티드긱스</p>
+                                <p id="gigsText2">방문해주셔서 감사합니다 :) 어떻게 도와드릴까요?</p>
+                            </div>
+                        </div>
+                        <button type="button" id="gigsBtn1">
+                            <img id="airplanIco" src="./ico_paper-airplane.png" alt="종이비행기">
+                            <p id="gigBtn1Text">새 문의하기</p>
+                        </button>
+                        <div class="green_dot_text">
+                            <p id="greenDot"></p>보통 수십 분 내 답변
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <img src="" alt="노란색느낌표">
+                        <p>운영시간 아님 ・ 금요일 09:00부터 운영</p>
+                    </div> -->
+                </div>
+                <div id="ghostHiddenSection4">
+                    <p id="gigsText3">다른 방법으로 상담</p>
+                    <div id="kakaoIcoBack">
+                        <img class="icos" src="./ico_speech-bubble.png" alt="카카오톡">
+                    </div>
+                    <div id="phoneIcoBack">
+                        <img class="icos" src="./ico_phone.png" alt="전화">
+                    </div>
+                </div>
+                <div id="ghost2IcoSection">
+                    <div id="ghost2Ico">
+                        <img src="./ico_ghost2.png" alt="유령이모티콘">
+                    </div>
+                    <p id="ghText1" class="ghost_text">채널톡</p>
+                    <p id="ghText2" class="ghost_text">이용중</p>
+                </div>
+            </div>
     </main>
     <!--main 끝-->
 
     <!--footer 시작-->
     <footer></footer>
     <!--footer 끝-->
+    <script src="./projects_add.js"></script>
 </body>
 </html>

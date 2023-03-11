@@ -68,6 +68,7 @@ li {
 a {
   text-decoration: none;
   text-decoration-line: none;
+  cursor: pointer;
 }
 
 button {
@@ -86,15 +87,15 @@ button {
   top: 0;
   left: 0;
   z-index: 9000;
-  border: 1px solid red;
   background-color: white;
-  /* border-bottom: 1px solid rgb(242, 244, 247); */
+  border-bottom: 1px solid rgb(242, 244, 247);
 }
 
 main {
   margin-top: 64px;
 }
-.main_bar {
+
+.header > .main_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,25 +115,43 @@ main {
   margin-right: 52px;
 }
 
-.mainbar_menu_name {
+.main_bar_link > .benefits {
+  vertical-align: top;
+}
+
+.main_bar_link {
   color: rgb(51, 51, 51);
   font-weight: 500;
+  text-decoration: none;
   display: block;
   height: 63px;
   padding: 22px 2px 0px;
-}
-
-.nameBtn {
   margin-right: 35px;
 }
-.mainber_menu_side {
+
+a.main_bar_link:hover {
+  border-bottom: 2px solid rgb(225, 227, 232);
+}
+
+.header > .main_bar > .mainber_menu_side {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.mainbar_menu_side_register {
+.header > .main_bar > .mainbar_menu_side_register {
   margin-left: 10px;
+}
+
+a.side_register_click:hover {
+  text-decoration: underline;
+}
+
+a.side_login_click:hover {
+  text-decoration: underline;
+}
+.header > .main_bar > .mainber_menu_side > li {
+  position: relative;
 }
 
 .side_register_click {
@@ -143,10 +162,18 @@ main {
   padding-top: 7px;
   padding-left: 15px;
   padding-right: 15px;
-  /* padding: 7px 15px 0 15px; */
   display: inline-block;
   border-radius: 25px;
   font-weight: 500;
+  width: max-content;
+}
+
+.side_login_click {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 12px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
 }
 /* main */
 
@@ -198,11 +225,14 @@ main {
   color: white;
 }
 
+.main_section_content_wrapper button:hover {
+  opacity: 0.8;
+}
 video.main_section_video_content {
   width: 800px;
   position: absolute;
   bottom: 0px;
-  right: 20px;
+  right: -95px;
 }
 
 /* 원티드긱스를 왜 사용해야 할까요?
@@ -284,6 +314,10 @@ video.main_section_video_content {
   justify-content: center;
   align-items: center;
   height: 80px;
+}
+
+.aos_button button:hover {
+  opacity: 0.8;
 }
 /* 끝 */
 
@@ -434,6 +468,7 @@ video.main_section_video_content {
   padding-left: 10px;
   color: rgb(102, 102, 102);
   font-size: 14px;
+  font-weight: 300;
   line-height: 120%;
   position: relative;
 }
@@ -538,6 +573,10 @@ video.main_section_video_content {
   font-weight: 400;
 }
 
+.qna_text_box > p > span {
+  display: none;
+}
+
 .qna_text_box p a {
   text-decoration: underline;
   color: rgba(170, 170, 170, 0.9);
@@ -559,6 +598,10 @@ video.main_section_video_content {
 .section_content_project_register {
   font-size: 20px;
   font-weight: 700;
+}
+
+.reBr {
+  display: none;
 }
 
 #projectRegisterGo {
@@ -618,7 +661,8 @@ footer > div {
   line-height: 24px;
 }
 
-.line {
+.line,
+.lineMobile {
   margin: 0px 4px;
   height: 12px;
   display: inline-block;
@@ -627,10 +671,173 @@ footer > div {
   background-color: rgb(236, 236, 236);
 }
 
-/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
-@media screen and (max-width: 1060px) {
+/* top button */
+#topBtn {
+  /* display: none; */
+  position: fixed;
+  z-index: 1000;
+  bottom: 40px;
+  right: 40px;
+  padding: 20px 18px;
+  border-radius: 50%;
+  border: 1px solid #e1e3e8;
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0s;
+}
+
+/* 패드 */
+@media screen and (max-width: 1059px) {
+  .section_wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+
   .swiper-wrapper {
-    max-width: 860px;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #clientReviewFade {
+    overflow: inherit;
+  }
+
+  .client_box {
+    position: inherit;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 30px;
+  }
+}
+
+/* 미디어쿼리로 페이드 배너 width 조정 잘하기! */
+/* 모바일 */
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 80px 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+
+  .mySwiper {
+    height: 460px;
+  }
+
+  .client_logo,
+  .client_review {
+    padding: 30px;
+  }
+
+  .client_box {
+    padding: 0;
+  }
+
+  .client_txt h2 {
+    font-size: 16px;
+  }
+
+  .client_txt p {
+    font-size: 14px;
+  }
+
+  .webBr {
+    display: none;
+  }
+
+  .client_profile {
+    flex-direction: column;
+  }
+
+  .client_profile img {
+    padding-bottom: 15px;
+  }
+
+  .client_name {
+    font-size: 15px;
+  }
+
+  .client_job {
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  .client_logo_img {
+    padding: 30px 20px;
+  }
+
+  .client_logo ul li {
+    width: 140px;
+    padding: 10px 0px 0px;
+  }
+
+  /* qna */
+  .qna_box ul {
+    padding: 30px;
+  }
+
+  .qna_box ul li {
+    font-size: 15px;
+  }
+
+  .qna_box > ul > li > p {
+    display: none;
+  }
+
+  .qna_text_box > p:last-of-type {
+    font-size: 14px;
+  }
+
+  .qna_text_box > p > span {
+    display: inline-block;
+  }
+
+  /* section project_register */
+  .section_content_project_register {
+    height: 205px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_content_project_register p {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #projectRegisterGo {
+    width: 240px;
+    height: 42px;
+    font-size: 14px;
+  }
+  .reBr {
+    display: block;
+  }
+
+  /* footer */
+  .footer_wrapper {
+    flex-direction: column;
+  }
+
+  .footer_logo img {
+    margin-bottom: 20px;
+  }
+
+  .footer_info ul li {
+    margin-right: 16px;
+  }
+
+  .footer_info ul li a {
+    font-size: 14px;
+  }
+
+  .line {
+    display: block;
+    height: 0;
   }
 }

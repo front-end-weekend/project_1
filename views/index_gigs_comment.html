@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/css/index_gigs.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32x32.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>원티드긱스</title>
 </head>
 
@@ -26,10 +29,10 @@
             </g>
           </svg>
         </a>
-        <a class="mainbar_menu_name nameBtn" href="#">프로젝트 등록</a>
-        <a class="mainbar_menu_name nameBtn" href="#">프로젝트 찾기</a>
-        <a class="mainbar_menu_name nameBtn" href="#">
-          <svg width="77" height="18" viewBox="0 0 76 18" xmlns="http://www.w3.org/2000/svg">
+        <a class="main_bar_link" href="../project_페어3/projects_add.html">프로젝트 등록</a>
+        <a class="main_bar_link" href="../project_페어3/projects.html">프로젝트 찾기</a>
+        <a class="main_bar_link" href="freelancer_benefit.html">
+          <svg class="benefits" width="77" height="18" viewBox="0 0 76 18" xmlns="http://www.w3.org/2000/svg">
             <title>GNB_img_Freelancer</title>
             <g fill="#36F" fill-rule="nonzero">
               <path fill-opacity="0.7" d="M4.109 14v-3.614h2.652V8.059H4.109V6.746h2.886l.39-2.496H.989V14z"></path>
@@ -49,9 +52,11 @@
                 d="M65.729 14.234c1.135 0 2.288-.156 3.458-.468l-.364-2.288a9.715 9.715 0 01-2.938.468 8.435 8.435 0 01-.936-.052v-.546c.875 0 1.608-.05 2.197-.15.59-.1 1.062-.253 1.417-.461.355-.208.609-.475.76-.8.152-.325.228-.712.228-1.163 0-.546-.063-.999-.188-1.359a1.72 1.72 0 00-.637-.858c-.3-.212-.692-.364-1.177-.455-.485-.09-1.092-.136-1.82-.136-1.447 0-2.498.34-3.152 1.02-.655.68-.982 1.719-.982 3.114 0 1.395.325 2.433.975 3.113.65.68 1.703 1.021 3.159 1.021zm-.143-4.693h-.637v-.637c0-.286.085-.468.254-.546.169-.078.444-.117.825-.117h.637v.637c0 .286-.084.468-.253.546-.17.078-.445.117-.826.117zM73.841 14V9.541c.078-.095.19-.18.338-.253.147-.074.31-.137.487-.189.178-.052.354-.095.527-.13.173-.035.32-.052.442-.052l-.182-2.951c-.919.165-1.69.533-2.314 1.105l-.858-.871h-1.56V14h3.12z"
                 fill-opacity="0.6"></path>
             </g>
-          </svg>혜택</a>
-        <a class="mainbar_menu_name" href="#">견적 계산기<svg width="24" height="14" fill="none"
-            xmlns="http://www.w3.org/2000/svg" style="position: absolute; transform: translate(3.5px, -4px)">
+          </svg>
+          혜택</a>
+        <a class="main_bar_link" onclick="location.href=('gigis_e404.html')">견적 계산기<svg width="24" height="14"
+            fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="position: absolute; transform: translate(3.5px, -4px)">
             <path
               d="M1.473 10.75h2.705c1.65 0 2.392-.82 2.392-1.904 0-1.094-.761-1.71-1.465-1.748v-.069c.65-.166 1.192-.61 1.192-1.494 0-1.05-.728-1.855-2.236-1.855H1.473v7.07Zm1.074-.918V7.576h1.572c.85 0 1.387.542 1.387 1.22 0 .587-.41 1.031-1.426 1.036H2.547Zm0-3.096V4.598h1.445c.845 0 1.25.44 1.25 1.025 0 .679-.556 1.108-1.27 1.113H2.548Zm7.373 4.121c1.167 0 1.982-.576 2.217-1.435h-1.055c-.176.322-.562.576-1.152.576-.87 0-1.465-.571-1.494-1.582h3.77v-.371c0-1.919-1.148-2.666-2.354-2.666-1.48 0-2.456 1.123-2.452 2.754-.004 1.645.957 2.724 2.52 2.724ZM8.44 7.635c.044-.747.586-1.402 1.421-1.397.796-.005 1.319.591 1.319 1.397H8.44Zm7.28-2.188h-1.083v-1.27h-1.035v1.27h-.782v.83h.782v3.125c-.01.967.727 1.416 1.543 1.416.288 0 .512-.02.654-.039v-.908c-.147.015-.376.03-.527.03-.337-.005-.63-.113-.635-.713v-2.91h1.084v-.83Zm.772 3.809c-.005 1.035.781 1.611 1.787 1.611.88 0 1.367-.444 1.573-.84h.039v.723h1.015V7.225c-.005-1.538-1.235-1.846-2.08-1.846-1.255 0-2.075.635-2.168 1.514h1.035c.108-.391.479-.674 1.094-.674.708 0 1.08.346 1.074.947l.005.425c-.244.01-1.04.054-1.391.073-.957.068-1.988.38-1.983 1.592Zm1.016.01c0-.523.43-.782 1.113-.83.25-.015 1.006-.069 1.245-.083l.005.483c0 .63-.508 1.196-1.357 1.201-.586-.005-1.006-.264-1.006-.771Z"
               fill="#36F"></path>
@@ -60,10 +65,10 @@
       </div>
       <ul class="mainber_menu_side">
         <li class="mainbar_menu_side_register">
-          <a class="side_register_click">프리랜서/클라이언트 등록</a>
+          <a class="side_register_click" onclick="location.href=('gigis_e404.html')">프리랜서/클라이언트 등록</a>
         </li>
         <li class="mainbar_menu_side_login">
-          <a class="side_login_click">로그인</a>
+          <a class="side_login_click" onclick="location.href=('gigis_e404.html')">로그인</a>
         </li>
       </ul>
     </div>
@@ -75,14 +80,18 @@
     <section class="main_section">
       <div class="main_section_content">
         <div class="main_section_content_wrapper">
-          <h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000">
             실력 있는 프리랜서를 빠르게<br />
             원티드긱스와 성공적인 비즈니스를 시작하세요
           </h2>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="1000">
             원티드의 300만 전문가 중 최적의 인재를 48시간 안에 매칭해 드려요
           </p>
-          <button>무료로 프리랜서 매칭받기</button>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <button onclick="location.href=('../project_페어3/projects_add.html')">
+              무료로 프리랜서 매칭받기
+            </button>
+          </div>
         </div>
         <video class="main_section_video_content" width="100%" height="auto" autoplay="autoplay" loop="" muted="muted"
           playsinline="">
@@ -93,36 +102,39 @@
     <!-- 원티드긱스를 왜 사용해야 할까요? -->
     <section class="aos_section">
       <div class="aos_list">
-        <h3 class="aos_list_title">원티드긱스를 왜 사용해야 할까요?</h3>
-        <ul>
-          <li class="aos_list_zeroFee">
-            <img src="../assets/images/wanted_gigs_zeroFee.png" alt="수수료 제로" />
-            <h4>수수료 제로</h4>
-            <p>수수료 없는 맞춤 견적으로 <br />외주 비용을 절약하세요.</p>
-            <p class="aos_list_zeroFee_font">
-              * 부가 서비스 사용에 따라 달라질 수 있습니다
-            </p>
-          </li>
+        <h3 class="aos_list_title" data-aos="fade-up" data-aos-duration="1000">원티드긱스를 왜 사용해야 할까요?</h3>
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <ul>
+            <li class="aos_list_zeroFee">
+              <img src="../assets/images/wanted_gigs_zeroFee.png" alt="수수료 제로" />
+              <h4>수수료 제로</h4>
+              <p>수수료 없는 맞춤 견적으로 <br />외주 비용을 절약하세요.</p>
+              <p class="aos_list_zeroFee_font">
+                * 부가 서비스 사용에 따라 달라질 수 있습니다
+              </p>
+            </li>
 
-          <li>
-            <img src="../assets/images/wanted_gigs_freelancers.png" alt="선별된 프리랜서" />
-            <h4>선별된 프리랜서</h4>
-            <p>
-              경력 10년 이상의 매칭 매니저가<br />
-              프리랜서를 연결해 드립니다.
-            </p>
-          </li>
+            <li>
+              <img src="../assets/images/wanted_gigs_freelancers.png" alt="선별된 프리랜서" />
+              <h4>선별된 프리랜서</h4>
+              <p>
+                경력 10년 이상의 매칭 매니저가<br />
+                프리랜서를 연결해 드립니다.
+              </p>
+            </li>
 
-          <li>
-            <img src="../assets/images/wanted_gigs_matching.png" alt="편리한 매칭" />
-            <h4>편리한 매칭</h4>
-            <p>
-              48시간 안에 적합한 프리랜서를<br />
-              빠르게 매칭 받으세요.
-            </p>
-          </li>
-        </ul>
-        <div class="aos_button">
+            <li>
+              <img src="../assets/images/wanted_gigs_matching.png" alt="편리한 매칭" />
+              <h4>편리한 매칭</h4>
+              <p>
+                48시간 안에 적합한 프리랜서를<br />
+                빠르게 매칭 받으세요.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="aos_button"
+          onclick="location.href=('../project_페어3/projects_add.html')">
           <button>지금 바로 시작하기</button>
         </div>
       </div>
@@ -253,7 +265,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="client_logo list">
+        <div class="client_logo client_logo_img list">
           <h5>Our client</h5>
           <ul>
             <li>
@@ -306,7 +318,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>타 서비스 대비 장점은 무엇인가요?</p>
+                <p><span>Q.</span> 타 서비스 대비 장점은 무엇인가요?</p>
                 <p>
                   다양한 직군의 경력을 지닌 고급 전문가 프리랜서 풀을 갖추고
                   있습니다. 그리고 직접 매칭 요청한 프리랜서뿐 아니라,
@@ -322,7 +334,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>IT 외 분야의 외주도 의뢰 받나요?</p>
+                <p><span>Q.</span> IT 외 분야의 외주도 의뢰 받나요?</p>
                 <p>
                   원티드긱스에는 개발/디자인/기획뿐만 아니라
                   영상/마케팅/컨설팅/인사 등 다양한 분야의 200만 명의 전문가가
@@ -333,7 +345,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>서비스 수수료는 어떻게 되나요?</p>
+                <p><span>Q.</span> 서비스 수수료는 어떻게 되나요?</p>
                 <p>
                   상담, 매칭 계약 등 전 과정에 별도 수수료가 부과되지 않으며,
                   의뢰하신 프로젝트의 견적에 맞춰 최적의 프리랜서를
@@ -345,7 +357,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>의뢰 접수를 완료했어요. 이후 프로세스는 어떻게 되나요?</p>
+                <p><span>Q.</span> 의뢰 접수를 완료했어요. 이후 프로세스는 어떻게 되나요?</p>
                 <p>
                   의뢰 내용을 확인 후, 담당 매칭매니저가 연락드립니다. 또한
                   접수 완료 메일에 프로세스에 대한 상세 안내가 포함되어 있으니
@@ -356,9 +368,9 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>견적 산정을 위해 평균 임금을 알고 싶어요.</p>
+                <p><span>Q.</span> 견적 산정을 위해 평균 임금을 알고 싶어요.</p>
                 <p>
-                  <a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 SW기술자 평균 노임</a>에서 확인이
+                  <a onclick="location.href=('gigis_e404.html')">🔗 SW기술자 평균 노임</a>에서 확인이
                   가능합니다. 실제 매칭 시 의뢰 내용에 따라
                   제공된 차트와 차이가 있을 수 있습니다.
                 </p>
@@ -367,9 +379,9 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>프리랜서로 등록을 하고 싶어요.</p>
+                <p><span>Q.</span> 프리랜서로 등록을 하고 싶어요.</p>
                 <p>
-                  <a href="https://www.wanted.co.kr/events/gigs_sw_salary" target="_blank">🔗 프리랜서 등록 페이지</a>에서등록이
+                  <a href="freelancer_benefit.html">🔗 프리랜서 등록 페이지</a>에서 등록이
                   가능합니다. 가지고 계신 역량과 스킬을 자세하게
                   작성해 주세요.
                 </p>
@@ -378,7 +390,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>계약 성사까지 얼마나 걸리나요?</p>
+                <p><span>Q.</span>  계약 성사까지 얼마나 걸리나요?</p>
                 <p>
                   매칭 난이도에 따라 3일 이내부터 1달까지 소요됩니다. 프리랜서
                   매칭, 미팅, 계약 등 절차를 고려하여 1주일 이상이 필요합니다.
@@ -388,7 +400,7 @@
             <li>
               <p>Q</p>
               <div class="qna_text_box">
-                <p>프로젝트/외주 의뢰 작성팁이 있나요?</p>
+                <p><span>Q.</span>  프로젝트/외주 의뢰 작성팁이 있나요?</p>
                 <p>
                   프리랜서가 담당할 업무를 자세하게 작성할수록 프리랜서의
                   매칭율이 올라갑니다. 구체적인 업무의 양을 기술해 주셔도
@@ -408,7 +420,7 @@
     <div class="section_wrapper">
       <div class="section_content_project_register">
         <p>지금 원티드긱스의 프리랜서와 프로젝트를 시작하세요.</p>
-        <a href="#" id="projectRegisterGo">프로젝트 등록하기</a>
+        <a href="../project_페어3/projects_add.html" id="projectRegisterGo">프로젝트 등록하기</a>
       </div>
     </div>
   </section>
@@ -416,6 +428,14 @@
 
   <!-- footer start-->
   <footer>
+    <button type="button" id="topBtn" onclick="topFunction()" title="Go to top">
+      <svg width="24" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m11.75 3.81 7.97 7.97a.75.75 0 1 0 1.06-1.06l-8.5-8.5a.75.75 0 0 0-1.06 0l-8.5 8.5a.75.75 0 1 0 1.06 1.06l7.97-7.97Z"
+          fill="#333"></path>
+        <rect x="11" y="3" width="1.5" height="20" rx="0.75" fill="#333"></rect>
+      </svg>
+    </button>
     <div class="footer_wrapper">
       <div class="footer_logo">
         <img src="https://www.wanted.co.kr/gigs/images/footer/common_wanted_logo.svg" alt="원티드긱스 인덱스 페이지 하단 푸터 로고" />
@@ -423,19 +443,16 @@
       <div class="footer_info">
         <ul>
           <li>
-            <a href="https://help.wantedgigs.co.kr/hc/ko/articles/8678489029785-%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80 "
-              target="_blank">프리랜서 이용약관</a>
+            <a onclick="location.href=('gigis_e404.html')">프리랜서 이용약관</a>
           </li>
           <li>
-            <a href="https://help.wantedgigs.co.kr/hc/ko/articles/8678442383129-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80-"
-              target="_blank">클라이언트 이용약관</a>
+            <a onclick="location.href=('gigis_e404.html')">클라이언트 이용약관</a>
           </li>
           <li>
-            <a href="https://help.wantedgigs.co.kr/hc/ko" target="_blank">고객센터</a>
+            <a onclick="location.href=('gigis_e404.html')">고객센터</a>
           </li>
           <li>
-            <a href="https://help.wanted.co.kr/hc/ko/articles/360035484292" target="_blank"><strong>개인정보
-                처리방침</strong></a>
+            <a onclick="location.href=('gigis_e404.html')"><strong>개인정보 처리방침</strong></a>
           </li>
         </ul>
         <div class="footer_copyright">
@@ -450,7 +467,7 @@
             제2020-3230259-14-5-00018호
             <span class="line"></span>
             <strong>사업자등록번호</strong> : 299-86-00021
-            <span class="line"></span>
+            <span class="lineMobile"></span>
             02-539-7118
             <br />
             &copy; WANTEDLAB, INC.
@@ -463,21 +480,9 @@
   <!-- 예슬 html 작업 끝 -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
+  <script src="../assets/js/index_gigs.js"></script>
   <script>
-    let swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+    AOS.init();
   </script>
 </body>
 
