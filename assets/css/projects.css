@@ -1,14 +1,14 @@
-/* TODO : 폰트 적용, 디자인 변경, 아이콘 추가, 커서 포인터 */
-
+/* TODO : 디자인 변경(나중에 욕심 내서 좀 더 할까?), 아이콘 추가, 커서 포인터(거의 다 된 듯?), 보더 하이라이트, 아티클 밑줄 */
+/*e1e3e8*/
+/*텍스트 : 333333*/
+/* f2f4f7 */
 /* common css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: Pretendard;
-  src: url(../assets/font/Pretendard-Regular.otf);
+  /* color: #333333; */
+  font-weight: 400;
 }
 input,
 input:focus {
@@ -86,6 +86,7 @@ ul {
   width: 400px;
   min-height: 400px;
   background-color: white;
+  color: #333333;
   z-index: 8;
   position: absolute;
   top: 50%;
@@ -106,6 +107,8 @@ ul {
   top: 20px;
   left: 28px;
   font-size: 0.88rem;
+  color: #888888;
+  cursor: pointer;
 }
 .refresh:before {
   content: "↺ ";
@@ -116,6 +119,7 @@ ul {
   right: 28px;
   font-size: 0.88rem;
   cursor: pointer;
+  color: #000000d9;
 }
 .area,
 .task,
@@ -123,7 +127,7 @@ ul {
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   margin: 40px 28px 10px 28px;
-  padding: 10px 5px;
+  padding: 13px 5px;
   cursor: pointer;
 }
 .task {
@@ -182,17 +186,18 @@ ul {
 }
 .area_items > * {
   font-size: 0.9rem;
-  background-color: #f7f8fa;
+  background-color: #f2f4f7;
   padding: 7px 15px;
-  border-radius: 16px;
+  border-radius: 18px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border: 1px solid transparent;
 }
 .skill input {
   height: 21px;
 }
 .skill input::placeholder {
-  color: #000;
+  color: #333333;
   font-size: 16px;
 }
 
@@ -215,6 +220,13 @@ ul {
 .criterion {
   cursor: pointer;
 }
+.hover_blue {
+  transition: border-color 0.2s;
+}
+.hover_blue:hover {
+  border: 1px solid #3365fd;
+  display: ;
+}
 /* main > nav */
 
 main > nav {
@@ -233,6 +245,7 @@ main > nav .dropdown_container > * {
   margin: 0 6px;
   padding: 0 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 main > nav .dropdown_container > * > * {
   margin: auto 10px;
@@ -273,13 +286,18 @@ main > nav .search_box {
   border-radius: 20px;
   padding-left: 20px;
 }
+main > nav .search_box > input,
+main > nav .search_box > input::placeholder {
+  font-size: 16px;
+}
 /* main > div */
 main > div {
-  background-color: #f7f8fa;
+  background-color: #f2f4f7;
 }
 /* main > div nav.setting */
 main > div nav.setting {
   height: 90px;
+  color: #333333;
 }
 main > div nav.setting > div {
   padding: 25px 0;
@@ -293,8 +311,8 @@ main > div nav.setting .num_and_sort > * {
 }
 main > div nav.setting .num_and_sort > .num_projects {
   padding-left: 0;
-  border-right: 1px solid #d9d9d9;
-  font-size: 12px;
+  border-right: 1px solid #cccccc;
+  font-size: 14px;
   transform: translateY(4px);
 }
 main > div nav.setting .num_and_sort > .sort ul {
@@ -330,7 +348,7 @@ main > div nav.setting .toggle_container * {
   height: max-content;
 }
 main > div nav.setting .toggle_container > div {
-  font-size: 12px;
+  font-size: 13px;
 }
 .toggle_switch {
   width: 40px;
@@ -367,34 +385,43 @@ main > div div.content article {
   margin: 10px 0;
   padding: 20px 30px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  color: #333333;
 }
 main > div div.content article > * {
   margin: 20px 0;
 }
 main > div div.content article .article_title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main > div div.content article .article_title:hover {
+  text-decoration: underline;
 }
 main > div div.content article .classification > * {
-  margin: 0 7px;
-  padding: 5px 15px;
+  margin-right: 6px;
+  padding: 5px 12px;
 }
 main > div div.content article .classification > .work_area {
   margin-left: 0;
   padding-left: 0;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 16px;
 }
 main > div div.content article .classification > .hashtag {
-  background-color: #f3f3f3;
+  background-color: #f2f4f7;
   border-radius: 16px;
+  color: #666666;
+  font-size: 13px;
 }
 main > div div.content article .classification > .hashtag:before {
   content: "# ";
 }
 main > div div.content article .info > * {
-  font-size: 12px;
+  font-size: 14px;
   padding: 0 15px;
-  border-right: 1px solid #d9d9d9;
+  border-right: 1px solid #cccccc;
+  color: #767676;
 }
 main > div div.content article .info > div:first-child {
   padding-left: 0;
@@ -405,11 +432,12 @@ main > div div.content article .info > div:last-child {
 main > div div.content article .info .price_monthly,
 main > div div.content article .info .price_project,
 main > div div.content article .info .negotiable {
-  color: #999;
+  color: #939393;
   border: 1px solid #999;
   font-size: 6px;
   border-radius: 2px;
   margin-left: 3px;
+  padding: 0 4px;
 }
 main > div div.content article .info .price_monthly:after {
   content: "월 단위";
@@ -423,12 +451,12 @@ main > div div.content article .info .negotiable:after {
 main > div div.content article .status * {
   margin: 0 2px;
   border-radius: 2px;
-  font-size: 10px;
+  font-size: 12px;
 }
 main > div div.content article .status .resident {
   background-color: #fef0f8;
   color: #f348a2;
-  padding: 2px 7px;
+  padding: 3px 8px;
 }
 main > div div.content article .status .resident::after {
   content: "상주";
@@ -436,7 +464,7 @@ main > div div.content article .status .resident::after {
 main > div div.content article .status .remote {
   background-color: #e4f3eb;
   color: #02ba9b;
-  padding: 2px 7px;
+  padding: 3px 8px;
 }
 main > div div.content article .status .remote::after {
   content: "원격";
@@ -444,7 +472,7 @@ main > div div.content article .status .remote::after {
 main > div div.content article .status .recruiting {
   background-color: #737eff;
   color: white;
-  padding: 2px 7px;
+  padding: 3px 8px;
 }
 main > div div.content article .status .recruiting::after {
   content: "모집중";
@@ -452,14 +480,14 @@ main > div div.content article .status .recruiting::after {
 main > div div.content article .status .recruiting_end {
   background-color: gray;
   color: white;
-  padding: 2px 7px;
+  padding: 3px 8px;
 }
 main > div div.content article .status .recruiting_end::after {
   content: "모집종료";
 }
 main > div div.content article .status .quick {
   color: #737eff;
-  font-size: 12px;
+  font-size: 13px;
 }
 main > div div.content article .status .quick::after {
   content: "🏃 아직 많이 확인 안 한 프로젝트예요! 서둘러 지원해 보세요 :)";
