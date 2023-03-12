@@ -35,15 +35,11 @@ document.getElementById('hiddenInfo2').addEventListener('click', function(){
     clickCount2 ++;
     if(clickCount2 % 2 == 1){
         document.getElementById('hiddenInfo3').classList.remove('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_up.png";
-        document.getElementById('mainContainer').style.height = "190vh";
-        document.getElementById('infoBox').style.height = "148vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_up.png";
         document.getElementById('hiddenInfo2').style.borderRadius = "4px 4px 0px 0px";
     } else{
         document.getElementById('hiddenInfo3').classList.add('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_down.png";
-        document.getElementById('mainContainer').style.height = "167vh";
-        document.getElementById('infoBox').style.height = "125vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_down.png";
     }
 });
 
@@ -52,15 +48,11 @@ document.getElementById('hiddenInfo2Icon').addEventListener('click', function(){
     clickCount5 ++;
     if(clickCount3 % 2 == 1){
         document.getElementById('hiddenInfo3').classList.remove('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_up.png";
-        document.getElementById('mainContainer').style.height = "190vh";
-        document.getElementById('infoBox').style.height = "148vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_up.png";
         document.getElementById('hiddenInfo2').style.borderRadius = "4px 4px 0px 0px";
     } else{
         document.getElementById('hiddenInfo3').classList.add('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_down.png";
-        document.getElementById('mainContainer').style.height = "167vh";
-        document.getElementById('infoBox').style.height = "125vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_down.png";
     }
 });
 
