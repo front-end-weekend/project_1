@@ -36,10 +36,23 @@ scrollToTopButton.addEventListener("click", function () {
   });
 });
 
-setTimeout(function () {
-  sideGuide = $("#guide_id");
-  sideGuide.fadeOut();
-}, 3000);
+// 헤더 안내문구 작업중
+const sideGuide = document.getElementById("guide_id");
+
+const showGuide = () => {
+  sideGuide.classList.add("show");
+  setTimeout(() => {
+    sideGuide.classList.remove("show");
+  });
+};
+// setTimeout(function () {
+//   test = $("#guide_id");
+//   test.fadeOut();
+// }, 2000);
+
+// setTimeout(function () {
+//   show("guide_id");
+// }, 1000);
 // function sideGuide() {
 //   document.getElementById("guide_id");
 // }

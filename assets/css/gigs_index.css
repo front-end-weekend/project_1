@@ -95,13 +95,25 @@ a.side_login_click:hover {
   text-decoration: underline;
 }
 
-/* 안내문구 */
+/* 안내문구 작업중 */
 .guide_class {
   position: absolute;
   left: 50%;
   top: 44px;
   transform: translateX(-50%);
 }
+
+.guide_class.show {
+  display: block;
+}
+/* @keyframes guide_class {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+} */
 
 .guide_text {
   background-color: white;
@@ -116,6 +128,10 @@ a.side_login_click:hover {
   font-weight: bold;
 }
 
+.guide_text > strong {
+  font-weight: bold;
+}
+
 .guide_location {
   position: absolute;
   left: 50%;
@@ -124,6 +140,23 @@ a.side_login_click:hover {
   margin-bottom: -1px;
   transform: translateX(-50%);
 }
+
+.guide_location::after {
+  content: "";
+  margin-top: 4px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 0px;
+  border: 1px solid rgb(255, 255, 255);
+  height: 7px;
+  width: 7px;
+  display: block;
+  border-top-right-radius: 30%;
+  transform: rotate(-55deg) shewX(-20deg);
+}
+
+/* ::after {
+  box-sizing: border-box;
+} */
+
 /* 안내문구 끝 */
 
 .header > .main_bar > .mainber_menu_side > li {
