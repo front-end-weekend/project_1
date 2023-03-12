@@ -95,7 +95,6 @@ a.side_login_click:hover {
   text-decoration: underline;
 }
 
-/* 안내문구 작업중 */
 .guide_class {
   position: absolute;
   left: 50%;
@@ -143,7 +142,6 @@ a.side_login_click:hover {
   margin-top: 3px;
   /* transform: rotate(-55deg) shewX(-20deg); */
 }
-/* 안내문구 끝 */
 
 .header > .main_bar > .mainber_menu_side > li {
   position: relative;
