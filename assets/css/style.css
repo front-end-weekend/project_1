@@ -325,6 +325,9 @@ div.list_card_thumbnail {
   display: flex;
   align-items: center;
 }
+.list_card_thumbnail:hover {
+  transform: translateY(-3%);
+}
 
 .card_user_profile_image img {
   border-radius: 50%;
