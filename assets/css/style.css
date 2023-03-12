@@ -196,21 +196,6 @@ main.main {
   font-family: "Pretendard-Regular";
 }
 
-main section .main_top_banner {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-  background-color: aqua;
-}
-/* 임시배너 height 지정*/
-.main_slide_banner {
-  width: 300px;
-}
-main section .main_top_line_banner {
-  width: 1060px;
-  margin: 60px auto;
-}
-
 .main_section_content_list {
   position: relative;
   scroll-margin-top: 4px;

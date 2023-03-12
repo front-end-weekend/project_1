@@ -6987,4 +6987,19 @@
     W
   );
 });
+
+var swiper = new Swiper(".main_swiper", {
+  slidesPerView: 1.58,
+  spaceBetween: 25,
+  centeredSlides: true,
+  pagination: {
+    el: ".banner_pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  loop: true,
+});
 //# sourceMappingURL=swiper.min.js.map
