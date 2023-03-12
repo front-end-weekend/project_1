@@ -16,11 +16,11 @@ document
       .classList.toggle("hidden");
   });
 /* 드랍다운 열기 */
-document
-  .getElementsByClassName("work_form")[0]
-  .addEventListener("click", function () {
-    document.querySelector(".work_form .dropdown").classList.toggle("hidden");
-  });
+const workFormButton = document.getElementsByClassName("work_form")[0];
+workFormButton.addEventListener("click", function () {
+  document.querySelector(".work_form .dropdown").classList.toggle("hidden");
+  document.querySelector(".work_form .arrow").classList.toggle("upside_down");
+});
 /* 드랍다운 선택시키기 */
 const workFormLis = document.querySelectorAll(".work_form .dropdown > *");
 const workFormText = document.querySelector(".work_form .criterion_value");
@@ -115,6 +115,7 @@ const setAreaItemsDisplay = function () {
 /* 직군을 선택해주세요 클릭 시 드랍다운 내려옴 */
 firstModalButton1.addEventListener("click", function () {
   firstModalDropdowns[0].classList.toggle("hidden");
+  document.querySelector(".area .arrow").classList.toggle("upside_down");
 });
 setAreaNumber();
 /* 직군 드랍다운 선택 시 다음 드랍다운이 생김 */
@@ -133,6 +134,7 @@ Array.from(firstModalDropdowns[0].children).forEach((v, i) => {
 /* 직무를 선택해주세요 클릭 시 드랍다운 내려옴 */
 firstModalButton2.addEventListener("click", function () {
   firstModalDropdowns[1].classList.toggle("hidden");
+  document.querySelector(".task .arrow").classList.toggle("upside_down");
 });
 /* 직무 버튼 드랍다운 클릭 시 */
 Array.from(firstModalDropdowns[1].children).forEach((v, i) => {
@@ -140,6 +142,7 @@ Array.from(firstModalDropdowns[1].children).forEach((v, i) => {
   v.addEventListener("click", function () {
     firstModalDropdowns[1].children[i].classList.toggle("selected");
     firstModalDropdowns[1].classList.toggle("hidden");
+    document.querySelector(".task .arrow").classList.toggle("upside_down");
     setAreaNumber();
     setAreaItemsDisplay();
   });
@@ -152,6 +155,7 @@ refreshButtons[0].addEventListener("click", function () {
   removeAllSelected(firstModalDropdowns[1].children);
   firstModalDropdowns[0].classList.add("hidden");
   firstModalDropdowns[1].classList.add("hidden");
+  firstModalButton1.children[0].innerHTML = "직군을 선택해주세요";
   firstModalButton2.classList.add("hidden");
   areaItemsDisplay.innerHTML = "";
   setAreaNumber();
@@ -190,18 +194,19 @@ toggle.addEventListener("click", function () {
   toggle.classList.toggle("active");
 });
 /* 정렬 기준 선택 시 드랍다운 */
-const sort = document.querySelector(".sort .criterion");
+const sort = document.querySelector(".sort");
 const sortDropdown = document.querySelector(".sort .dropdown");
 const sortLis = document.querySelectorAll(".sort .dropdown > *");
 sort.addEventListener("click", function () {
   sortDropdown.classList.toggle("hidden");
+  sort.children[1].classList.toggle("upside_down");
 });
 Array.from(sortLis).forEach((v, i) => {
   v.innerHTML += "<div>✓</div>";
   v.addEventListener("click", function () {
     removeAllSelected(sortLis);
     sortLis[i].classList.toggle("selected");
-    sort.children[0].innerHTML = document.querySelector(
+    sort.children[0].children[0].innerHTML = document.querySelector(
       ".sort li.selected div"
     ).innerHTML;
   });

@@ -68,6 +68,37 @@ ul {
 .dropdown {
   z-index: 100;
 }
+.arrow {
+  width: 8px !important;
+  height: 6px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../icon/arrow.svg");
+}
+.arrow.upside_down {
+  transform: scaleY(-1);
+}
+.glass {
+  width: 20px !important;
+  height: 20px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../icon/glass.svg");
+  position: absolute;
+}
+.search_box .glass {
+  right: 20px;
+  top: 10px;
+}
+.skill .glass {
+  right: 5px;
+  top: 15px;
+}
+.bookmark {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
 /* modal */
 
 .modal_close {
@@ -221,11 +252,14 @@ ul {
   cursor: pointer;
 }
 .hover_blue {
-  transition: border-color 0.2s;
+  transition: 0.1s;
 }
-.hover_blue:hover {
+.hover_blue:hover,
+.hover_blue:focus-within {
   border: 1px solid #3365fd;
-  display: ;
+}
+.hover_blue:focus-within {
+  outline: 3px solid #1890ff33;
 }
 /* main > nav */
 
@@ -314,6 +348,12 @@ main > div nav.setting .num_and_sort > .num_projects {
   border-right: 1px solid #cccccc;
   font-size: 14px;
   transform: translateY(4px);
+}
+main > div nav.setting .num_and_sort > .sort {
+  cursor: pointer;
+}
+main > div nav.setting .num_and_sort > .sort > * {
+  margin-right: 10px;
 }
 main > div nav.setting .num_and_sort > .sort ul {
   position: absolute;
