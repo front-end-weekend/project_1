@@ -1,4 +1,4 @@
-/* TODO : 초기화 버튼, 최신 순 드랍다운, 페이지네이션 */
+/* TODO : 페이지네이션 */
 
 /* 모달창 열기 */
 document
@@ -99,7 +99,7 @@ const setAreaItemsDisplay = function () {
   areaItemsDisplay.innerHTML = "";
   Array.from(firstModalDropdowns[1].children).forEach((v, i) => {
     if (v.classList.contains("selected")) {
-      areaItemsDisplay.innerHTML += `<div>${areaItems[i]}<span id="${i}"> ╳</span></div>`;
+      areaItemsDisplay.innerHTML += `<div class="hover_blue">${areaItems[i]}<span id="${i}"> ╳</span></div>`;
     }
   });
   Array.from(areaItemsDisplay.children).forEach((v) => {
@@ -144,6 +144,21 @@ Array.from(firstModalDropdowns[1].children).forEach((v, i) => {
     setAreaItemsDisplay();
   });
 });
+/* 초기화 버튼 */
+const refreshButtons = document.getElementsByClassName("refresh");
+const skillInput = document.querySelector(".skill input");
+refreshButtons[0].addEventListener("click", function () {
+  removeAllSelected(firstModalDropdowns[0].children);
+  removeAllSelected(firstModalDropdowns[1].children);
+  firstModalDropdowns[0].classList.add("hidden");
+  firstModalDropdowns[1].classList.add("hidden");
+  firstModalButton2.classList.add("hidden");
+  areaItemsDisplay.innerHTML = "";
+  setAreaNumber();
+});
+refreshButtons[1].addEventListener("click", function () {
+  skillInput.value = "";
+});
 /* 모달창 닫기 */
 const close_btn = document.getElementsByClassName("close");
 Array.from(close_btn).forEach((v, i) => {
@@ -157,7 +172,6 @@ Array.from(close_btn).forEach((v, i) => {
 const confirmButtons = document.getElementsByClassName("confirm");
 const workTypeText = document.querySelector(".work_type .criterion_value");
 confirmButtons[0].addEventListener("click", function () {
-  console.log(document.querySelector(".skill li.selected div"));
   try {
     workTypeText.innerHTML = document.querySelector(
       ".area li.selected div"
@@ -179,7 +193,6 @@ toggle.addEventListener("click", function () {
 const sort = document.querySelector(".sort .criterion");
 const sortDropdown = document.querySelector(".sort .dropdown");
 const sortLis = document.querySelectorAll(".sort .dropdown > *");
-console.log(sortLis);
 sort.addEventListener("click", function () {
   sortDropdown.classList.toggle("hidden");
 });
