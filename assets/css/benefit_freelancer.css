@@ -479,3 +479,16 @@
   width: 1040px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 820px) {
+  .box1_img_text {
+    font-size: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .box1_img_text_sm {
+    padding-left: 30px;
+    font-size: 18px;
+    color: white;
+  }
+}
