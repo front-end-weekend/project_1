@@ -35,27 +35,11 @@ document.getElementById('hiddenInfo2').addEventListener('click', function(){
     clickCount2 ++;
     if(clickCount2 % 2 == 1){
         document.getElementById('hiddenInfo3').classList.remove('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_up.png";
-        document.getElementById('mainContainer').style.height = "190vh";
-        document.getElementById('infoBox').style.height = "148vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_up.png";
         document.getElementById('hiddenInfo2').style.borderRadius = "4px 4px 0px 0px";
-        checkboxWrapper2.style.bottom = "115%";
-        checkboxWrapper3.style.bottom = "120%";
-        checkboxWrapper4.style.bottom = "120%";
-        document.getElementById('progressbarPer').style.bottom = "100%"
-        document.getElementById('hiddenInfoIcon').style.bottom = "25%;";
-        document.getElementById('hiddenInfo2Icon').style.bottom = "40%";
     } else{
         document.getElementById('hiddenInfo3').classList.add('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_down.png";
-        document.getElementById('mainContainer').style.height = "167vh";
-        document.getElementById('infoBox').style.height = "125vh";
-        checkboxWrapper2.style.bottom = "115%";
-        checkboxWrapper3.style.bottom = "120%";
-        checkboxWrapper4.style.bottom = "120%";
-        document.getElementById('progressbarPer').style.bottom = "100%";
-        document.getElementById('hiddenInfoIcon').style.bottom = "25%;";
-        document.getElementById('hiddenInfo2Icon').style.bottom = "40%";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_down.png";
     }
 });
 
@@ -64,27 +48,11 @@ document.getElementById('hiddenInfo2Icon').addEventListener('click', function(){
     clickCount5 ++;
     if(clickCount3 % 2 == 1){
         document.getElementById('hiddenInfo3').classList.remove('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_up.png";
-        document.getElementById('mainContainer').style.height = "190vh";
-        document.getElementById('infoBox').style.height = "148vh";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_up.png";
         document.getElementById('hiddenInfo2').style.borderRadius = "4px 4px 0px 0px";
-        checkboxWrapper2.style.bottom = "841.5px";
-        checkboxWrapper3.style.bottom = "425.5px";
-        checkboxWrapper4.style.bottom = "170.5px";
-        document.getElementById('progressbarPer').style.bottom = "1035.1px"
-        document.getElementById('hiddenInfoIcon').style.bottom = "890.5px";
-        document.getElementById('hiddenInfo2Icon').style.bottom = "373px";
     } else{
         document.getElementById('hiddenInfo3').classList.add('close');
-        document.getElementById('hiddenInfo2Icon').src = "./ico_down.png";
-        document.getElementById('mainContainer').style.height = "167vh";
-        document.getElementById('infoBox').style.height = "125vh";
-        checkboxWrapper2.style.bottom = "671px";
-        checkboxWrapper3.style.bottom = "255px";
-        checkboxWrapper4.style.bottom = "169px";
-        document.getElementById('progressbarPer').style.bottom = "864.5px";
-        document.getElementById('hiddenInfoIcon').style.bottom = "720px";
-        document.getElementById('hiddenInfo2Icon').style.bottom = "200px";
+        document.getElementById('hiddenInfo2Icon').src = "../assets/icon/ico_down.png";
     }
 });
 
