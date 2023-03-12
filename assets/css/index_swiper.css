@@ -176,7 +176,8 @@
 }
 
 .main_banner {
-  width: 1700px;
+  overflow: hidden;
+  width: 100%;
   height: 300px;
 }
 
