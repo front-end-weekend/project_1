@@ -95,25 +95,12 @@ a.side_login_click:hover {
   text-decoration: underline;
 }
 
-/* 안내문구 작업중 */
 .guide_class {
   position: absolute;
   left: 50%;
   top: 44px;
   transform: translateX(-50%);
 }
-
-.guide_class.show {
-  display: block;
-}
-/* @keyframes guide_class {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-} */
 
 .guide_text {
   background-color: white;
@@ -125,7 +112,6 @@ a.side_login_click:hover {
   line-height: 1.33;
   text-align: center;
   white-space: nowrap;
-  font-weight: bold;
 }
 
 .guide_text > strong {
@@ -141,23 +127,21 @@ a.side_login_click:hover {
   transform: translateX(-50%);
 }
 
-.guide_location::after {
+.guide_location:after {
   content: "";
   margin-top: 4px;
-  box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 0px;
-  border: 1px solid rgb(255, 255, 255);
+  /* box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 0px; */
+  border-top: 1px solid rgba(51, 102, 244, 0.24);
+  border-left: 1px solid rgba(51, 102, 244, 0.24);
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
   height: 7px;
   width: 7px;
   display: block;
   border-top-right-radius: 30%;
-  transform: rotate(-55deg) shewX(-20deg);
+  margin-top: 3px;
+  /* transform: rotate(-55deg) shewX(-20deg); */
 }
-
-/* ::after {
-  box-sizing: border-box;
-} */
-
-/* 안내문구 끝 */
 
 .header > .main_bar > .mainber_menu_side > li {
   position: relative;
@@ -507,6 +491,7 @@ video.main_section_video_content {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .client_logo ul li {
   width: 160px;
   padding: 25px 0px 0px;
@@ -597,7 +582,7 @@ video.main_section_video_content {
   font-weight: 700;
 }
 
-.reBr {
+.banner_br {
   display: none;
 }
 
@@ -805,7 +790,7 @@ footer > div {
     text-align: center;
     padding-bottom: 25px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   #projectRegisterGo {
     width: 240px;
@@ -813,11 +798,15 @@ footer > div {
     font-size: 14px;
   }
 
-  .reBr {
+  .banner_br {
     display: block;
   }
 
   /* footer */
+  footer {
+    padding: 40px 0;
+  }
+
   .footer_wrapper {
     flex-direction: column;
   }

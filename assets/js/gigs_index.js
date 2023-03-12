@@ -36,24 +36,16 @@ scrollToTopButton.addEventListener("click", function () {
   });
 });
 
-// 헤더 안내문구 작업중
-const sideGuide = document.getElementById("guide_id");
+// 헤더 안내문구
+function showGuide() {
+  let sideGuide = document.getElementById("guide_id");
+  sideGuide.display = "block";
+  console.log(sideGuide);
+  setTimeout(function () {
+    sideGuide.style.display = "none";
+  }, 5000);
+}
 
-const showGuide = () => {
-  sideGuide.classList.add("show");
-  setTimeout(() => {
-    sideGuide.classList.remove("show");
-  });
-};
-// setTimeout(function () {
-//   test = $("#guide_id");
-//   test.fadeOut();
-// }, 2000);
-
-// setTimeout(function () {
-//   show("guide_id");
-// }, 1000);
-// function sideGuide() {
-//   document.getElementById("guide_id");
-// }
-// self.setTimeout("sideGuide()", 2000);
+(function () {
+  showGuide();
+})();
