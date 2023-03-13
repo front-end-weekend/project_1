@@ -232,13 +232,6 @@ main.main {
   position: relative;
 }
 
-.interest_slide {
-  /* margin: 30px 0;
-  width: 100%;
-  background-color: aquamarine;
-  height: 40px; */
-}
-
 ul.interest_content_list {
   width: 100% !important;
   margin: 0 auto;
@@ -928,3 +921,136 @@ footer.footer .footer_inner_text {
   margin-left: 2px;
 }
 /* aside */
+
+.swiper-slide img {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+}
+.swiper-slide .swiper-inner-absolute-div {
+  opacity: 0;
+}
+
+.swiper-slide .swiper-inner-absolute-div {
+  opacity: 0;
+}
+
+.swiper-slide.swiper-slide-active .swiper-inner-absolute-div {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.swiper-slide.swiper-slide-active .swiper-inner-absolute-div {
+  position: absolute;
+  background: #fff;
+  bottom: 28px;
+  width: 330px;
+  height: 146px;
+  opacity: 1;
+  text-align: left;
+  left: 34px;
+  z-index: 15;
+  border-radius: 4px;
+}
+
+.swiper-inner-absolute-div {
+  position: absolute;
+  background: #fff;
+  bottom: 28px;
+  width: 330px;
+  height: 146px;
+  opacity: 1;
+  text-align: left;
+  left: 34px;
+  z-index: 15;
+  border-radius: 4px;
+}
+.swiper-inner-absolute-div {
+  position: absolute;
+  background: #fff;
+  bottom: 28px;
+  width: 330px;
+  height: 146px;
+  opacity: 1;
+  text-align: left;
+  left: 34px;
+  z-index: 15;
+  border-radius: 4px;
+}
+
+.swiper-inner-absolute-div h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.swiper-inner-absolute-div h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  height: 30px;
+  color: #666;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.swiper-link {
+  display: block;
+  margin-top: 6px;
+  margin-left: 13px;
+  padding: 6px 8px;
+}
+
+.blue-color {
+  color: #3366ff;
+}
+
+.swiper-link .blue-color {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+.swiper-link .blue-color .blue-next-btn img {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  line-height: 13px;
+  bottom: 2px;
+}
+
+.top-banner {
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+}
+
+.blue-next-btn {
+  position: relative;
+}
+
+.blue-next-btn img {
+  position: absolute;
+  right: -15px;
+}
+
+.main_banner_hr {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-bottom: 0.5px solid #ececec;
+}
