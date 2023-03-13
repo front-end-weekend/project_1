@@ -44,13 +44,11 @@
 
 .swiper-slide .swiper-inner-absolute-div {
   opacity: 0;
-  transition-duration: 3s;
 }
 
 .swiper-slide.swiper-slide-active .swiper-inner-absolute-div {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 1s;
 }
 
 .swiper-slide.swiper-slide-active .swiper-inner-absolute-div {
