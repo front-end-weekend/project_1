@@ -36,3 +36,10 @@ const interest_slide_aside = document.querySelector(".interest_slide_aside");
 close_button.addEventListener("click", function () {
   interest_slide_aside.style.display = "none";
 });
+
+const button_prev = document.querySelector(".tag_button_prev");
+const button_next = document.querySelector(".tag_button_next");
+
+button_next.addEventListener("click", function () {
+  button_prev.style.display = "inline-block";
+});

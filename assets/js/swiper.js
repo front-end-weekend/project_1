@@ -7002,4 +7002,36 @@ var swiper = new Swiper(".main_swiper", {
   },
   loop: true,
 });
+
+var swiper = new Swiper(".tagSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".tag_button_next",
+    prevEl: ".tag_button_prev",
+  },
+
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 0,
+      spaceBetween: 0,
+    },
+    "@0.75": {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    "@1.00": {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    "@1.50": {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+  },
+});
+
 //# sourceMappingURL=swiper.min.js.map
