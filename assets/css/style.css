@@ -325,6 +325,11 @@ div.list_card_thumbnail {
   display: flex;
   align-items: center;
 }
+
+.list_card_thumbnail {
+  transition: transform 0.2s ease-in-out;
+}
+
 .list_card_thumbnail:hover {
   transform: translateY(-3%);
 }
