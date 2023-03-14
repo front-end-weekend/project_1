@@ -124,11 +124,13 @@
             </div>
             <aside>
               <li>
-                <button><img src="./assets/images/main_search.png" /></button>
+                <button onclick="location.href=('./views/e404.html')">
+                  <img src="./assets/images/main_search.png" />
+                </button>
               </li>
-              <li><a class="member">회원가입/로그인</a></li>
+              <li><a href="./views/e404.html" class="member">회원가입/로그인</a></li>
               <li><div class="bar">|</div></li>
-              <li><a class="service">기업 서비스</a></li>
+              <li><a href="./views/e404.html" class="service">기업 서비스</a></li>
             </aside>
           </div>
         </nav>
@@ -140,7 +142,7 @@
       <div class="main_banner main_swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./views/e404.html">
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1940%2F4a485a58.jpg&w=1060&q=100"
                 alt="직장인 유형 테스트"
@@ -151,7 +153,7 @@
               <h2>직장인 유형 테스트</h2>
               <h3>회사를 고를 때, 나는 어떤 유형일까요?</h3>
               <div class="main_banner_hr"></div>
-              <a class="swiper-link">
+              <a href="./views/e404.html" class="swiper-link">
                 <span class="blue-color link"
                   >바로가기
                   <span class="blue-next-btn"
@@ -165,7 +167,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./views/e404.html">
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1958%2Fb670c991.jpg&w=1060&q=100"
                 alt="IT 세일즈 리드 현직자 인터뷰"
@@ -176,7 +178,7 @@
               <h2>IT 세일즈 리드 현직자 인터뷰</h2>
               <h3>슬랙, 마이크로소프트, 한국신용데이터, 채널톡</h3>
               <div class="main_banner_hr"></div>
-              <a class="swiper-link">
+              <a href="./views/e404.html" class="swiper-link">
                 <span class="blue-color link"
                   >바로가기
                   <span class="blue-next-btn"
@@ -190,7 +192,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./views/e404.html">
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1975%2Fdebe424c.jpg&w=1060&q=100"
                 alt="이제 면접 준비도 챗GPT로!"
@@ -201,7 +203,7 @@
               <h2>이제 면접 준비도 챗GPT로!</h2>
               <h3>면접 예상 질문부터 답변에 대한 피드백까지</h3>
               <div class="main_banner_hr"></div>
-              <a class="swiper-link">
+              <a href="./views/e404.html" class="swiper-link">
                 <span class="blue-color link"
                   >바로가기
                   <span class="blue-next-btn"
@@ -215,7 +217,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./views/e404.html">
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1974%2Fc3bc1b35.jpg&w=1060&q=100"
                 alt="프리온보딩 커리어 킥오프"
@@ -226,7 +228,7 @@
               <h2>프리온보딩 커리어 킥오프</h2>
               <h3>커리어 시작을 꿈꾸는 주니어를 위하여</h3>
               <div class="main_banner_hr"></div>
-              <a class="swiper-link">
+              <a href="./views/e404.html" class="swiper-link">
                 <span class="blue-color link"
                   >바로가기
                   <span class="blue-next-btn"
@@ -1225,27 +1227,5 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
-    <script>
-      var swiper = new Swiper(".main_swiper", {
-        slidesPerView: 1.58,
-        spaceBetween: 25,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false, // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
-        },
-        loop: true,
-        slideToClickedSlide: true,
-        pagination: {
-          el: ".banner_pagination",
-          clickable: true,
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
-        },
-      });
-    </script>
   </body>
 </html>

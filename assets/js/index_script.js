@@ -10,6 +10,38 @@ button.addEventListener("click", function () {
   button2.style.display = "inline-block";
 });
 
+var swiper = new Swiper(".main_swiper", {
+  breakpoints: {
+    1500: {
+      slidesPerView: 1.7,
+    },
+    1300: {
+      slidesPerView: 1.7,
+    },
+    1000: {
+      slidesPerView: 1,
+    },
+  },
+  spaceBetween: 25,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+  },
+  loop: true,
+  slideToClickedSlide: true,
+  speed: 1000,
+  pagination: {
+    el: ".banner_pagination",
+    clickable: true,
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+});
+
 const event_swiper = new Swiper(".swiper-container.event", {
   slidesPerView: 2,
   // 동시에 보여줄 슬라이드 갯수

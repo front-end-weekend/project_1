@@ -200,14 +200,14 @@
 .button-next {
   position: absolute;
   top: 195px;
-  right: 233px;
+  right: 18%;
   z-index: 1;
 }
 
 .button-prev {
   position: absolute;
   top: 195px;
-  left: 240px;
+  left: 18%;
   z-index: 1;
 }
 

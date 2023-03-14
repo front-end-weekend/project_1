@@ -1054,3 +1054,20 @@ footer.footer .footer_inner_text {
   margin-bottom: 5px;
   border-bottom: 0.5px solid #ececec;
 }
+
+@media (max-width: 1000px) {
+  .swiper-inner-absolute-div {
+    display: none;
+  }
+  .button-next {
+    display: none;
+  }
+  .button-prev {
+    display: none;
+  }
+}
+.swiper-slide.swiper-slide-active .swiper-inner-absolute-div {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
