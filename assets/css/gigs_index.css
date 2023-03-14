@@ -23,8 +23,7 @@ button {
   border: 0;
 }
 
-/* 상아 */
-/* 실력 있는 프리랜서를 빠르게 원티드긱스와 성공적인 비즈니스를 시작하세요 */
+/* header */
 .header {
   width: 100%;
   position: fixed;
@@ -130,7 +129,6 @@ a.side_login_click:hover {
 .guide_location:after {
   content: "";
   margin-top: 4px;
-  /* box-shadow: rgb(0 0 0 / 8%) 0px 2px 8px 0px; */
   border-top: 1px solid rgba(51, 102, 244, 0.24);
   border-left: 1px solid rgba(51, 102, 244, 0.24);
   background-color: rgb(255, 255, 255);
@@ -140,7 +138,6 @@ a.side_login_click:hover {
   display: block;
   border-top-right-radius: 30%;
   margin-top: 3px;
-  /* transform: rotate(-55deg) shewX(-20deg); */
 }
 
 .header > .main_bar > .mainber_menu_side > li {
@@ -168,8 +165,8 @@ a.side_login_click:hover {
   color: rgb(51, 51, 51);
   white-space: nowrap;
 }
-/* main */
 
+/* main */
 .main_section {
   height: 680px;
   background-color: rgb(245, 247, 255);
@@ -221,6 +218,7 @@ a.side_login_click:hover {
 .main_section_content_wrapper button:hover {
   opacity: 0.8;
 }
+
 video.main_section_video_content {
   width: 800px;
   position: absolute;
@@ -228,8 +226,6 @@ video.main_section_video_content {
   right: -95px;
 }
 
-/* 원티드긱스를 왜 사용해야 할까요?
- */
 .aos_section {
   padding: 100px 0;
   text-align: center;
@@ -277,7 +273,6 @@ video.main_section_video_content {
   padding: 20px 0 5px;
 }
 
-/* 폰트 사이즈 적용 안됨 - 이유찾기  -> 239~245 줄도 확인 */
 .aos_list ul li p {
   font-size: 16px;
   line-height: 160%;
@@ -312,9 +307,7 @@ video.main_section_video_content {
 .aos_button button:hover {
   opacity: 0.8;
 }
-/* 끝 */
 
-/* 폰트 사이즈 적용 안됨 - 이유찾기  -> 195번줄과 같이 확인 */
 .aos_list_zeroFee_font {
   color: rgb(136, 136, 136);
 }
@@ -323,8 +316,7 @@ video.main_section_video_content {
   font-size: 12px;
 }
 
-/* 상아 모바일 */
-
+/* 모바일 */
 @media screen and (max-width: 767px) {
   .main_section {
     height: 580px;
@@ -395,6 +387,7 @@ video.main_section_video_content {
     height: 50px;
   }
 }
+
 /* swiper overriding */
 .swiper-pagination {
   margin-bottom: 40px;
