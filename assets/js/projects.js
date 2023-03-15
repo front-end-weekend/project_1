@@ -1,5 +1,3 @@
-/* TODO : 페이지네이션 */
-
 /* 모달창 열기 */
 document
   .getElementsByClassName("work_type")[0]
