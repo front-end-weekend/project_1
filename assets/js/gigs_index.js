@@ -1,6 +1,5 @@
 // Swiper fade 효과 적용
 let swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
   effect: "fade",
   pagination: {
     el: ".swiper-pagination",
@@ -9,6 +8,7 @@ let swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 5000,
     speed: 2000,
+    disableOnInteraction: false,
   },
 });
 

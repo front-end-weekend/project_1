@@ -718,7 +718,6 @@ footer > div {
 
 /* top button */
 #topBtn {
-  /* display: none; */
   position: fixed;
   z-index: 1000;
   bottom: 40px;
