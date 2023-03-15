@@ -106,11 +106,12 @@ ul {
 }
 
 .modal_bk_bg {
+  top: 0;
   width: 100%;
   height: 100%;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.298);
-  z-index: 9;
+  z-index: 10000;
 }
 
 .modal_wh_bg {
