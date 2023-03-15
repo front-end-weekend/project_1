@@ -24,7 +24,8 @@
 }
 #add_freelancer {
   margin-top: 40px;
-  width: 253px;
+  max-width: 1080px;
+  margin: 0 auto;
   height: 60px;
   border-radius: 39px;
   background-color: white;
@@ -40,15 +41,29 @@
 }
 .box2_flex {
   display: flex;
-  width: 800.37px;
+  max-width: 1080px;
   height: 300px;
   margin: 0 auto;
   align-items: center;
+  padding: 0 auto;
+  justify-content: center;
+}
+.box2_wrap {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+.box2_flex_2 {
+  display: flex;
+  max-width: 1080px;
+  height: 300px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .align_sm {
   margin: 0 auto;
-  width: 1040px;
+  max-width: 1040px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -137,7 +152,7 @@
   margin-top: 80px;
 }
 .box2_btn_wrap {
-  width: 1040px;
+  max-width: 1040px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -149,23 +164,23 @@
 }
 #box3 {
   background-color: rgb(244, 248, 253);
-  height: 554.5px;
-  padding-top: 100px;
+  height: 100%;
+  padding: 100px 0;
 }
 .smallbox3 {
   margin: 0 auto;
-  width: 1040px;
+  max-width: 1040px;
   text-align: center;
 }
 .smallbox3_2 {
   margin: 0 auto;
-  width: 1040px;
+  max-width: 1040px;
   text-align: center;
 }
 .step {
   display: flex;
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
   gap: 60px;
 }
 .circle {
@@ -183,6 +198,16 @@
   margin: 0 auto;
   margin-top: 60px;
 }
+.circle_wraper {
+  max-width: 1080px;
+}
+.mySwiper {
+  max-width: 1080px;
+  padding: 30px 0;
+}
+.swiper-slide-active {
+  width: 300px;
+}
 .circle_tit {
   padding-top: 33px;
   font-size: 22px;
@@ -198,9 +223,9 @@
   margin: 0 auto;
 }
 #box4 {
-  padding-top: 100px;
+  padding: 100px 0;
   margin: 0 auto;
-  height: 934px;
+  height: 100%;
   background-color: white;
 }
 .box4_desc {
@@ -215,15 +240,15 @@
   text-align: center;
 }
 .box4_img {
-  width: 1043px;
-  height: 934px;
+  max-width: 1080px;
+
   background-color: white;
   margin: 0 auto;
 }
 .box4_flex {
   display: flex;
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
   justify-content: center;
   gap: 80px;
   margin-top: 60px;
@@ -262,14 +287,13 @@
 }
 
 .swiper-wrapper {
-  width: 1000px;
+  width: 300px;
+  padding: 30px auto;
 }
 .swiper-slide {
   width: 300px;
-
   text-align: center;
   font-size: 18px;
-
   /* background: #fff; */
 
   /* Center slide text vertically */
@@ -325,8 +349,7 @@
   margin-top: 12px;
   color: rgb(102, 102, 102);
 }
-.dot {
-}
+
 .bg-slide {
   width: 300px;
   height: 359px;
@@ -490,5 +513,70 @@
     padding-left: 30px;
     font-size: 18px;
     color: white;
+  }
+  #add_freelancer {
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 253px;
+    height: 60px;
+    border-radius: 39px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .align_sm {
+    margin: 0 auto;
+    max-width: 1040px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box2_flex {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1080px;
+    height: 300px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .box2_flex_2 {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1080px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    align-items: center;
+  }
+  .step {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 60px;
+    justify-content: center;
+  }
+  .box4_flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .section4_img {
+    width: 120px;
+    height: 120px;
+  }
+  .mySwiper {
+    display: block;
   }
 }

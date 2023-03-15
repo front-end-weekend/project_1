@@ -1,17 +1,29 @@
 console.log('출력');
-let swiper = new Swiper('.mySwiper', {
+
+swiper = new Swiper('.mySwiper', {
   spaceBetween: 50, // 슬라이드 사이의 간격 (px)
-  slidesPerView: 3, // 한 번에 한 개의 슬라이드만 보이게 설정
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
+  slideWidth: 1000,
+  initialSlide: 1,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   },
-  initialSlide: 1,
   dynamicBullets: true,
   bulletClass: 'my-bullet-class', // Indicator의 클래스 이름
-  bulletActiveClass: 'my-bullet-active-class' // 활성화된 Indicator의 클래스 이름
+  bulletActiveClass: 'my-bullet-active-class',
+  breakpoints: {
+    820: {
+      enabled: false,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      slidesPerView: 3,
+      slideWidth: 300,
+      spaceBetween: 50 // 슬라이드 사이의 간격 (px)
+    }
+  }
 });
 
 let buttons = document.querySelectorAll('.toggle-button');
