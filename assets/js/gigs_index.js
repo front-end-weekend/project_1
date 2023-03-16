@@ -36,7 +36,7 @@ scrollToTopButton.addEventListener("click", function () {
   });
 });
 
-// 헤더 안내문구
+// header 안내문구
 function showGuide() {
   let sideGuide = document.getElementById("guide_id");
   sideGuide.display = "block";
